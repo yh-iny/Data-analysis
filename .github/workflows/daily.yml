@@ -7,13 +7,8 @@ on:
     - cron: "30 1 * * 1-5"
     # 15:30 北京时间（收盘后）≈ 07:30 UTC
     - cron: "30 7 * * 1-5"
-  # 允许在 GitHub 网页上手动触发
+  # 允许在 GitHub 网页上手动触发（Actions → 该工作流 → Run workflow）
   workflow_dispatch:
-    inputs:
-      force:
-        description: "强制重新生成并覆盖今日报告"
-        required: false
-        default: "false"
 
 # 允许工作流把生成的报告写回仓库
 permissions:
@@ -50,10 +45,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: 生成日报
-        id: generate
         run: |
           python stock_daily.py
-          echo "date=$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
 
       - name: 提交并更新
         run: |
