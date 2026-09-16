@@ -1,0 +1,15 @@
+# 统一换行符，避免 Windows/Linux 混用导致的 diff 噪音
+* text=auto
+
+# 文本类源码统一以 LF 入库
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+
+# Windows 批处理保留 CRLF
+*.bat text eol=crlf
