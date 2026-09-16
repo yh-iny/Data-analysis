@@ -1,0 +1,32 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+# Virtual environments
+env/
+.venv/
+venv/
+ENV/
+
+# ===== OS / 编辑器 =====
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ===== 误生成文件（Windows 重定向残留）=====
+nul
+nul.*
+
+# ===== 日志 / 本地配置 =====
+*.log
+.env
+.env.*
+settings.local.json
+
+# ===== 说明 =====
+# reports/ 与 tracking/ 是每日自动更新的产物，需要纳入版本库，不要忽略。
+# 如需关闭历史报告入库，可取消下面两行的注释：
+# reports/stock-report-*.html
+# tracking/track-*.json

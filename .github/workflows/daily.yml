@@ -1,0 +1,74 @@
+name: 每日股票分析日报
+
+on:
+  schedule:
+    # 北京时间（UTC+8）盘中 + 收盘后各更新一次
+    # 09:30 北京时间 ≈ 01:30 UTC
+    - cron: "30 1 * * 1-5"
+    # 15:30 北京时间（收盘后）≈ 07:30 UTC
+    - cron: "30 7 * * 1-5"
+  # 允许在 GitHub 网页上手动触发
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "强制重新生成并覆盖今日报告"
+        required: false
+        default: "false"
+
+# 允许工作流把生成的报告写回仓库
+permissions:
+  contents: write
+
+# 避免同一时间多个任务互相覆盖
+concurrency:
+  group: daily-stock-report
+  cancel-in-progress: false
+
+env:
+  # 关键：让 Python 的 date.today() 使用北京时间，避免 UTC 日期错位
+  TZ: Asia/Shanghai
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # 需要完整历史以便提交
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 生成日报
+        id: generate
+        run: |
+          python stock_daily.py
+          echo "date=$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: 提交并更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 仅当 reports / tracking 有变化时才提交
+          if [ -z "$(git status --porcelain reports tracking)" ]; then
+            echo "没有新的报告变化，跳过提交。"
+            exit 0
+          fi
+
+          git add reports tracking
+          MSG="chore: 自动更新股票日报 $(date +'%Y-%m-%d %H:%M %Z')"
+          git commit -m "$MSG"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

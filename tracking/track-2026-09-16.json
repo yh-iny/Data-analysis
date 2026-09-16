@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-16",
+  "position_stocks": [
+    {
+      "code": "600135",
+      "name": "乐凯胶片",
+      "price": 8.09,
+      "entry_price": 7.6,
+      "target_price": 8.64,
+      "stop_loss": 6.99,
+      "score": 91
+    },
+    {
+      "code": "002780",
+      "name": "三夫户外",
+      "price": 14.04,
+      "entry_price": 13.2,
+      "target_price": 15.53,
+      "stop_loss": 12.14,
+      "score": 86
+    },
+    {
+      "code": "002617",
+      "name": "露笑科技",
+      "price": 7.02,
+      "entry_price": 6.6,
+      "target_price": 7.72,
+      "stop_loss": 6.07,
+      "score": 85
+    },
+    {
+      "code": "001216",
+      "name": "华瓷股份",
+      "price": 18.07,
+      "entry_price": 16.99,
+      "target_price": 20.2,
+      "stop_loss": 15.63,
+      "score": 81
+    },
+    {
+      "code": "000055",
+      "name": "方大集团",
+      "price": 3.82,
+      "entry_price": 3.59,
+      "target_price": 4.3,
+      "stop_loss": 3.3,
+      "score": 79
+    },
+    {
+      "code": "000720",
+      "name": "新能泰山",
+      "price": 4.17,
+      "entry_price": 3.92,
+      "target_price": 4.61,
+      "stop_loss": 3.61,
+      "score": 79
+    },
+    {
+      "code": "000731",
+      "name": "四川美丰",
+      "price": 7.99,
+      "entry_price": 7.51,
+      "target_price": 8.57,
+      "stop_loss": 6.91,
+      "score": 76
+    },
+    {
+      "code": "600059",
+      "name": "古越龙山",
+      "price": 9.77,
+      "entry_price": 9.18,
+      "target_price": 10.7,
+      "stop_loss": 8.45,
+      "score": 74
+    },
+    {
+      "code": "002593",
+      "name": "日上集团",
+      "price": 4.63,
+      "entry_price": 4.63,
+      "target_price": 5.26,
+      "stop_loss": 4.31,
+      "score": 69
+    },
+    {
+      "code": "300511",
+      "name": "雪榕生物",
+      "price": 4.98,
+      "entry_price": 4.98,
+      "target_price": 5.51,
+      "stop_loss": 4.63,
+      "score": 69
+    },
+    {
+      "code": "601619",
+      "name": "嘉泽新能",
+      "price": 4.17,
+      "entry_price": 4.17,
+      "target_price": 4.63,
+      "stop_loss": 3.88,
+      "score": 69
+    },
+    {
+      "code": "000905",
+      "name": "厦门港务",
+      "price": 9.35,
+      "entry_price": 9.35,
+      "target_price": 10.32,
+      "stop_loss": 8.7,
+      "score": 68
+    },
+    {
+      "code": "603900",
+      "name": "莱绅通灵",
+      "price": 7.1,
+      "entry_price": 6.6,
+      "target_price": 7.49,
+      "stop_loss": 6.01,
+      "score": 67
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "price": 7.27,
+      "entry_price": 6.76,
+      "target_price": 7.77,
+      "stop_loss": 6.15,
+      "score": 66
+    },
+    {
+      "code": "002083",
+      "name": "孚日股份",
+      "price": 9.85,
+      "entry_price": 9.85,
+      "target_price": 11.13,
+      "stop_loss": 9.16,
+      "score": 66
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002617",
+      "name": "露笑科技",
+      "price": 7.02,
+      "target_price": 7.98,
+      "stop_loss": 6.53,
+      "score": 97
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "price": 7.27,
+      "target_price": 8.2,
+      "stop_loss": 6.76,
+      "score": 97
+    },
+    {
+      "code": "002300",
+      "name": "太阳电缆",
+      "price": 8.38,
+      "target_price": 9.87,
+      "stop_loss": 7.79,
+      "score": 97
+    },
+    {
+      "code": "600135",
+      "name": "乐凯胶片",
+      "price": 8.09,
+      "target_price": 9.11,
+      "stop_loss": 7.52,
+      "score": 97
+    },
+    {
+      "code": "002780",
+      "name": "三夫户外",
+      "price": 14.04,
+      "target_price": 16.66,
+      "stop_loss": 13.06,
+      "score": 92
+    },
+    {
+      "code": "600371",
+      "name": "万向德农",
+      "price": 14.22,
+      "target_price": 16.81,
+      "stop_loss": 13.22,
+      "score": 87
+    },
+    {
+      "code": "000055",
+      "name": "方大集团",
+      "price": 3.82,
+      "target_price": 4.42,
+      "stop_loss": 3.55,
+      "score": 85
+    },
+    {
+      "code": "000720",
+      "name": "新能泰山",
+      "price": 4.17,
+      "target_price": 4.88,
+      "stop_loss": 3.88,
+      "score": 85
+    },
+    {
+      "code": "600616",
+      "name": "金枫酒业",
+      "price": 4.88,
+      "target_price": 5.47,
+      "stop_loss": 4.54,
+      "score": 85
+    },
+    {
+      "code": "002388",
+      "name": "新亚制程",
+      "price": 6.78,
+      "target_price": 8.07,
+      "stop_loss": 6.31,
+      "score": 82
+    },
+    {
+      "code": "000731",
+      "name": "四川美丰",
+      "price": 7.99,
+      "target_price": 9.19,
+      "stop_loss": 7.43,
+      "score": 82
+    },
+    {
+      "code": "000753",
+      "name": "漳州发展",
+      "price": 5.5,
+      "target_price": 6.26,
+      "stop_loss": 5.12,
+      "score": 82
+    },
+    {
+      "code": "002383",
+      "name": "合众思壮",
+      "price": 8.16,
+      "target_price": 9.56,
+      "stop_loss": 7.59,
+      "score": 82
+    },
+    {
+      "code": "603900",
+      "name": "莱绅通灵",
+      "price": 7.1,
+      "target_price": 8.44,
+      "stop_loss": 6.6,
+      "score": 82
+    },
+    {
+      "code": "600059",
+      "name": "古越龙山",
+      "price": 9.77,
+      "target_price": 11.62,
+      "stop_loss": 9.09,
+      "score": 82
+    },
+    {
+      "code": "600103",
+      "name": "青山纸业",
+      "price": 3.69,
+      "target_price": 4.14,
+      "stop_loss": 3.43,
+      "score": 80
+    },
+    {
+      "code": "600545",
+      "name": "卓郎智能",
+      "price": 4.72,
+      "target_price": 5.42,
+      "stop_loss": 4.39,
+      "score": 80
+    },
+    {
+      "code": "002679",
+      "name": "福建金森",
+      "price": 11.28,
+      "target_price": 12.9,
+      "stop_loss": 10.49,
+      "score": 77
+    },
+    {
+      "code": "002584",
+      "name": "西陇科学",
+      "price": 9.55,
+      "target_price": 11.11,
+      "stop_loss": 8.88,
+      "score": 77
+    },
+    {
+      "code": "002631",
+      "name": "德尔未来",
+      "price": 11.23,
+      "target_price": 12.62,
+      "stop_loss": 10.44,
+      "score": 77
+    }
+  ]
+}

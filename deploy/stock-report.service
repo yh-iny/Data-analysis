@@ -1,0 +1,30 @@
+[Unit]
+Description=Stock Daily Report Web Server
+Documentation=https://github.com/daily-stock-report
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/stock-report
+ExecStart=/opt/stock-report/venv/bin/python3 /opt/stock-report/web_server.py
+Restart=always
+RestartSec=10
+TimeoutStartSec=300
+TimeoutStopSec=30
+StandardOutput=journal
+StandardError=journal
+
+# 安全限制
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/stock-report/reports /opt/stock-report/tracking /opt/stock-report/logs
+
+# 环境变量
+Environment=STOCK_WEB_PORT=8080
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
