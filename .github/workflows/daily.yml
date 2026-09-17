@@ -2,11 +2,9 @@ name: 每日股票分析日报
 
 on:
   schedule:
-    # 北京时间（UTC+8）盘中 + 收盘后各更新一次
-    # 09:30 北京时间 ≈ 01:30 UTC
-    - cron: "30 1 * * 1-5"
-    # 15:30 北京时间（收盘后）≈ 07:30 UTC
-    - cron: "30 7 * * 1-5"
+    # 北京时间（UTC+8）交易时段内每小时检查一次，避免 GitHub 定时延迟漏报
+    # 09:00–16:00 北京时间 ≈ UTC 01:00–08:00
+    - cron: "15 1-8 * * 1-5"
   # 允许在 GitHub 网页上手动触发（Actions → 该工作流 → Run workflow）
   workflow_dispatch:
 
@@ -48,16 +46,36 @@ jobs:
         run: |
           python stock_daily.py
 
+      - name: 检查数据是否真有变化
+        id: check
+        run: |
+          python - <<'PY'
+          import subprocess, re, os
+          def get_old():
+              r = subprocess.run(["git", "show", "HEAD:reports/latest.html"],
+                                 capture_output=True, text=True)
+              return r.stdout if r.returncode == 0 else ""
+          def norm(t):
+              # 去掉“生成时间”整行以及任何 20XX-XX-XX XX:XX 时间戳，只保留核心数据
+              t = re.sub(r"生成时间\s*", "", t)
+              t = re.sub(r"\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}(:\d{2})?", "", t)
+              return t
+          old = norm(get_old())
+          try:
+              new = norm(open("reports/latest.html", encoding="utf-8", errors="ignore").read())
+          except FileNotFoundError:
+              new = ""
+          changed = old != new
+          print("changed =", changed)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"changed={'true' if changed else 'false'}\n")
+          PY
+
       - name: 提交并更新
+        if: steps.check.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # 仅当 reports / tracking 有变化时才提交
-          if [ -z "$(git status --porcelain reports tracking)" ]; then
-            echo "没有新的报告变化，跳过提交。"
-            exit 0
-          fi
 
           git add reports tracking
           MSG="chore: 自动更新股票日报 $(date +'%Y-%m-%d %H:%M %Z')"
