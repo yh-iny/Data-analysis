@@ -2,31 +2,67 @@
   "date": "2026-09-23",
   "position_stocks": [
     {
+      "code": "600743",
+      "name": "华远控股",
+      "price": 2.82,
+      "entry_price": 2.65,
+      "target_price": 2.99,
+      "stop_loss": 2.44,
+      "score": 74
+    },
+    {
       "code": "000850",
       "name": "华茂股份",
       "price": 4.65,
       "entry_price": 4.37,
-      "target_price": 5.13,
+      "target_price": 5.1,
       "stop_loss": 4.02,
       "score": 73
     },
     {
-      "code": "002286",
-      "name": "保龄宝",
-      "price": 8.75,
-      "entry_price": 8.22,
-      "target_price": 9.83,
-      "stop_loss": 7.56,
-      "score": 71
+      "code": "600293",
+      "name": "三峡新材",
+      "price": 3.7,
+      "entry_price": 3.48,
+      "target_price": 4.09,
+      "stop_loss": 3.2,
+      "score": 73
+    },
+    {
+      "code": "603949",
+      "name": "雪龙集团",
+      "price": 15.36,
+      "entry_price": 14.44,
+      "target_price": 16.9,
+      "stop_loss": 13.28,
+      "score": 72
     },
     {
       "code": "002238",
       "name": "天威视讯",
       "price": 7.66,
       "entry_price": 7.2,
-      "target_price": 8.24,
+      "target_price": 8.56,
       "stop_loss": 6.62,
       "score": 71
+    },
+    {
+      "code": "002286",
+      "name": "保龄宝",
+      "price": 8.75,
+      "entry_price": 8.22,
+      "target_price": 9.77,
+      "stop_loss": 7.56,
+      "score": 71
+    },
+    {
+      "code": "600230",
+      "name": "沧州大化",
+      "price": 14.82,
+      "entry_price": 13.93,
+      "target_price": 16.61,
+      "stop_loss": 12.82,
+      "score": 70
     },
     {
       "code": "002426",
@@ -42,131 +78,135 @@
       "name": "安洁科技",
       "price": 16.79,
       "entry_price": 15.61,
-      "target_price": 17.75,
+      "target_price": 17.72,
       "stop_loss": 14.21,
       "score": 66
     },
     {
-      "code": "000848",
-      "name": "承德露露",
-      "price": 8.26,
-      "entry_price": 8.26,
-      "target_price": 9.38,
-      "stop_loss": 7.68,
+      "code": "601811",
+      "name": "新华文轩",
+      "price": 18.5,
+      "entry_price": 17.21,
+      "target_price": 19.62,
+      "stop_loss": 15.66,
       "score": 66
     },
     {
-      "code": "002205",
-      "name": "国统股份",
-      "price": 11.96,
-      "entry_price": 11.12,
-      "target_price": 12.53,
-      "stop_loss": 10.12,
+      "code": "002638",
+      "name": "勤上股份",
+      "price": 4.74,
+      "entry_price": 4.41,
+      "target_price": 4.92,
+      "stop_loss": 4.01,
       "score": 64
     },
     {
-      "code": "002375",
-      "name": "亚厦股份",
-      "price": 3.94,
-      "entry_price": 3.94,
-      "target_price": 4.64,
-      "stop_loss": 3.66,
-      "score": 64
-    },
-    {
-      "code": "002968",
-      "name": "新大正",
-      "price": 9.95,
-      "entry_price": 9.95,
-      "target_price": 11.15,
-      "stop_loss": 9.25,
-      "score": 63
-    },
-    {
-      "code": "002516",
-      "name": "旷达科技",
-      "price": 5.86,
-      "entry_price": 5.86,
-      "target_price": 6.82,
-      "stop_loss": 5.45,
+      "code": "600802",
+      "name": "福建水泥",
+      "price": 6.02,
+      "entry_price": 5.6,
+      "target_price": 6.31,
+      "stop_loss": 5.1,
       "score": 62
     },
     {
-      "code": "002250",
-      "name": "联化科技",
-      "price": 14.78,
-      "entry_price": 14.78,
-      "target_price": 16.83,
-      "stop_loss": 13.75,
-      "score": 62
+      "code": "600503",
+      "name": "华丽家族",
+      "price": 2.94,
+      "entry_price": 2.73,
+      "target_price": 3.11,
+      "stop_loss": 2.48,
+      "score": 61
     },
     {
       "code": "000910",
       "name": "大亚圣象",
       "price": 7.58,
       "entry_price": 7.05,
-      "target_price": 7.96,
+      "target_price": 7.95,
       "stop_loss": 6.42,
       "score": 60
     },
     {
-      "code": "002145",
-      "name": "钛能化学",
-      "price": 4.85,
-      "entry_price": 4.85,
-      "target_price": 5.63,
-      "stop_loss": 4.51,
+      "code": "002541",
+      "name": "鸿路钢构",
+      "price": 19.69,
+      "entry_price": 18.31,
+      "target_price": 20.25,
+      "stop_loss": 16.66,
       "score": 60
-    },
-    {
-      "code": "002367",
-      "name": "康力电梯",
-      "price": 6.22,
-      "entry_price": 6.22,
-      "target_price": 6.86,
-      "stop_loss": 5.78,
-      "score": 60
-    },
-    {
-      "code": "002614",
-      "name": "奥佳华",
-      "price": 7.57,
-      "entry_price": 7.04,
-      "target_price": 7.93,
-      "stop_loss": 6.41,
-      "score": 58
     }
   ],
   "recommendations": [
     {
+      "code": "000850",
+      "name": "华茂股份",
+      "price": 4.65,
+      "target_price": 5.37,
+      "stop_loss": 4.32,
+      "score": 85
+    },
+    {
       "code": "002426",
       "name": "胜利精密",
       "price": 2.96,
-      "target_price": 3.49,
+      "target_price": 3.52,
       "stop_loss": 2.75,
       "score": 85
     },
     {
-      "code": "000850",
-      "name": "华茂股份",
-      "price": 4.65,
-      "target_price": 5.22,
-      "stop_loss": 4.32,
+      "code": "002638",
+      "name": "勤上股份",
+      "price": 4.74,
+      "target_price": 5.37,
+      "stop_loss": 4.41,
+      "score": 85
+    },
+    {
+      "code": "600293",
+      "name": "三峡新材",
+      "price": 3.7,
+      "target_price": 4.2,
+      "stop_loss": 3.44,
+      "score": 85
+    },
+    {
+      "code": "600743",
+      "name": "华远控股",
+      "price": 2.82,
+      "target_price": 3.22,
+      "stop_loss": 2.62,
       "score": 85
     },
     {
       "code": "000910",
       "name": "大亚圣象",
       "price": 7.58,
-      "target_price": 8.54,
+      "target_price": 8.64,
       "stop_loss": 7.05,
+      "score": 82
+    },
+    {
+      "code": "600843",
+      "name": "上工申贝",
+      "price": 7.61,
+      "target_price": 8.63,
+      "stop_loss": 7.08,
+      "score": 82
+    },
+    {
+      "code": "603222",
+      "name": "济民健康",
+      "price": 8.94,
+      "target_price": 10.39,
+      "stop_loss": 8.31,
       "score": 82
     },
     {
       "code": "000560",
       "name": "我爱我家",
       "price": 3.86,
-      "target_price": 4.62,
+      "target_price": 4.43,
       "stop_loss": 3.59,
       "score": 80
     },
@@ -174,129 +214,89 @@
       "code": "002286",
       "name": "保龄宝",
       "price": 8.75,
-      "target_price": 10.08,
+      "target_price": 10.16,
       "stop_loss": 8.14,
       "score": 77
     },
     {
-      "code": "002205",
-      "name": "国统股份",
-      "price": 11.96,
-      "target_price": 13.62,
-      "stop_loss": 11.12,
+      "code": "600230",
+      "name": "沧州大化",
+      "price": 14.82,
+      "target_price": 16.65,
+      "stop_loss": 13.78,
       "score": 77
     },
     {
-      "code": "002635",
-      "name": "安洁科技",
-      "price": 16.79,
-      "target_price": 18.3,
-      "stop_loss": 15.61,
-      "score": 72
+      "code": "600802",
+      "name": "福建水泥",
+      "price": 6.02,
+      "target_price": 6.98,
+      "stop_loss": 5.6,
+      "score": 77
     },
     {
-      "code": "002935",
-      "name": "天奥电子",
-      "price": 17.52,
-      "target_price": 19.31,
-      "stop_loss": 16.29,
+      "code": "603636",
+      "name": "南威软件",
+      "price": 8.81,
+      "target_price": 10.2,
+      "stop_loss": 8.19,
+      "score": 77
+    },
+    {
+      "code": "603803",
+      "name": "瑞斯康达",
+      "price": 12.87,
+      "target_price": 14.53,
+      "stop_loss": 11.97,
+      "score": 77
+    },
+    {
+      "code": "603937",
+      "name": "丽岛新材",
+      "price": 12.97,
+      "target_price": 14.56,
+      "stop_loss": 12.06,
+      "score": 77
+    },
+    {
+      "code": "002541",
+      "name": "鸿路钢构",
+      "price": 19.69,
+      "target_price": 21.23,
+      "stop_loss": 18.31,
       "score": 72
     },
     {
       "code": "002633",
       "name": "申科股份",
       "price": 15.87,
-      "target_price": 16.86,
+      "target_price": 17.23,
       "stop_loss": 14.76,
       "score": 72
     },
     {
-      "code": "002909",
-      "name": "集泰股份",
-      "price": 7.54,
-      "target_price": 8.19,
-      "stop_loss": 7.01,
-      "score": 67
+      "code": "002935",
+      "name": "天奥电子",
+      "price": 17.52,
+      "target_price": 19.09,
+      "stop_loss": 16.29,
+      "score": 72
     },
     {
-      "code": "002614",
-      "name": "奥佳华",
-      "price": 7.57,
-      "target_price": 8.13,
-      "stop_loss": 7.04,
-      "score": 67
+      "code": "601811",
+      "name": "新华文轩",
+      "price": 18.5,
+      "target_price": 19.72,
+      "stop_loss": 17.21,
+      "score": 72
     },
     {
-      "code": "002238",
-      "name": "天威视讯",
-      "price": 7.66,
-      "target_price": 8.29,
-      "stop_loss": 7.12,
-      "score": 62
-    },
-    {
-      "code": "002638",
-      "name": "勤上股份",
-      "price": 4.54,
-      "target_price": 4.87,
-      "stop_loss": 4.22,
-      "score": 60
-    },
-    {
-      "code": "002375",
-      "name": "亚厦股份",
-      "price": 3.94,
-      "target_price": 4.4,
-      "stop_loss": 3.66,
-      "score": 60
-    },
-    {
-      "code": "002145",
-      "name": "钛能化学",
-      "price": 4.85,
-      "target_price": 5.35,
-      "stop_loss": 4.51,
-      "score": 60
-    },
-    {
-      "code": "002646",
-      "name": "天佑德酒",
-      "price": 7.41,
-      "target_price": 8.11,
-      "stop_loss": 6.89,
-      "score": 57
-    },
-    {
-      "code": "002383",
-      "name": "合众思壮",
-      "price": 8.46,
-      "target_price": 9.25,
-      "stop_loss": 7.87,
-      "score": 57
-    },
-    {
-      "code": "002367",
-      "name": "康力电梯",
-      "price": 6.22,
-      "target_price": 6.76,
-      "stop_loss": 5.78,
-      "score": 57
-    },
-    {
-      "code": "002968",
-      "name": "新大正",
-      "price": 9.95,
-      "target_price": 10.68,
-      "stop_loss": 9.25,
-      "score": 57
-    },
-    {
-      "code": "000868",
-      "name": "安凯客车",
-      "price": 4.14,
-      "target_price": 4.45,
-      "stop_loss": 3.85,
-      "score": 55
+      "code": "603328",
+      "name": "依顿电子",
+      "price": 15.2,
+      "target_price": 16.25,
+      "stop_loss": 14.14,
+      "score": 72
     }
   ]
 }
