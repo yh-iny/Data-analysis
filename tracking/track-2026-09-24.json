@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-24",
+  "position_stocks": [
+    {
+      "code": "603970",
+      "name": "中农立华",
+      "price": 12.17,
+      "entry_price": 11.44,
+      "target_price": 13.11,
+      "stop_loss": 10.52,
+      "score": 80
+    },
+    {
+      "code": "603500",
+      "name": "祥和实业",
+      "price": 10.42,
+      "entry_price": 9.79,
+      "target_price": 10.98,
+      "stop_loss": 9.01,
+      "score": 75
+    },
+    {
+      "code": "605018",
+      "name": "长华集团",
+      "price": 12.74,
+      "entry_price": 11.98,
+      "target_price": 14.05,
+      "stop_loss": 11.02,
+      "score": 72
+    },
+    {
+      "code": "603949",
+      "name": "雪龙集团",
+      "price": 16.9,
+      "entry_price": 15.72,
+      "target_price": 17.4,
+      "stop_loss": 14.31,
+      "score": 67
+    },
+    {
+      "code": "603278",
+      "name": "大业股份",
+      "price": 9.8,
+      "entry_price": 9.11,
+      "target_price": 10.24,
+      "stop_loss": 8.29,
+      "score": 66
+    },
+    {
+      "code": "600189",
+      "name": "泉阳泉",
+      "price": 9.1,
+      "entry_price": 8.46,
+      "target_price": 9.36,
+      "stop_loss": 7.7,
+      "score": 65
+    },
+    {
+      "code": "600792",
+      "name": "云煤能源",
+      "price": 5.7,
+      "entry_price": 5.3,
+      "target_price": 6.03,
+      "stop_loss": 4.82,
+      "score": 63
+    },
+    {
+      "code": "601339",
+      "name": "百隆东方",
+      "price": 7.45,
+      "entry_price": 7.45,
+      "target_price": 8.75,
+      "stop_loss": 6.93,
+      "score": 61
+    },
+    {
+      "code": "600825",
+      "name": "新华传媒",
+      "price": 7.77,
+      "entry_price": 7.23,
+      "target_price": 8.14,
+      "stop_loss": 6.58,
+      "score": 58
+    },
+    {
+      "code": "600006",
+      "name": "东风股份",
+      "price": 5.49,
+      "entry_price": 5.49,
+      "target_price": 6.25,
+      "stop_loss": 5.11,
+      "score": 58
+    },
+    {
+      "code": "603767",
+      "name": "中马传动",
+      "price": 14.74,
+      "entry_price": 13.71,
+      "target_price": 15.47,
+      "stop_loss": 12.48,
+      "score": 57
+    },
+    {
+      "code": "601218",
+      "name": "吉鑫科技",
+      "price": 5.5,
+      "entry_price": 5.12,
+      "target_price": 5.79,
+      "stop_loss": 4.66,
+      "score": 57
+    },
+    {
+      "code": "600358",
+      "name": "国旅联合",
+      "price": 5.72,
+      "entry_price": 5.32,
+      "target_price": 6.11,
+      "stop_loss": 4.84,
+      "score": 55
+    },
+    {
+      "code": "603700",
+      "name": "宁水集团",
+      "price": 11.9,
+      "entry_price": 11.9,
+      "target_price": 13.48,
+      "stop_loss": 11.07,
+      "score": 55
+    },
+    {
+      "code": "603321",
+      "name": "梅轮电梯",
+      "price": 7.24,
+      "entry_price": 7.24,
+      "target_price": 8.18,
+      "stop_loss": 6.73,
+      "score": 55
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "600189",
+      "name": "泉阳泉",
+      "price": 9.1,
+      "target_price": 10.57,
+      "stop_loss": 8.46,
+      "score": 82
+    },
+    {
+      "code": "600358",
+      "name": "国旅联合",
+      "price": 5.72,
+      "target_price": 6.43,
+      "stop_loss": 5.32,
+      "score": 82
+    },
+    {
+      "code": "603278",
+      "name": "大业股份",
+      "price": 9.8,
+      "target_price": 11.41,
+      "stop_loss": 9.11,
+      "score": 82
+    },
+    {
+      "code": "603970",
+      "name": "中农立华",
+      "price": 12.17,
+      "target_price": 14.4,
+      "stop_loss": 11.32,
+      "score": 77
+    },
+    {
+      "code": "603500",
+      "name": "祥和实业",
+      "price": 10.42,
+      "target_price": 12.45,
+      "stop_loss": 9.69,
+      "score": 77
+    },
+    {
+      "code": "603767",
+      "name": "中马传动",
+      "price": 14.74,
+      "target_price": 17.6,
+      "stop_loss": 13.71,
+      "score": 77
+    },
+    {
+      "code": "601218",
+      "name": "吉鑫科技",
+      "price": 5.5,
+      "target_price": 6.51,
+      "stop_loss": 5.12,
+      "score": 77
+    },
+    {
+      "code": "600156",
+      "name": "华升股份",
+      "price": 9.25,
+      "target_price": 10.74,
+      "stop_loss": 8.6,
+      "score": 77
+    },
+    {
+      "code": "600843",
+      "name": "上工申贝",
+      "price": 8.37,
+      "target_price": 9.55,
+      "stop_loss": 7.78,
+      "score": 77
+    },
+    {
+      "code": "603949",
+      "name": "雪龙集团",
+      "price": 16.9,
+      "target_price": 18.13,
+      "stop_loss": 15.72,
+      "score": 72
+    },
+    {
+      "code": "600792",
+      "name": "云煤能源",
+      "price": 5.7,
+      "target_price": 6.35,
+      "stop_loss": 5.3,
+      "score": 67
+    },
+    {
+      "code": "603065",
+      "name": "宿迁联盛",
+      "price": 16.27,
+      "target_price": 17.8,
+      "stop_loss": 15.13,
+      "score": 67
+    },
+    {
+      "code": "600825",
+      "name": "新华传媒",
+      "price": 7.77,
+      "target_price": 8.7,
+      "stop_loss": 7.23,
+      "score": 65
+    },
+    {
+      "code": "600831",
+      "name": "广电网络",
+      "price": 3.53,
+      "target_price": 3.8,
+      "stop_loss": 3.28,
+      "score": 60
+    },
+    {
+      "code": "600758",
+      "name": "辽宁能源",
+      "price": 3.65,
+      "target_price": 3.91,
+      "stop_loss": 3.39,
+      "score": 60
+    },
+    {
+      "code": "605018",
+      "name": "长华集团",
+      "price": 12.74,
+      "target_price": 13.87,
+      "stop_loss": 11.85,
+      "score": 57
+    },
+    {
+      "code": "603042",
+      "name": "华脉科技",
+      "price": 18.73,
+      "target_price": 19.9,
+      "stop_loss": 17.42,
+      "score": 57
+    },
+    {
+      "code": "603105",
+      "name": "芯能科技",
+      "price": 8.85,
+      "target_price": 9.4,
+      "stop_loss": 8.23,
+      "score": 57
+    },
+    {
+      "code": "600661",
+      "name": "昂立教育",
+      "price": 9.7,
+      "target_price": 10.83,
+      "stop_loss": 9.02,
+      "score": 57
+    },
+    {
+      "code": "603116",
+      "name": "红蜻蜓",
+      "price": 7.12,
+      "target_price": 7.73,
+      "stop_loss": 6.62,
+      "score": 57
+    }
+  ]
+}
