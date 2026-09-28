@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-28",
+  "position_stocks": [
+    {
+      "code": "600032",
+      "name": "浙江新能",
+      "price": 7.43,
+      "entry_price": 6.98,
+      "target_price": 7.9,
+      "stop_loss": 6.42,
+      "score": 95
+    },
+    {
+      "code": "000011",
+      "name": "深物业A",
+      "price": 10.12,
+      "entry_price": 9.51,
+      "target_price": 11.39,
+      "stop_loss": 8.75,
+      "score": 87
+    },
+    {
+      "code": "001201",
+      "name": "东瑞股份",
+      "price": 16.13,
+      "entry_price": 15.16,
+      "target_price": 17.9,
+      "stop_loss": 13.95,
+      "score": 77
+    },
+    {
+      "code": "001330",
+      "name": "博纳影业",
+      "price": 6.36,
+      "entry_price": 5.98,
+      "target_price": 6.76,
+      "stop_loss": 5.5,
+      "score": 76
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "price": 10.33,
+      "entry_price": 9.71,
+      "target_price": 11.47,
+      "stop_loss": 8.93,
+      "score": 72
+    },
+    {
+      "code": "000503",
+      "name": "国新健康",
+      "price": 7.44,
+      "entry_price": 6.99,
+      "target_price": 8.07,
+      "stop_loss": 6.43,
+      "score": 71
+    },
+    {
+      "code": "002852",
+      "name": "道道全",
+      "price": 8.9,
+      "entry_price": 8.37,
+      "target_price": 9.75,
+      "stop_loss": 7.7,
+      "score": 71
+    },
+    {
+      "code": "600488",
+      "name": "津药药业",
+      "price": 6.27,
+      "entry_price": 5.89,
+      "target_price": 6.8,
+      "stop_loss": 5.42,
+      "score": 70
+    },
+    {
+      "code": "603968",
+      "name": "醋化股份",
+      "price": 11.63,
+      "entry_price": 10.82,
+      "target_price": 12.04,
+      "stop_loss": 9.85,
+      "score": 69
+    },
+    {
+      "code": "600802",
+      "name": "福建水泥",
+      "price": 7.28,
+      "entry_price": 6.77,
+      "target_price": 7.71,
+      "stop_loss": 6.16,
+      "score": 63
+    },
+    {
+      "code": "601218",
+      "name": "吉鑫科技",
+      "price": 6.05,
+      "entry_price": 5.63,
+      "target_price": 6.37,
+      "stop_loss": 5.12,
+      "score": 62
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "price": 10.65,
+      "entry_price": 9.9,
+      "target_price": 11.15,
+      "stop_loss": 9.01,
+      "score": 61
+    },
+    {
+      "code": "002480",
+      "name": "新筑股份",
+      "price": 5.65,
+      "entry_price": 5.25,
+      "target_price": 5.89,
+      "stop_loss": 4.78,
+      "score": 61
+    },
+    {
+      "code": "002640",
+      "name": "跨境通",
+      "price": 3.96,
+      "entry_price": 3.68,
+      "target_price": 4.06,
+      "stop_loss": 3.35,
+      "score": 61
+    },
+    {
+      "code": "002347",
+      "name": "泰尔股份",
+      "price": 6.42,
+      "entry_price": 5.97,
+      "target_price": 6.75,
+      "stop_loss": 5.43,
+      "score": 60
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "600032",
+      "name": "浙江新能",
+      "price": 7.43,
+      "target_price": 8.76,
+      "stop_loss": 6.91,
+      "score": 97
+    },
+    {
+      "code": "000011",
+      "name": "深物业A",
+      "price": 10.12,
+      "target_price": 11.39,
+      "stop_loss": 9.41,
+      "score": 92
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "price": 10.33,
+      "target_price": 12.17,
+      "stop_loss": 9.61,
+      "score": 92
+    },
+    {
+      "code": "001201",
+      "name": "东瑞股份",
+      "price": 16.13,
+      "target_price": 18.53,
+      "stop_loss": 15.0,
+      "score": 87
+    },
+    {
+      "code": "000503",
+      "name": "国新健康",
+      "price": 7.44,
+      "target_price": 8.55,
+      "stop_loss": 6.92,
+      "score": 82
+    },
+    {
+      "code": "001330",
+      "name": "博纳影业",
+      "price": 6.36,
+      "target_price": 7.32,
+      "stop_loss": 5.91,
+      "score": 82
+    },
+    {
+      "code": "002480",
+      "name": "新筑股份",
+      "price": 5.65,
+      "target_price": 6.53,
+      "stop_loss": 5.25,
+      "score": 82
+    },
+    {
+      "code": "600241",
+      "name": "时代万恒",
+      "price": 8.04,
+      "target_price": 9.08,
+      "stop_loss": 7.48,
+      "score": 82
+    },
+    {
+      "code": "600802",
+      "name": "福建水泥",
+      "price": 7.28,
+      "target_price": 8.33,
+      "stop_loss": 6.77,
+      "score": 82
+    },
+    {
+      "code": "000980",
+      "name": "众泰汽车",
+      "price": 2.24,
+      "target_price": 2.62,
+      "stop_loss": 2.08,
+      "score": 80
+    },
+    {
+      "code": "000020",
+      "name": "深华发Ａ",
+      "price": 14.64,
+      "target_price": 17.5,
+      "stop_loss": 13.62,
+      "score": 77
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "price": 10.65,
+      "target_price": 12.44,
+      "stop_loss": 9.9,
+      "score": 77
+    },
+    {
+      "code": "002347",
+      "name": "泰尔股份",
+      "price": 6.42,
+      "target_price": 7.64,
+      "stop_loss": 5.97,
+      "score": 77
+    },
+    {
+      "code": "002852",
+      "name": "道道全",
+      "price": 8.9,
+      "target_price": 10.67,
+      "stop_loss": 8.28,
+      "score": 77
+    },
+    {
+      "code": "600488",
+      "name": "津药药业",
+      "price": 6.27,
+      "target_price": 7.07,
+      "stop_loss": 5.83,
+      "score": 77
+    },
+    {
+      "code": "603968",
+      "name": "醋化股份",
+      "price": 11.63,
+      "target_price": 13.83,
+      "stop_loss": 10.82,
+      "score": 77
+    },
+    {
+      "code": "002232",
+      "name": "启明信息",
+      "price": 16.28,
+      "target_price": 17.6,
+      "stop_loss": 15.14,
+      "score": 72
+    },
+    {
+      "code": "002962",
+      "name": "五方光电",
+      "price": 14.76,
+      "target_price": 15.7,
+      "stop_loss": 13.73,
+      "score": 72
+    },
+    {
+      "code": "603949",
+      "name": "雪龙集团",
+      "price": 18.59,
+      "target_price": 20.17,
+      "stop_loss": 17.29,
+      "score": 72
+    },
+    {
+      "code": "605366",
+      "name": "宏柏新材",
+      "price": 10.14,
+      "target_price": 11.08,
+      "stop_loss": 9.43,
+      "score": 72
+    }
+  ]
+}
