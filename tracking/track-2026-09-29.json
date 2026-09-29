@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-29",
+  "position_stocks": [
+    {
+      "code": "601949",
+      "name": "中国出版",
+      "price": 6.01,
+      "entry_price": 5.65,
+      "target_price": 6.36,
+      "stop_loss": 5.2,
+      "score": 84
+    },
+    {
+      "code": "600657",
+      "name": "信达地产",
+      "price": 3.38,
+      "entry_price": 3.18,
+      "target_price": 3.57,
+      "stop_loss": 2.93,
+      "score": 79
+    },
+    {
+      "code": "600982",
+      "name": "宁波能源",
+      "price": 5.49,
+      "entry_price": 5.16,
+      "target_price": 6.04,
+      "stop_loss": 4.75,
+      "score": 74
+    },
+    {
+      "code": "600325",
+      "name": "华发股份",
+      "price": 2.95,
+      "entry_price": 2.77,
+      "target_price": 3.13,
+      "stop_loss": 2.55,
+      "score": 73
+    },
+    {
+      "code": "600825",
+      "name": "新华传媒",
+      "price": 9.41,
+      "entry_price": 8.85,
+      "target_price": 10.37,
+      "stop_loss": 8.14,
+      "score": 71
+    },
+    {
+      "code": "603188",
+      "name": "亚邦股份",
+      "price": 4.91,
+      "entry_price": 4.62,
+      "target_price": 5.5,
+      "stop_loss": 4.25,
+      "score": 71
+    },
+    {
+      "code": "600032",
+      "name": "浙江新能",
+      "price": 8.17,
+      "entry_price": 7.68,
+      "target_price": 8.97,
+      "stop_loss": 7.07,
+      "score": 70
+    },
+    {
+      "code": "600152",
+      "name": "维科技术",
+      "price": 8.32,
+      "entry_price": 7.82,
+      "target_price": 9.09,
+      "stop_loss": 7.19,
+      "score": 70
+    },
+    {
+      "code": "000036",
+      "name": "华联控股",
+      "price": 4.21,
+      "entry_price": 3.92,
+      "target_price": 4.37,
+      "stop_loss": 3.57,
+      "score": 69
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "price": 11.72,
+      "entry_price": 10.9,
+      "target_price": 12.22,
+      "stop_loss": 9.92,
+      "score": 67
+    },
+    {
+      "code": "002303",
+      "name": "美盈森",
+      "price": 6.7,
+      "entry_price": 6.23,
+      "target_price": 7.14,
+      "stop_loss": 5.67,
+      "score": 67
+    },
+    {
+      "code": "002799",
+      "name": "环球印务",
+      "price": 7.55,
+      "entry_price": 7.02,
+      "target_price": 7.85,
+      "stop_loss": 6.39,
+      "score": 67
+    },
+    {
+      "code": "002244",
+      "name": "滨江集团",
+      "price": 9.46,
+      "entry_price": 8.8,
+      "target_price": 10.09,
+      "stop_loss": 8.01,
+      "score": 66
+    },
+    {
+      "code": "605388",
+      "name": "均瑶健康",
+      "price": 6.72,
+      "entry_price": 6.25,
+      "target_price": 7.1,
+      "stop_loss": 5.69,
+      "score": 66
+    },
+    {
+      "code": "000068",
+      "name": "华控赛格",
+      "price": 3.54,
+      "entry_price": 3.29,
+      "target_price": 3.67,
+      "stop_loss": 2.99,
+      "score": 64
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "000036",
+      "name": "华联控股",
+      "price": 4.21,
+      "target_price": 4.72,
+      "stop_loss": 3.92,
+      "score": 85
+    },
+    {
+      "code": "000068",
+      "name": "华控赛格",
+      "price": 3.54,
+      "target_price": 4.16,
+      "stop_loss": 3.29,
+      "score": 85
+    },
+    {
+      "code": "600325",
+      "name": "华发股份",
+      "price": 2.95,
+      "target_price": 3.34,
+      "stop_loss": 2.74,
+      "score": 85
+    },
+    {
+      "code": "600657",
+      "name": "信达地产",
+      "price": 3.38,
+      "target_price": 3.82,
+      "stop_loss": 3.14,
+      "score": 85
+    },
+    {
+      "code": "603188",
+      "name": "亚邦股份",
+      "price": 4.91,
+      "target_price": 5.61,
+      "stop_loss": 4.57,
+      "score": 85
+    },
+    {
+      "code": "002799",
+      "name": "环球印务",
+      "price": 7.55,
+      "target_price": 8.7,
+      "stop_loss": 7.02,
+      "score": 82
+    },
+    {
+      "code": "600032",
+      "name": "浙江新能",
+      "price": 8.17,
+      "target_price": 9.61,
+      "stop_loss": 7.6,
+      "score": 82
+    },
+    {
+      "code": "600152",
+      "name": "维科技术",
+      "price": 8.32,
+      "target_price": 9.76,
+      "stop_loss": 7.74,
+      "score": 82
+    },
+    {
+      "code": "600189",
+      "name": "泉阳泉",
+      "price": 9.01,
+      "target_price": 10.56,
+      "stop_loss": 8.38,
+      "score": 82
+    },
+    {
+      "code": "600241",
+      "name": "时代万恒",
+      "price": 8.84,
+      "target_price": 10.41,
+      "stop_loss": 8.22,
+      "score": 82
+    },
+    {
+      "code": "600982",
+      "name": "宁波能源",
+      "price": 5.49,
+      "target_price": 6.41,
+      "stop_loss": 5.11,
+      "score": 82
+    },
+    {
+      "code": "601519",
+      "name": "大智慧",
+      "price": 9.01,
+      "target_price": 10.1,
+      "stop_loss": 8.38,
+      "score": 82
+    },
+    {
+      "code": "601949",
+      "name": "中国出版",
+      "price": 6.01,
+      "target_price": 6.78,
+      "stop_loss": 5.59,
+      "score": 82
+    },
+    {
+      "code": "603980",
+      "name": "吉华集团",
+      "price": 8.84,
+      "target_price": 10.25,
+      "stop_loss": 8.22,
+      "score": 82
+    },
+    {
+      "code": "605388",
+      "name": "均瑶健康",
+      "price": 6.72,
+      "target_price": 7.71,
+      "stop_loss": 6.25,
+      "score": 82
+    },
+    {
+      "code": "000607",
+      "name": "华媒控股",
+      "price": 4.13,
+      "target_price": 4.94,
+      "stop_loss": 3.84,
+      "score": 80
+    },
+    {
+      "code": "000011",
+      "name": "深物业A",
+      "price": 11.13,
+      "target_price": 12.89,
+      "stop_loss": 10.35,
+      "score": 77
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "price": 11.72,
+      "target_price": 14.02,
+      "stop_loss": 10.9,
+      "score": 77
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "price": 11.36,
+      "target_price": 13.15,
+      "stop_loss": 10.56,
+      "score": 77
+    },
+    {
+      "code": "002303",
+      "name": "美盈森",
+      "price": 6.7,
+      "target_price": 7.95,
+      "stop_loss": 6.23,
+      "score": 77
+    }
+  ]
+}
