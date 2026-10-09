@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-09",
+  "position_stocks": [
+    {
+      "code": "002480",
+      "name": "新筑股份",
+      "price": 6.0,
+      "entry_price": 5.64,
+      "target_price": 6.63,
+      "stop_loss": 5.19,
+      "score": 80
+    },
+    {
+      "code": "000420",
+      "name": "吉林化纤",
+      "price": 3.81,
+      "entry_price": 3.58,
+      "target_price": 4.23,
+      "stop_loss": 3.29,
+      "score": 73
+    },
+    {
+      "code": "002596",
+      "name": "海南瑞泽",
+      "price": 3.26,
+      "entry_price": 3.26,
+      "target_price": 3.76,
+      "stop_loss": 3.0,
+      "score": 71
+    },
+    {
+      "code": "000546",
+      "name": "金圆股份",
+      "price": 4.77,
+      "entry_price": 4.44,
+      "target_price": 5.09,
+      "stop_loss": 4.04,
+      "score": 69
+    },
+    {
+      "code": "002697",
+      "name": "红旗连锁",
+      "price": 4.84,
+      "entry_price": 4.84,
+      "target_price": 5.49,
+      "stop_loss": 4.5,
+      "score": 69
+    },
+    {
+      "code": "002154",
+      "name": "报 喜 鸟",
+      "price": 3.9,
+      "entry_price": 3.9,
+      "target_price": 4.53,
+      "stop_loss": 3.63,
+      "score": 69
+    },
+    {
+      "code": "002696",
+      "name": "百洋股份",
+      "price": 7.32,
+      "entry_price": 6.81,
+      "target_price": 7.75,
+      "stop_loss": 6.2,
+      "score": 67
+    },
+    {
+      "code": "000061",
+      "name": "农 产 品",
+      "price": 6.17,
+      "entry_price": 6.17,
+      "target_price": 7.23,
+      "stop_loss": 5.74,
+      "score": 66
+    },
+    {
+      "code": "002103",
+      "name": "广博股份",
+      "price": 6.81,
+      "entry_price": 6.81,
+      "target_price": 7.52,
+      "stop_loss": 6.33,
+      "score": 66
+    },
+    {
+      "code": "000597",
+      "name": "东北制药",
+      "price": 4.91,
+      "entry_price": 4.91,
+      "target_price": 5.73,
+      "stop_loss": 4.57,
+      "score": 65
+    },
+    {
+      "code": "002692",
+      "name": "远程股份",
+      "price": 4.76,
+      "entry_price": 4.43,
+      "target_price": 5.03,
+      "stop_loss": 4.03,
+      "score": 64
+    },
+    {
+      "code": "002004",
+      "name": "华邦健康",
+      "price": 4.57,
+      "entry_price": 4.57,
+      "target_price": 5.26,
+      "stop_loss": 4.25,
+      "score": 64
+    },
+    {
+      "code": "002212",
+      "name": "天融信",
+      "price": 7.56,
+      "entry_price": 7.03,
+      "target_price": 7.77,
+      "stop_loss": 6.4,
+      "score": 63
+    },
+    {
+      "code": "000715",
+      "name": "中兴商业",
+      "price": 5.5,
+      "entry_price": 5.5,
+      "target_price": 6.12,
+      "stop_loss": 5.12,
+      "score": 63
+    },
+    {
+      "code": "002376",
+      "name": "新北洋",
+      "price": 6.6,
+      "entry_price": 6.6,
+      "target_price": 7.68,
+      "stop_loss": 6.14,
+      "score": 62
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002692",
+      "name": "远程股份",
+      "price": 4.76,
+      "target_price": 5.43,
+      "stop_loss": 4.43,
+      "score": 100
+    },
+    {
+      "code": "002480",
+      "name": "新筑股份",
+      "price": 6.0,
+      "target_price": 6.84,
+      "stop_loss": 5.58,
+      "score": 97
+    },
+    {
+      "code": "000546",
+      "name": "金圆股份",
+      "price": 4.77,
+      "target_price": 5.58,
+      "stop_loss": 4.44,
+      "score": 85
+    },
+    {
+      "code": "002181",
+      "name": "粤 传 媒",
+      "price": 9.39,
+      "target_price": 10.85,
+      "stop_loss": 8.73,
+      "score": 82
+    },
+    {
+      "code": "002343",
+      "name": "慈文传媒",
+      "price": 6.08,
+      "target_price": 7.23,
+      "stop_loss": 5.65,
+      "score": 82
+    },
+    {
+      "code": "000736",
+      "name": "中交发展",
+      "price": 5.21,
+      "target_price": 6.23,
+      "stop_loss": 4.85,
+      "score": 82
+    },
+    {
+      "code": "000420",
+      "name": "吉林化纤",
+      "price": 3.81,
+      "target_price": 4.29,
+      "stop_loss": 3.54,
+      "score": 80
+    },
+    {
+      "code": "002696",
+      "name": "百洋股份",
+      "price": 7.32,
+      "target_price": 8.64,
+      "stop_loss": 6.81,
+      "score": 77
+    },
+    {
+      "code": "002212",
+      "name": "天融信",
+      "price": 7.56,
+      "target_price": 8.78,
+      "stop_loss": 7.03,
+      "score": 77
+    },
+    {
+      "code": "001300",
+      "name": "三柏硕",
+      "price": 14.86,
+      "target_price": 17.55,
+      "stop_loss": 13.82,
+      "score": 77
+    },
+    {
+      "code": "002675",
+      "name": "东诚药业",
+      "price": 13.89,
+      "target_price": 15.61,
+      "stop_loss": 12.92,
+      "score": 77
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "price": 15.13,
+      "target_price": 16.06,
+      "stop_loss": 14.07,
+      "score": 72
+    },
+    {
+      "code": "002811",
+      "name": "郑中设计",
+      "price": 18.4,
+      "target_price": 20.43,
+      "stop_loss": 17.11,
+      "score": 72
+    },
+    {
+      "code": "000892",
+      "name": "欢瑞世纪",
+      "price": 4.85,
+      "target_price": 5.39,
+      "stop_loss": 4.51,
+      "score": 70
+    },
+    {
+      "code": "002805",
+      "name": "丰元股份",
+      "price": 19.44,
+      "target_price": 21.11,
+      "stop_loss": 18.08,
+      "score": 67
+    },
+    {
+      "code": "001330",
+      "name": "博纳影业",
+      "price": 6.97,
+      "target_price": 7.51,
+      "stop_loss": 6.48,
+      "score": 67
+    },
+    {
+      "code": "000710",
+      "name": "贝瑞基因",
+      "price": 11.3,
+      "target_price": 12.12,
+      "stop_loss": 10.51,
+      "score": 62
+    },
+    {
+      "code": "002044",
+      "name": "美年健康",
+      "price": 4.9,
+      "target_price": 5.42,
+      "stop_loss": 4.56,
+      "score": 60
+    },
+    {
+      "code": "002329",
+      "name": "皇氏集团",
+      "price": 3.85,
+      "target_price": 4.14,
+      "stop_loss": 3.58,
+      "score": 60
+    },
+    {
+      "code": "000839",
+      "name": "国安股份",
+      "price": 2.89,
+      "target_price": 3.23,
+      "stop_loss": 2.69,
+      "score": 60
+    }
+  ]
+}
