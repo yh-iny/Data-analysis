@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>干云大模型 - 2026年10月13日</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #f0f4f8; color: #1e293b; line-height: 1.6; }
+
+  .header { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1d4ed8 100%); color: white; padding: 32px 40px; }
+  .header h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; }
+  .header .subtitle { opacity: 0.8; margin-top: 6px; font-size: 14px; }
+  .header .date-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 4px 16px; border-radius: 20px; font-size: 13px; margin-top: 10px; }
+
+  .main { max-width: 1400px; margin: 0 auto; padding: 24px 20px; }
+
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+  .stat-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .stat-value { font-size: 32px; font-weight: 700; margin: 6px 0; }
+  .stat-label { color: #64748b; font-size: 13px; }
+  .stat-sub { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+
+  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .card-title { font-size: 16px; font-weight: 700; color: #0f172a; padding-bottom: 14px; border-bottom: 2px solid #e2e8f0; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+
+  /* 新闻 */
+  .news-item { padding: 10px 0; border-bottom: 1px solid #f1f5f9; }
+  .news-item:last-child { border-bottom: none; }
+  .news-time { color: #3b82f6; font-size: 12px; font-weight: 600; margin-right: 8px; }
+  .news-title { font-size: 14px; color: #1e293b; }
+  .news-summary { font-size: 12px; color: #64748b; margin-top: 4px; }
+
+  /* 新闻股票关联徽章 */
+  .news-stock-badges { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .stock-badge { display: inline-flex; align-items: center; gap: 3px; background: linear-gradient(135deg, #dbeafe, #bfdbfe); color: #1d4ed8; font-size: 11px; padding: 2px 8px; border-radius: 12px; cursor: pointer; transition: all 0.2s; border: 1px solid #93c5fd; }
+  .stock-badge:hover { background: linear-gradient(135deg, #bfdbfe, #93c5fd); transform: scale(1.05); }
+  .badge-code { color: #6b7280; font-size: 10px; font-family: monospace; }
+
+  /* 可点击统计卡片 */
+  .stat-card-clickable { cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; position: relative; }
+  .stat-card-clickable:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+  .stat-card-clickable::after { content: "▾"; position: absolute; right: 14px; top: 14px; font-size: 14px; color: #94a3b8; transition: transform 0.3s; }
+  .stat-card-clickable.open::after { transform: rotate(180deg); }
+
+  /* 展开面板（独立于stats-grid外部） */
+  .expand-panel { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s, margin 0.3s; background: #f8fafc; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e2e8f0; }
+  .expand-panel.show { max-height: 400px; padding: 16px 20px; }
+  .sector-chip { display: inline-block; background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 14px; margin: 4px; font-size: 13px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .sector-chip .sector-name { font-weight: 600; color: #1e293b; }
+  .sector-chip .sector-pct { color: #dc2626; font-size: 12px; margin-left: 6px; }
+  .sector-chip .sector-pct.down { color: #16a34a; }
+  .sector-chip .sector-stocks { font-size: 11px; color: #64748b; margin-top: 2px; }
+
+  /* 行业 */
+  .ind-row { display: flex; align-items: center; padding: 8px 0; gap: 10px; border-bottom: 1px solid #f8fafc; }
+  .ind-name { width: 90px; font-size: 13px; flex-shrink: 0; }
+  .ind-bar-wrap { flex: 1; background: #f1f5f9; border-radius: 4px; height: 8px; overflow: hidden; }
+  .ind-bar { height: 100%; border-radius: 4px; transition: width 0.3s; }
+  .ind-pct { width: 55px; text-align: right; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+  .ind-meta { width: 80px; font-size: 11px; color: #94a3b8; flex-shrink: 0; }
+
+  /* 推荐表格（冻结表头） */
+  .rec-table-wrap { overflow-x: auto; max-height: 600px; overflow-y: auto; position: relative; }
+  .rec-table-wrap thead th { position: sticky; top: 0; z-index: 10; box-shadow: 0 1px 0 #e2e8f0; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #f8fafc; color: #64748b; font-weight: 600; padding: 12px 10px; text-align: left; border-bottom: 2px solid #e2e8f0; white-space: nowrap; }
+  .rec-row { border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
+  .rec-row:hover { background: #f8fafc; }
+  td { padding: 12px 10px; vertical-align: middle; }
+  .rank-cell { font-size: 18px; }
+  .stock-name { font-weight: 600; color: #0f172a; }
+  .stock-code { color: #94a3b8; font-size: 11px; margin-top: 2px; }
+  .price-cell { font-weight: 700; font-size: 15px; color: #0f172a; }
+  .target-cell { font-weight: 700; color: #dc2626; }
+  .score-cell { display: flex; align-items: center; gap: 8px; }
+  .score-bar-wrap { width: 60px; height: 6px; background: #e2e8f0; border-radius: 3px; overflow: hidden; }
+  .score-bar { height: 100%; background: linear-gradient(90deg, #3b82f6, #8b5cf6); border-radius: 3px; }
+  .reason-cell { max-width: 200px; }
+  .reason-tags { color: #64748b; font-size: 12px; }
+  .catalyst-text { color: #d97706; font-size: 11px; margin-top: 3px; }
+
+  .rise-tag { display: inline-block; background: linear-gradient(135deg, #fee2e2, #fecaca); color: #dc2626; font-size: 11px; padding: 2px 8px; border-radius: 10px; margin: 2px; font-weight: 600; }
+  .rising-row { border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
+  .rising-row:hover { background: #fff7ed; }
+
+  .pos-tag { display: inline-block; background: linear-gradient(135deg, #ede9fe, #ddd6fe); color: #7c3aed; font-size: 11px; padding: 2px 8px; border-radius: 10px; margin: 2px; font-weight: 600; }
+  .pos-row { border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
+  .pos-row:hover { background: #f5f3ff; }
+
+  .chart-container { position: relative; height: 280px; }
+
+  .disclaimer { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 14px 20px; margin-top: 24px; font-size: 12px; color: #92400e; line-height: 1.8; }
+
+  .footer { text-align: center; color: #94a3b8; font-size: 12px; padding: 20px; }
+
+  @media (max-width: 768px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📈 干云大模型</h1>
+  <p class="subtitle">全球财经资讯 · 行业板块 · 低价潜力股推荐</p>
+  <span class="date-badge">📅 2026年10月13日 · 数据来源: 东财/同花顺/腾讯财经</span>
+</div>
+
+<div class="main">
+
+  <!-- 市场一句话摘要 -->
+  <div style="background:linear-gradient(135deg, #d97706, #b45309);border-radius:12px;padding:18px 24px;margin-bottom:16px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;color:white;font-size:14px">
+    <div style="font-weight:700;font-size:16px">🔴 今日市场情绪：偏弱</div>
+    <div> | 上涨家数 22%</div>
+    <div> | 最佳策略：<strong>谨慎观望</strong></div>
+    <div> | 首选板块：<strong>AI应用, AI漫剧, 出版发行</strong></div>
+    <div> | 仓位建议：<strong>30%（弱市缩减）</strong></div>
+    <div style="background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:10px;font-size:12px">📉 沪指3797线下，仓位已自动下调</div>
+  </div>
+
+  
+
+  <div style="background:#ecfdf5;border:1px solid #6ee7b7;border-radius:10px;padding:12px 18px;margin-bottom:16px;font-size:13px;display:flex;align-items:center;gap:12px">
+    <span style="font-size:18px">✅</span>
+    <span><strong>数据源健康度：</strong>东财push2（主）+ 腾讯行情（辅） | 换手率缺失率 <strong>0.0%</strong>（正常）</span>
+  </div>
+
+  <!-- 回测验证 -->
+  <div style="background:white;border-radius:12px;padding:16px 20px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,0.08);font-size:13px">
+    <strong>📊 历史回测（近5日）：</strong>
+    总推荐 175 只 |
+    <span style="color:#dc2626">✅ 达目标价 17只(9.7%)</span> |
+    <span style="color:#dc2626">❌ 触止损 11只(6.3%)</span> |
+    <span style="color:#3b82f6">🔄 运行中 147只(84.0%)</span>
+     | <span style="color:#d97706">⚠️ 重复推荐：002226(4日)、000692(4日)、001318(4日)</span>
+  </div>
+
+  <!-- 核心推荐池 -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid #7c3aed">
+    <div class="card-title">⭐ 今日核心推荐池（≤3只 · 首选建仓标的）</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+      <div style="background:linear-gradient(135deg, #f5f3ff, #ede9fe);border-radius:10px;padding:16px;border:1px solid #7c3aed">
+          <div style="font-weight:700;font-size:16px;color:#0f172a">众业达<span style="font-size:12px;color:#94a3b8;margin-left:6px">002441</span></div>
+          <span style="display:inline-block;background:#7c3aed;color:white;padding:1px 10px;border-radius:10px;font-size:11px;margin-top:4px">🏆 今日首选</span>
+          <div style="margin-top:8px;font-size:13px">
+            <div>现价 <strong>¥9.21</strong> | 入场 <strong style="color:#3b82f6">¥8.66</strong></div>
+            <div>目标 <strong style="color:#dc2626">¥10.04</strong> | 止损 <strong style="color:#16a34a">¥7.97</strong></div>
+            <div>仓位 <strong style="color:#7c3aed">试探仓(5%)</strong> | 盈亏比 <strong>0.7:1</strong></div>
+            <div style="margin-top:6px;color:#64748b;font-size:12px">低价区间，建仓成本可控 · 换手率7.0%适度活跃</div>
+            <div style="margin-top:4px;color:#16a34a;font-size:11px">⚠ 单票最大亏损: ¥398 (8.0%)</div>
+          </div>
+        </div><div style="background:#f8fafc;border-radius:10px;padding:16px;border:1px solid #e2e8f0">
+          <div style="font-weight:700;font-size:16px;color:#0f172a">东百集团<span style="font-size:12px;color:#94a3b8;margin-left:6px">600693</span></div>
+          <span style="display:inline-block;background:#7c3aed;color:white;padding:1px 10px;border-radius:10px;font-size:11px;margin-top:4px">🏆 重点备选</span>
+          <div style="margin-top:8px;font-size:13px">
+            <div>现价 <strong>¥11.18</strong> | 入场 <strong style="color:#3b82f6">¥10.51</strong></div>
+            <div>目标 <strong style="color:#dc2626">¥12.32</strong> | 止损 <strong style="color:#16a34a">¥9.67</strong></div>
+            <div>仓位 <strong style="color:#7c3aed">试探仓(5%)</strong> | 盈亏比 <strong>0.8:1</strong></div>
+            <div style="margin-top:6px;color:#64748b;font-size:12px">换手率3.1%温和，筹码稳定 · 涨停回调后可关注低吸机会</div>
+            <div style="margin-top:4px;color:#16a34a;font-size:11px">⚠ 单票最大亏损: ¥399 (8.0%)</div>
+          </div>
+        </div><div style="background:#f8fafc;border-radius:10px;padding:16px;border:1px solid #e2e8f0">
+          <div style="font-weight:700;font-size:16px;color:#0f172a">海欣股份<span style="font-size:12px;color:#94a3b8;margin-left:6px">600851</span></div>
+          <span style="display:inline-block;background:#7c3aed;color:white;padding:1px 10px;border-radius:10px;font-size:11px;margin-top:4px">🏆 重点备选</span>
+          <div style="margin-top:8px;font-size:13px">
+            <div>现价 <strong>¥8.6</strong> | 入场 <strong style="color:#3b82f6">¥8.08</strong></div>
+            <div>目标 <strong style="color:#dc2626">¥9.37</strong> | 止损 <strong style="color:#16a34a">¥7.43</strong></div>
+            <div>仓位 <strong style="color:#7c3aed">试探仓(5%)</strong> | 盈亏比 <strong>0.7:1</strong></div>
+            <div style="margin-top:6px;color:#64748b;font-size:12px">低价区间，建仓成本可控 · 换手率4.2%温和，筹码稳定</div>
+            <div style="margin-top:4px;color:#16a34a;font-size:11px">⚠ 单票最大亏损: ¥402 (8.0%)</div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- 回避清单 -->
+  
+
+  <!-- 核心统计（4卡片一行） -->
+  <div class="stats-grid">
+    <div class="stat-card stat-card-clickable" onclick="togglePanel('newsPanel', this)">
+      <div class="stat-label">📰 今日资讯</div>
+      <div class="stat-value" style="color:#3b82f6">30</div>
+      <div class="stat-sub">条全球财经快讯</div>
+    </div>
+    <div class="stat-card stat-card-clickable" onclick="togglePanel('themePanel', this)">
+      <div class="stat-label">🔥 强势题材</div>
+      <div class="stat-value" style="color:#f59e0b">48</div>
+      <div class="stat-sub">只今日强势股涨停</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">🏆 领涨行业</div>
+      <div class="stat-value" style="color:#dc2626;font-size:22px">—</div>
+      <div class="stat-sub">涨幅 +0%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">💡 推荐低价股</div>
+      <div class="stat-value" style="color:#8b5cf6">20</div>
+      <div class="stat-sub">高信心 16 只 · 均预期涨 14.9%</div>
+    </div>
+  </div>
+
+  <!-- 展开面板（放在grid外部，不影响4卡片一行布局） -->
+  <div id="newsPanel" class="expand-panel">
+    <div style="font-size:14px;font-weight:600;color:#1e293b;margin-bottom:10px">📊 今日资讯关联板块</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px"><p style="color:#94a3b8;padding:16px 0;font-size:13px">⚠ 行业板块数据暂不可用（push2接口连接失败）</p></div>
+  </div>
+  <div id="themePanel" class="expand-panel">
+    <div style="font-size:14px;font-weight:600;color:#1e293b;margin-bottom:10px">🔥 强势题材 & 关联股票</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px"><div class="sector-chip"><span class="sector-name">AI应用</span><span class="sector-pct">3次</span><div class="sector-stocks">吉视传媒 · 多伦科技 · 新经典</div></div><div class="sector-chip"><span class="sector-name">AI漫剧</span><span class="sector-pct">3次</span><div class="sector-stocks">欢瑞世纪 · 龙版传媒 · 德才股份</div></div><div class="sector-chip"><span class="sector-name">出版发行</span><span class="sector-pct">2次</span><div class="sector-stocks">内蒙新华 · 龙版传媒</div></div><div class="sector-chip"><span class="sector-name">AI短剧</span><span class="sector-pct">2次</span><div class="sector-stocks">掌阅科技 · 博纳影业</div></div><div class="sector-chip"><span class="sector-name">机器人</span><span class="sector-pct">2次</span><div class="sector-stocks">汇川技术 · 埃斯顿 · 拓斯达</div></div><div class="sector-chip"><span class="sector-name">AIGC</span><span class="sector-pct">2次</span><div class="sector-stocks">上海电影 · 果麦文化</div></div><div class="sector-chip"><span class="sector-name">预重整</span><span class="sector-pct">2次</span><div class="sector-stocks">*ST仕净 · 广电网络</div></div><div class="sector-chip"><span class="sector-name">超豪华SUV传闻</span><span class="sector-pct">1次</span><div class="sector-stocks">赛力斯</div></div><div class="sector-chip"><span class="sector-name">海外出海</span><span class="sector-pct">1次</span><div class="sector-stocks">赛力斯</div></div><div class="sector-chip"><span class="sector-name">宁德合作</span><span class="sector-pct">1次</span><div class="sector-stocks">赛力斯</div></div><div class="sector-chip"><span class="sector-name">华为合作</span><span class="sector-pct">1次</span><div class="sector-stocks">赛力斯</div></div><div class="sector-chip"><span class="sector-name">钠电材料</span><span class="sector-pct">1次</span><div class="sector-stocks">恒大高新</div></div></div>
+  </div>
+
+  <!-- 新闻 + 行业排名 -->
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">📰 全球财经快讯</div>
+      <div style="max-height:380px;overflow-y:auto">
+        
+        <div class="news-item">
+          <span class="news-time">01:50:58</span>
+          <span class="news-title">Andreessen Horowitz洽谈在初创公司TypeSafe AI的融资中扩大股票供应</span>
+          <div class="news-stock-badges"><span class="stock-badge" title="题材关联: 人工智能">科大讯飞<span class="badge-code">002230</span></span><span class="stock-badge" title="题材关联: 人工智能">海光信息<span class="badge-code">688041</span></span><span class="stock-badge" title="题材关联: 人工智能">浪潮信息<span class="badge-code">000977</span></span></div>
+          <p class="news-summary">AndreessenHorowitz洽谈在初创公司TypeSafeAI的融资中扩大股票供应。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">01:43:44</span>
+          <span class="news-title">美联储哈玛克称 对中性利率的预期在FOMC中属于偏高水平</span>
+          
+          <p class="news-summary">美联储哈玛克称，对中性利率的预期在FOMC中属于偏高水平。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">01:28:38</span>
+          <span class="news-title">美联储哈玛克表示 目前的国债利率在历史标准下是“适度的”</span>
+          
+          <p class="news-summary">美联储哈玛克表示，目前的国债利率在历史标准下是"适度的"。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">01:15:30</span>
+          <span class="news-title">欧佩克+部长在利雅得会议期间举行会晤</span>
+          
+          <p class="news-summary">欧佩克+部长在利雅得会议期间举行会晤。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">01:04:14</span>
+          <span class="news-title">Meta Platforms的CEO扎克伯格表示 Meta Platforms将进一步增加支出 因为公司“已经在为下一步做好准备”</span>
+          
+          <p class="news-summary">MetaPlatforms的CEO扎克伯格表示，MetaPlatforms将进一步增加支出，因为公司“已经在为下一步做好准备”。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:53:41</span>
+          <span class="news-title">LME金属期货收盘涨跌不一</span>
+          
+          <p class="news-summary">【LME金属期货收盘涨跌不一】LME金属期货收盘涨跌不一，LME期铜收涨78美元，报14618美元/吨。LME期铝收涨4美元，报3052美元/吨。LME期锌收跌48美元，报3758美元/吨。LME期铅收跌4美元，报1884美元/吨。LME期镍收跌3美元，报15619美元/吨。LME期锡收涨203美元</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:44:19</span>
+          <span class="news-title">美联储哈玛克：利率需要进一步上调</span>
+          
+          <p class="news-summary">【美联储哈玛克：利率需要进一步上调】美联储哈玛克表示，利率需要进一步上调；倾向于幅度更小、频率更高的加息；当前政策的限制性还不够；通胀回归速度过慢，高通胀风险仍在上升。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:37:18</span>
+          <span class="news-title">以色列北部爆炸1死24伤</span>
+          
+          <p class="news-summary">【以色列北部爆炸1死24伤】以色列北部靠近黎巴嫩边境的拉明岭地区发生爆炸事件。以色列军方与警方初步联合通报称，导致多名远足学生及教师死伤的爆炸物“极有可能是黎巴嫩真主党火箭弹散落的‘子炸弹’”。以色列警方称，这枚弹药被一名学生放入包里，并发生爆炸，目前已造成1人死亡、24人受伤。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:32:18</span>
+          <span class="news-title">据美国海洋矿产管理局（MMA） 美国墨西哥湾地区已暂停约60.45万桶/日石油产量</span>
+          <div class="news-stock-badges"><span class="stock-badge" title="题材关联: 石油能源">中国石油<span class="badge-code">601857</span></span><span class="stock-badge" title="题材关联: 石油能源">中国石化<span class="badge-code">600028</span></span><span class="stock-badge" title="题材关联: 石油能源">中海油服<span class="badge-code">601808</span></span></div>
+          <p class="news-summary">据美国海洋矿产管理局（MMA），美国墨西哥湾地区已暂停约60.45万桶/日石油产量，占当前石油产量约30%。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:25:32</span>
+          <span class="news-title">知情人士透露 阿联酋国家石油公司（Adnoc）的物流部门正洽谈收购能源海运服务公司HEA Energy的大量股权</span>
+          <div class="news-stock-badges"><span class="stock-badge" title="题材关联: 石油能源">中国石油<span class="badge-code">601857</span></span><span class="stock-badge" title="题材关联: 石油能源">中国石化<span class="badge-code">600028</span></span><span class="stock-badge" title="题材关联: 石油能源">中海油服<span class="badge-code">601808</span></span></div>
+          <p class="news-summary">【知情人士透露 阿联酋国家石油公司（Adnoc）的物流部门正洽谈收购能源海运服务公司HEA Energy的大量股权】知情人士透露，阿联酋国家石油公司（Adnoc）的物流部门正洽谈收购能源海运服务公司HEAEnergy的大量股权，该交易可能令HEAEnergy估值达到30亿美元。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:24:31</span>
+          <span class="news-title">英国首相：考虑对沙特提供进一步支援</span>
+          
+          <p class="news-summary">【英国首相：考虑对沙特提供进一步支援】英国首相伯纳姆12日表示，英国将对沙特阿拉伯提出的任何进一步支援请求予以考虑。伯纳姆当天在议会表示，英国将根据沙特提出请求的具体情况，考虑提供进一步支援。沙特阿拉伯近期遭到也门胡塞武装袭击，该国已请求法国、英国、巴基斯坦和埃及向该地区支援防空系统。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:14:48</span>
+          <span class="news-title">美国威胁切断对乌武器供应 俄乌局势或出现重大转折</span>
+          
+          <p class="news-summary">【美国威胁切断对乌武器供应 俄乌局势或出现重大转折】有欧洲官员近日表示，美国正威胁停止向乌克兰提供武器供应的机制，以此向乌克兰方面施压，要求其停止对俄能源基础设施的纵深打击。刚刚过去的这个周末，部分欧洲官员接到美国方面打来的电话，美国游说欧洲相关国家并向乌克兰方面施压，试图结束乌克兰对俄罗斯炼油厂的</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:08:37</span>
+          <span class="news-title">谷歌云推出预览版Looker数据应用</span>
+          <div class="news-stock-badges"><span class="stock-badge" title="题材关联: 人工智能">科大讯飞<span class="badge-code">002230</span></span><span class="stock-badge" title="题材关联: 人工智能">海光信息<span class="badge-code">688041</span></span><span class="stock-badge" title="题材关联: 人工智能">浪潮信息<span class="badge-code">000977</span></span></div>
+          <p class="news-summary">【谷歌云推出预览版Looker数据应用】谷歌云推出预览版Looker数据应用，支持通过AI生成应用，并内置治理与安全功能。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:03:59</span>
+          <span class="news-title">英国召见伊朗驻英大使并制裁两名伊朗籍人士</span>
+          
+          <p class="news-summary">【英国召见伊朗驻英大使并制裁两名伊朗籍人士】当地时间12日，英国外交大臣米利班德表示，英国已就伊朗持续开展的所谓“恶意活动”正式召见伊朗驻英国大使阿里·穆萨维，提出严正交涉。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-time">00:03:57</span>
+          <span class="news-title">南非方面称铁矿石码头将在10月16日前恢复运营</span>
+          
+          <p class="news-summary">南非方面称铁矿石码头将在10月16日前恢复运营。</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">📊 行业板块涨跌 TOP10</div>
+      
+    </div>
+  </div>
+
+  <!-- 图表行 -->
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">📊 行业涨跌幅对比</div>
+      <div class="chart-container">
+        <canvas id="industryChart"></canvas>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">🔥 热门题材词频 TOP20</div>
+      <div class="chart-container">
+        <canvas id="tagChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- 推荐股票表 -->
+  <div class="card" style="margin-bottom:24px">
+    <div class="card-title">💎 低价潜力股推荐清单（2026年10月13日）</div>
+    <p style="color:#64748b;font-size:13px;margin-bottom:16px">
+      筛选条件：股价 2~20元 · 非ST · 综合评分≥40 · 按评分降序排列
+    </p>
+    <div class="rec-table-wrap sticky-header">
+      <table>
+        <thead>
+          <tr>
+            <th>排名</th>
+            <th>股票</th>
+            <th>现价</th>
+            <th>今日涨跌</th>
+            <th>综合评分</th>
+            <th>目标价</th>
+            <th>预期涨幅</th>
+            <th>止损价</th>
+            <th>信心</th>
+            <th>推荐理由</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr class="rec-row">
+          <td class="rank-cell">🥇</td>
+          <td>
+            <div class="stock-name">广电网络</div>
+            <div class="stock-code">600831</div>
+          </td>
+          <td class="price-cell">¥3.91</td>
+          <td style="color:#dc2626">+10.14%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:85%"></div>
+            </div>
+            <span>85</span>
+          </td>
+          <td class="target-cell">¥4.48</td>
+          <td style="color:#dc2626;font-weight:600">+14.6%</td>
+          <td style="color:#16a34a">¥3.64</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">超低价格弹性大 · 换手率适中活跃 · 今日强势股↑10.1% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 预重整+重整投资人+算力云网</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">🥈</td>
+          <td>
+            <div class="stock-name">慈文传媒</div>
+            <div class="stock-code">002343</div>
+          </td>
+          <td class="price-cell">¥6.69</td>
+          <td style="color:#dc2626">+10.03%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:82%"></div>
+            </div>
+            <span>82</span>
+          </td>
+          <td class="target-cell">¥7.69</td>
+          <td style="color:#dc2626;font-weight:600">+15.0%</td>
+          <td style="color:#16a34a">¥6.22</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 微短剧+影视IP+江西国资</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">🥉</td>
+          <td>
+            <div class="stock-name">众业达</div>
+            <div class="stock-code">002441</div>
+          </td>
+          <td class="price-cell">¥9.21</td>
+          <td style="color:#dc2626">+10.04%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:82%"></div>
+            </div>
+            <span>82</span>
+          </td>
+          <td class="target-cell">¥10.39</td>
+          <td style="color:#dc2626;font-weight:600">+12.8%</td>
+          <td style="color:#16a34a">¥8.57</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 工业电气分销+电网设备+业绩增长</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#4</td>
+          <td>
+            <div class="stock-name">天顺风能</div>
+            <div class="stock-code">002531</div>
+          </td>
+          <td class="price-cell">¥8.27</td>
+          <td style="color:#dc2626">+9.97%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:82%"></div>
+            </div>
+            <span>82</span>
+          </td>
+          <td class="target-cell">¥9.91</td>
+          <td style="color:#dc2626;font-weight:600">+19.8%</td>
+          <td style="color:#16a34a">¥7.69</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 海上风电+海工装备+油气船舶</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#5</td>
+          <td>
+            <div class="stock-name">远程股份</div>
+            <div class="stock-code">002692</div>
+          </td>
+          <td class="price-cell">¥5.24</td>
+          <td style="color:#dc2626">+10.08%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:82%"></div>
+            </div>
+            <span>82</span>
+          </td>
+          <td class="target-cell">¥5.95</td>
+          <td style="color:#dc2626;font-weight:600">+13.6%</td>
+          <td style="color:#16a34a">¥4.87</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.1% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 电线电缆+数据中心电缆+电网应用+参股半导体</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#6</td>
+          <td>
+            <div class="stock-name">百洋股份</div>
+            <div class="stock-code">002696</div>
+          </td>
+          <td class="price-cell">¥8.05</td>
+          <td style="color:#dc2626">+9.97%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:82%"></div>
+            </div>
+            <span>82</span>
+          </td>
+          <td class="target-cell">¥9.21</td>
+          <td style="color:#dc2626;font-weight:600">+14.4%</td>
+          <td style="color:#16a34a">¥7.49</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 水产饲料+鱼粉涨价+青岛国资</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#7</td>
+          <td>
+            <div class="stock-name">长城电工</div>
+            <div class="stock-code">600192</div>
+          </td>
+          <td class="price-cell">¥7.93</td>
+          <td style="color:#dc2626">+9.99%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:82%"></div>
+            </div>
+            <span>82</span>
+          </td>
+          <td class="target-cell">¥8.92</td>
+          <td style="color:#dc2626;font-weight:600">+12.5%</td>
+          <td style="color:#16a34a">¥7.37</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 输配电设备+核电项目+资产剥离</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#8</td>
+          <td>
+            <div class="stock-name">海欣股份</div>
+            <div class="stock-code">600851</div>
+          </td>
+          <td class="price-cell">¥8.6</td>
+          <td style="color:#dc2626">+9.97%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:82%"></div>
+            </div>
+            <span>82</span>
+          </td>
+          <td class="target-cell">¥9.9</td>
+          <td style="color:#dc2626;font-weight:600">+15.1%</td>
+          <td style="color:#16a34a">¥8.0</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 股东变更+APDC+医药健康</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#9</td>
+          <td>
+            <div class="stock-name">多伦科技</div>
+            <div class="stock-code">603528</div>
+          </td>
+          <td class="price-cell">¥7.05</td>
+          <td style="color:#dc2626">+9.98%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:82%"></div>
+            </div>
+            <span>82</span>
+          </td>
+          <td class="target-cell">¥7.92</td>
+          <td style="color:#dc2626;font-weight:600">+12.4%</td>
+          <td style="color:#16a34a">¥6.56</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: AI应用+人形机器人+智慧驾培</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#10</td>
+          <td>
+            <div class="stock-name">吉视传媒</div>
+            <div class="stock-code">601929</div>
+          </td>
+          <td class="price-cell">¥2.75</td>
+          <td style="color:#dc2626">+10.00%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:80%"></div>
+            </div>
+            <span>80</span>
+          </td>
+          <td class="target-cell">¥3.25</td>
+          <td style="color:#dc2626;font-weight:600">+18.1%</td>
+          <td style="color:#16a34a">¥2.56</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">超低价格弹性大 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 智慧广电+AI微短剧+AI应用+算力租赁</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#11</td>
+          <td>
+            <div class="stock-name">德生科技</div>
+            <div class="stock-code">002908</div>
+          </td>
+          <td class="price-cell">¥8.02</td>
+          <td style="color:#dc2626">+10.01%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:77%"></div>
+            </div>
+            <span>77</span>
+          </td>
+          <td class="target-cell">¥9.61</td>
+          <td style="color:#dc2626;font-weight:600">+19.8%</td>
+          <td style="color:#16a34a">¥7.46</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 民生AI+社保服务+就医支付</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#12</td>
+          <td>
+            <div class="stock-name">金自天正</div>
+            <div class="stock-code">600560</div>
+          </td>
+          <td class="price-cell">¥12.53</td>
+          <td style="color:#dc2626">+10.01%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:77%"></div>
+            </div>
+            <span>77</span>
+          </td>
+          <td class="target-cell">¥14.69</td>
+          <td style="color:#dc2626;font-weight:600">+17.3%</td>
+          <td style="color:#16a34a">¥11.65</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 冶金自动化+钢铁智能化+国有股东</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#13</td>
+          <td>
+            <div class="stock-name">东百集团</div>
+            <div class="stock-code">600693</div>
+          </td>
+          <td class="price-cell">¥11.18</td>
+          <td style="color:#dc2626">+10.04%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:77%"></div>
+            </div>
+            <span>77</span>
+          </td>
+          <td class="target-cell">¥13.31</td>
+          <td style="color:#dc2626;font-weight:600">+19.0%</td>
+          <td style="color:#16a34a">¥10.4</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 光芯片收购+光探测芯片+商业零售</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#14</td>
+          <td>
+            <div class="stock-name">华北制药</div>
+            <div class="stock-code">600812</div>
+          </td>
+          <td class="price-cell">¥6.63</td>
+          <td style="color:#dc2626">+9.95%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:77%"></div>
+            </div>
+            <span>77</span>
+          </td>
+          <td class="target-cell">¥7.82</td>
+          <td style="color:#dc2626;font-weight:600">+17.9%</td>
+          <td style="color:#16a34a">¥6.17</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">今日强势股↑9.9% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 鼠疫+抗感染药物+创新药研发</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#15</td>
+          <td>
+            <div class="stock-name">新华传媒</div>
+            <div class="stock-code">600825</div>
+          </td>
+          <td class="price-cell">¥13.78</td>
+          <td style="color:#dc2626">+9.98%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:77%"></div>
+            </div>
+            <span>77</span>
+          </td>
+          <td class="target-cell">¥16.46</td>
+          <td style="color:#dc2626;font-weight:600">+19.4%</td>
+          <td style="color:#16a34a">¥12.82</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 财联社重组+财经新媒体+图书发行</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#16</td>
+          <td>
+            <div class="stock-name">宏辉果蔬</div>
+            <div class="stock-code">603336</div>
+          </td>
+          <td class="price-cell">¥10.45</td>
+          <td style="color:#dc2626">+10.00%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:77%"></div>
+            </div>
+            <span>77</span>
+          </td>
+          <td class="target-cell">¥12.26</td>
+          <td style="color:#dc2626;font-weight:600">+17.3%</td>
+          <td style="color:#16a34a">¥9.72</td>
+          <td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:12px;font-size:12px">高</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 创新药+果蔬供应链+速冻食品+苏州国资</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#17</td>
+          <td>
+            <div class="stock-name">通达动力</div>
+            <div class="stock-code">002576</div>
+          </td>
+          <td class="price-cell">¥16.07</td>
+          <td style="color:#dc2626">+9.99%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:72%"></div>
+            </div>
+            <span>72</span>
+          </td>
+          <td class="target-cell">¥17.76</td>
+          <td style="color:#dc2626;font-weight:600">+10.5%</td>
+          <td style="color:#16a34a">¥14.95</td>
+          <td><span style="background:#d97706;color:white;padding:2px 8px;border-radius:12px;font-size:12px">中</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 电机铁芯+风电+机器人概念+新能源汽车</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#18</td>
+          <td>
+            <div class="stock-name">新经典</div>
+            <div class="stock-code">603096</div>
+          </td>
+          <td class="price-cell">¥19.06</td>
+          <td style="color:#dc2626">+9.98%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:72%"></div>
+            </div>
+            <span>72</span>
+          </td>
+          <td class="target-cell">¥20.81</td>
+          <td style="color:#dc2626;font-weight:600">+9.2%</td>
+          <td style="color:#16a34a">¥17.73</td>
+          <td><span style="background:#d97706;color:white;padding:2px 8px;border-radius:12px;font-size:12px">中</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">换手率适中活跃 · 今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 图书出版+AI应用+内容IP</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#19</td>
+          <td>
+            <div class="stock-name">祥和实业</div>
+            <div class="stock-code">603500</div>
+          </td>
+          <td class="price-cell">¥11.04</td>
+          <td style="color:#dc2626">+9.96%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:72%"></div>
+            </div>
+            <span>72</span>
+          </td>
+          <td class="target-cell">¥11.87</td>
+          <td style="color:#dc2626;font-weight:600">+7.5%</td>
+          <td style="color:#16a34a">¥10.27</td>
+          <td><span style="background:#d97706;color:white;padding:2px 8px;border-radius:12px;font-size:12px">中</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 轨道扣件+电容配件+智能检测</div>
+          </td>
+        </tr>
+        <tr class="rec-row">
+          <td class="rank-cell">#20</td>
+          <td>
+            <div class="stock-name">醋化股份</div>
+            <div class="stock-code">603968</div>
+          </td>
+          <td class="price-cell">¥13.05</td>
+          <td style="color:#dc2626">+10.03%</td>
+          <td class="score-cell">
+            <div class="score-bar-wrap">
+              <div class="score-bar" style="width:72%"></div>
+            </div>
+            <span>72</span>
+          </td>
+          <td class="target-cell">¥14.52</td>
+          <td style="color:#dc2626;font-weight:600">+11.3%</td>
+          <td style="color:#16a34a">¥12.14</td>
+          <td><span style="background:#d97706;color:white;padding:2px 8px;border-radius:12px;font-size:12px">中</span></td>
+          <td class="reason-cell">
+            <div class="reason-tags">今日强势股↑10.0% · 中小盘弹性好</div>
+            <div class="catalyst-text">题材: 染料+安赛蜜+精细化工+食品饲料添加剂</div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 短期上涨趋势股 -->
+  <div class="card" style="margin-bottom:24px">
+    <div class="card-title">🚀 短期上涨趋势股（2026年10月13日）</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px">
+      <div class="stat-card" style="padding:14px">
+        <div class="stat-label">📈 趋势上涨股</div>
+        <div class="stat-value" style="color:#f59e0b;font-size:26px">20</div>
+        <div class="stat-sub">5日涨幅≥5%且今日续涨</div>
+      </div>
+      <div class="stat-card" style="padding:14px">
+        <div class="stat-label">📊 平均5日涨幅</div>
+        <div class="stat-value" style="color:#dc2626;font-size:26px">+13.5%</div>
+        <div class="stat-sub">短期动能强劲</div>
+      </div>
+      <div class="stat-card" style="padding:14px">
+        <div class="stat-label">🏦 北向加仓</div>
+        <div class="stat-value" style="color:#3b82f6;font-size:26px">0</div>
+        <div class="stat-sub">只获北向净买入</div>
+      </div>
+      <div class="stat-card" style="padding:14px">
+        <div class="stat-label">🏛️ 机构抢筹</div>
+        <div class="stat-value" style="color:#8b5cf6;font-size:26px">0</div>
+        <div class="stat-sub">只龙虎榜机构买入</div>
+      </div>
+    </div>
+    <div style="margin-bottom:20px">
+      <div style="font-size:14px;font-weight:600;color:#374151;margin-bottom:10px">📊 趋势股涨幅对比（橙=5日涨幅 绿=今日涨幅）</div>
+      <div style="position:relative;height:260px">
+        <canvas id="risingChart"></canvas>
+      </div>
+    </div>
+    <p style="color:#64748b;font-size:13px;margin-bottom:12px">
+      筛选标准：近5日累涨≥5% · 今日仍在上涨 · 量比/资金/题材综合分析 · 非ST股
+    </p>
+    <div class="rec-table-wrap sticky-header">
+      <table>
+        <thead>
+          <tr>
+            <th>排名</th><th>股票</th><th>现价</th><th>今日涨幅</th>
+            <th>5日涨幅</th><th>量比</th><th>换手率</th><th>总市值</th>
+            <th>上涨标签</th><th>上涨原因分析</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr class="rising-row">
+              <td class="rank-cell">🥇</td>
+              <td>
+                <div class="stock-name">博汇科技</div>
+                <div class="stock-code">688004</div>
+              </td>
+              <td class="price-cell">¥37.25</td>
+              <td style="color:#dc2626;font-weight:700">+20.01%</td>
+              <td style="color:#f59e0b;font-weight:700">+20.0%</td>
+              <td>5.0x</td>
+              <td>14.9%</td>
+              <td>30亿</td>
+              <td><span class="rise-tag">AI内容安全</span> <span class="rise-tag">视听大数据</span> <span class="rise-tag">传媒安全</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">强势突破</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: AI内容安全+视听大数据+传媒安全+协议转让<br>量能大幅放大（量比5.0x）<br>5日累涨20.0%，强势突破</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">🥈</td>
+              <td>
+                <div class="stock-name">果麦文化</div>
+                <div class="stock-code">301052</div>
+              </td>
+              <td class="price-cell">¥30.47</td>
+              <td style="color:#dc2626;font-weight:700">+20.01%</td>
+              <td style="color:#f59e0b;font-weight:700">+20.0%</td>
+              <td>8.5x</td>
+              <td>25.4%</td>
+              <td>24亿</td>
+              <td><span class="rise-tag">AI出版</span> <span class="rise-tag">短剧</span> <span class="rise-tag">AIGC</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">强势突破</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: AI出版+短剧+AIGC+教辅图书<br>量能大幅放大（量比8.5x）<br>5日累涨20.0%，强势突破</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">🥉</td>
+              <td>
+                <div class="stock-name">首航新能</div>
+                <div class="stock-code">301658</div>
+              </td>
+              <td class="price-cell">¥27.12</td>
+              <td style="color:#dc2626;font-weight:700">+20.00%</td>
+              <td style="color:#f59e0b;font-weight:700">+20.0%</td>
+              <td>7.1x</td>
+              <td>21.2%</td>
+              <td>26亿</td>
+              <td><span class="rise-tag">储能系统</span> <span class="rise-tag">光伏逆变器</span> <span class="rise-tag">海外布局</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">强势突破</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 储能系统+光伏逆变器+海外布局<br>量能大幅放大（量比7.1x）<br>5日累涨20.0%，强势突破</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#4</td>
+              <td>
+                <div class="stock-name">阿莱德</div>
+                <div class="stock-code">301419</div>
+              </td>
+              <td class="price-cell">¥47.7</td>
+              <td style="color:#dc2626;font-weight:700">+20.00%</td>
+              <td style="color:#f59e0b;font-weight:700">+20.0%</td>
+              <td>2.8x</td>
+              <td>8.3%</td>
+              <td>53亿</td>
+              <td><span class="rise-tag">光通信散热</span> <span class="rise-tag">重大资产重组</span> <span class="rise-tag">热管理材料</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">强势突破</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 光通信散热+重大资产重组+热管理材料<br>量能大幅放大（量比2.8x）<br>5日累涨20.0%，强势突破<br>换手率8.3%，流动性活跃</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#5</td>
+              <td>
+                <div class="stock-name">金丹科技</div>
+                <div class="stock-code">300829</div>
+              </td>
+              <td class="price-cell">¥28.02</td>
+              <td style="color:#dc2626;font-weight:700">+20.00%</td>
+              <td style="color:#f59e0b;font-weight:700">+20.0%</td>
+              <td>4.7x</td>
+              <td>14.1%</td>
+              <td>47亿</td>
+              <td><span class="rise-tag">聚乳酸</span> <span class="rise-tag">乳酸提价</span> <span class="rise-tag">可降解材料</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">强势突破</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 聚乳酸+乳酸提价+可降解材料<br>量能大幅放大（量比4.7x）<br>5日累涨20.0%，强势突破</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#6</td>
+              <td>
+                <div class="stock-name">金冠电气</div>
+                <div class="stock-code">688517</div>
+              </td>
+              <td class="price-cell">¥21.18</td>
+              <td style="color:#dc2626;font-weight:700">+20.00%</td>
+              <td style="color:#f59e0b;font-weight:700">+20.0%</td>
+              <td>5.6x</td>
+              <td>16.7%</td>
+              <td>29亿</td>
+              <td><span class="rise-tag">签订光储充协议</span> <span class="rise-tag">陶瓷基板</span> <span class="rise-tag">特高压</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">强势突破</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 签订光储充协议+陶瓷基板+特高压+充电桩<br>量能大幅放大（量比5.6x）<br>5日累涨20.0%，强势突破</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#7</td>
+              <td>
+                <div class="stock-name">莱美药业</div>
+                <div class="stock-code">300006</div>
+              </td>
+              <td class="price-cell">¥6.56</td>
+              <td style="color:#dc2626;font-weight:700">+19.93%</td>
+              <td style="color:#f59e0b;font-weight:700">+19.9%</td>
+              <td>6.4x</td>
+              <td>19.3%</td>
+              <td>69亿</td>
+              <td><span class="rise-tag">抗癌药物</span> <span class="rise-tag">纳米炭铁</span> <span class="rise-tag">资产出售</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 抗癌药物+纳米炭铁+资产出售<br>量能大幅放大（量比6.4x）<br>5日涨19.9%，趋势向上</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#8</td>
+              <td>
+                <div class="stock-name">广电网络</div>
+                <div class="stock-code">600831</div>
+              </td>
+              <td class="price-cell">¥3.91</td>
+              <td style="color:#dc2626;font-weight:700">+10.14%</td>
+              <td style="color:#f59e0b;font-weight:700">+10.1%</td>
+              <td>1.9x</td>
+              <td>5.6%</td>
+              <td>28亿</td>
+              <td><span class="rise-tag">预重整</span> <span class="rise-tag">重整投资人</span> <span class="rise-tag">算力云网</span> <span class="rise-tag">温和放量</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 预重整+重整投资人+算力云网<br>5日涨10.1%，趋势向上<br>换手率5.6%，流动性活跃</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#9</td>
+              <td>
+                <div class="stock-name">欢瑞世纪</div>
+                <div class="stock-code">000892</div>
+              </td>
+              <td class="price-cell">¥5.34</td>
+              <td style="color:#dc2626;font-weight:700">+10.10%</td>
+              <td style="color:#f59e0b;font-weight:700">+10.1%</td>
+              <td>11.3x</td>
+              <td>33.8%</td>
+              <td>38亿</td>
+              <td><span class="rise-tag">AI漫剧</span> <span class="rise-tag">互动影游</span> <span class="rise-tag">影视制作</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: AI漫剧+互动影游+影视制作<br>量能大幅放大（量比11.3x）<br>5日涨10.1%，趋势向上</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#10</td>
+              <td>
+                <div class="stock-name">远程股份</div>
+                <div class="stock-code">002692</div>
+              </td>
+              <td class="price-cell">¥5.24</td>
+              <td style="color:#dc2626;font-weight:700">+10.08%</td>
+              <td style="color:#f59e0b;font-weight:700">+10.1%</td>
+              <td>2.5x</td>
+              <td>7.4%</td>
+              <td>38亿</td>
+              <td><span class="rise-tag">电线电缆</span> <span class="rise-tag">数据中心电缆</span> <span class="rise-tag">电网应用</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 电线电缆+数据中心电缆+电网应用+参股半导体<br>量能大幅放大（量比2.5x）<br>5日涨10.1%，趋势向上<br>换手率7.4%，流动性活跃</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#11</td>
+              <td>
+                <div class="stock-name">众业达</div>
+                <div class="stock-code">002441</div>
+              </td>
+              <td class="price-cell">¥9.21</td>
+              <td style="color:#dc2626;font-weight:700">+10.04%</td>
+              <td style="color:#f59e0b;font-weight:700">+10.0%</td>
+              <td>2.3x</td>
+              <td>7.0%</td>
+              <td>37亿</td>
+              <td><span class="rise-tag">工业电气分销</span> <span class="rise-tag">电网设备</span> <span class="rise-tag">业绩增长</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 工业电气分销+电网设备+业绩增长<br>量能大幅放大（量比2.3x）<br>5日涨10.0%，趋势向上<br>换手率7.0%，流动性活跃</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#12</td>
+              <td>
+                <div class="stock-name">博纳影业</div>
+                <div class="stock-code">001330</div>
+              </td>
+              <td class="price-cell">¥7.67</td>
+              <td style="color:#dc2626;font-weight:700">+10.04%</td>
+              <td style="color:#f59e0b;font-weight:700">+10.0%</td>
+              <td>5.9x</td>
+              <td>17.8%</td>
+              <td>89亿</td>
+              <td><span class="rise-tag">AI电影</span> <span class="rise-tag">AI短剧</span> <span class="rise-tag">影视院线</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: AI电影+AI短剧+影视院线<br>量能大幅放大（量比5.9x）<br>5日涨10.0%，趋势向上</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#13</td>
+              <td>
+                <div class="stock-name">东百集团</div>
+                <div class="stock-code">600693</div>
+              </td>
+              <td class="price-cell">¥11.18</td>
+              <td style="color:#dc2626;font-weight:700">+10.04%</td>
+              <td style="color:#f59e0b;font-weight:700">+10.0%</td>
+              <td>1.0x</td>
+              <td>3.1%</td>
+              <td>97亿</td>
+              <td><span class="rise-tag">光芯片收购</span> <span class="rise-tag">光探测芯片</span> <span class="rise-tag">商业零售</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 光芯片收购+光探测芯片+商业零售<br>5日涨10.0%，趋势向上<br>换手率3.1%，流动性活跃</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#14</td>
+              <td>
+                <div class="stock-name">醋化股份</div>
+                <div class="stock-code">603968</div>
+              </td>
+              <td class="price-cell">¥13.05</td>
+              <td style="color:#dc2626;font-weight:700">+10.03%</td>
+              <td style="color:#f59e0b;font-weight:700">+10.0%</td>
+              <td>4.3x</td>
+              <td>12.8%</td>
+              <td>27亿</td>
+              <td><span class="rise-tag">染料</span> <span class="rise-tag">安赛蜜</span> <span class="rise-tag">精细化工</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 染料+安赛蜜+精细化工+食品饲料添加剂<br>量能大幅放大（量比4.3x）<br>5日涨10.0%，趋势向上</div></td>
+            </tr>
+            <tr class="rising-row">
+              <td class="rank-cell">#15</td>
+              <td>
+                <div class="stock-name">时代万恒</div>
+                <div class="stock-code">600241</div>
+              </td>
+              <td class="price-cell">¥12.94</td>
+              <td style="color:#dc2626;font-weight:700">+10.03%</td>
+              <td style="color:#f59e0b;font-weight:700">+10.0%</td>
+              <td>10.7x</td>
+              <td>32.0%</td>
+              <td>38亿</td>
+              <td><span class="rise-tag">新能源电池</span> <span class="rise-tag">圆柱锂电</span> <span class="rise-tag">辽宁国资</span> <span class="rise-tag">放量上攻</span> <span class="rise-tag">趋势向上</span> <span class="rise-tag">中小盘弹性</span></td>
+              <td class="reason-cell"><div style="font-size:12px;color:#475569">题材驱动: 新能源电池+圆柱锂电+辽宁国资<br>量能大幅放大（量比10.7x）<br>5日涨10.0%，趋势向上</div></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 可建仓股票推荐 -->
+  
+  <div class="card" style="margin-bottom:24px">
+    <div class="card-title">🏗️ 可建仓股票推荐（2026年10月13日）</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px">
+      <div class="stat-card" style="padding:14px">
+        <div class="stat-label">🏗️ 可建仓标的</div>
+        <div class="stat-value" style="color:#7c3aed;font-size:26px">15</div>
+        <div class="stat-sub">满足建仓条件</div>
+      </div>
+      <div class="stat-card" style="padding:14px">
+        <div class="stat-label">🟢 高信心</div>
+        <div class="stat-value" style="color:#16a34a;font-size:26px">0</div>
+        <div class="stat-sub">只强烈推荐</div>
+      </div>
+      <div class="stat-card" style="padding:14px">
+        <div class="stat-label">📊 平均风险收益比</div>
+        <div class="stat-value" style="color:#3b82f6;font-size:26px">0.3:1</div>
+        <div class="stat-sub">收益/风险比</div>
+      </div>
+      <div class="stat-card" style="padding:14px">
+        <div class="stat-label">💡 建仓原则</div>
+        <div class="stat-value" style="color:#f59e0b;font-size:14px">分批·低吸·控仓</div>
+        <div class="stat-sub">不追高·设止损</div>
+      </div>
+    </div>
+    <div style="margin-bottom:20px">
+      <div style="font-size:14px;font-weight:600;color:#374151;margin-bottom:10px">📊 建仓股评分 & 风险收益比</div>
+      <div style="position:relative;height:260px">
+        <canvas id="positionChart"></canvas>
+      </div>
+    </div>
+    <p style="color:#64748b;font-size:13px;margin-bottom:12px">
+      建仓标准：价格相对低位 · 非追高 · 有催化支撑 · 风险收益比≥1.5 · 按综合评分降序
+    </p>
+    <div class="rec-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>排名</th><th>股票</th><th>现价</th><th>今日涨跌</th>
+            <th>建仓评分</th><th>入场价</th><th>加仓价</th><th>目标价</th>
+            <th>止损价</th><th>建议仓位</th><th>风险收益比</th><th>单票最大亏损</th><th>信心</th>
+            <th>推荐理由</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr class="pos-row">
+              <td class="rank-cell">🥇</td>
+              <td>
+                <div class="stock-name">众业达</div>
+                <div class="stock-code">002441</div>
+              </td>
+              <td class="price-cell">¥9.21</td>
+              <td style="color:#dc2626">+10.04%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                78
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥8.66</td>
+              <td style="color:#3b82f6">¥8.75</td>
+              <td style="color:#dc2626;font-weight:600">¥10.04</td>
+              <td style="color:#16a34a">¥7.97</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">试探仓(5%)</td>
+              <td style="font-weight:700;color:#d97706">0.7:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥398 <span style="font-size:11px">(8.0%)</span></td>
+              <td><span style="background:#d97706;color:white;padding:2px 8px;border-radius:12px;font-size:11px">中</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率7.0%适度活跃<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 工业电气分销+电网设备+业绩增长<br>短期趋势确立(5日+10.0%)，趋势跟随<br>PE(TTM)23.2倍估值合理<br>PB 1.2倍破净风险低<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                <div style="color:#7c3aed;font-size:11px;margin-top:2px"><strong>🔄 已连续推荐2日</strong>，建议上移止损至成本价附近</div>
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">🥈</td>
+              <td>
+                <div class="stock-name">东百集团</div>
+                <div class="stock-code">600693</div>
+              </td>
+              <td class="price-cell">¥11.18</td>
+              <td style="color:#dc2626">+10.04%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                72
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥10.51</td>
+              <td style="color:#3b82f6">¥10.62</td>
+              <td style="color:#dc2626;font-weight:600">¥12.32</td>
+              <td style="color:#16a34a">¥9.67</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">试探仓(5%)</td>
+              <td style="font-weight:700;color:#d97706">0.8:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥399 <span style="font-size:11px">(8.0%)</span></td>
+              <td><span style="background:#d97706;color:white;padding:2px 8px;border-radius:12px;font-size:11px">中</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">缩量蓄势</span> <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">换手率3.1%温和，筹码稳定<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 光芯片收购+光探测芯片+商业零售<br>短期趋势确立(5日+10.0%)，趋势跟随<br>PB 2.7倍破净风险低<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓 · PE(199)偏高，估值风险需注意</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">🥉</td>
+              <td>
+                <div class="stock-name">海欣股份</div>
+                <div class="stock-code">600851</div>
+              </td>
+              <td class="price-cell">¥8.6</td>
+              <td style="color:#dc2626">+9.97%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                70
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥8.08</td>
+              <td style="color:#3b82f6">¥8.17</td>
+              <td style="color:#dc2626;font-weight:600">¥9.37</td>
+              <td style="color:#16a34a">¥7.43</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">试探仓(5%)</td>
+              <td style="font-weight:700;color:#d97706">0.7:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥402 <span style="font-size:11px">(8.0%)</span></td>
+              <td><span style="background:#d97706;color:white;padding:2px 8px;border-radius:12px;font-size:11px">中</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">缩量蓄势</span> <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率4.2%温和，筹码稳定<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 股东变更+APDC+医药健康<br>PB 2.1倍破净风险低<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#4</td>
+              <td>
+                <div class="stock-name">多伦科技</div>
+                <div class="stock-code">603528</div>
+              </td>
+              <td class="price-cell">¥7.05</td>
+              <td style="color:#dc2626">+9.98%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                66
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥6.56</td>
+              <td style="color:#3b82f6">¥6.7</td>
+              <td style="color:#dc2626;font-weight:600">¥7.29</td>
+              <td style="color:#16a34a">¥5.97</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.2:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥179 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">缩量蓄势</span> <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率2.2%温和，筹码稳定<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: AI应用+人形机器人+智慧驾培<br>PB 2.7倍破净风险低<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#5</td>
+              <td>
+                <div class="stock-name">慈文传媒</div>
+                <div class="stock-code">002343</div>
+              </td>
+              <td class="price-cell">¥6.69</td>
+              <td style="color:#dc2626">+10.03%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                65
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥6.22</td>
+              <td style="color:#3b82f6">¥6.36</td>
+              <td style="color:#dc2626;font-weight:600">¥6.93</td>
+              <td style="color:#16a34a">¥5.66</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.2:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥180 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率6.0%适度活跃<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 微短剧+影视IP+江西国资<br>短期趋势确立(5日+10.0%)，趋势跟随<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                <div style="color:#7c3aed;font-size:11px;margin-top:2px"><strong>🔄 已连续推荐2日</strong>，建议上移止损至成本价附近</div>
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#6</td>
+              <td>
+                <div class="stock-name">远程股份</div>
+                <div class="stock-code">002692</div>
+              </td>
+              <td class="price-cell">¥5.24</td>
+              <td style="color:#dc2626">+10.08%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                65
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥4.87</td>
+              <td style="color:#3b82f6">¥4.98</td>
+              <td style="color:#dc2626;font-weight:600">¥5.56</td>
+              <td style="color:#16a34a">¥4.43</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.4:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥180 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率7.4%适度活跃<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 电线电缆+数据中心电缆+电网应用+参股半导体<br>短期趋势确立(5日+10.1%)，趋势跟随<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                <div style="color:#7c3aed;font-size:11px;margin-top:2px"><strong>🔄 已连续推荐3日</strong>，建议上移止损至成本价附近</div>
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#7</td>
+              <td>
+                <div class="stock-name">广电网络</div>
+                <div class="stock-code">600831</div>
+              </td>
+              <td class="price-cell">¥3.91</td>
+              <td style="color:#dc2626">+10.14%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                65
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥3.64</td>
+              <td style="color:#3b82f6">¥3.71</td>
+              <td style="color:#dc2626;font-weight:600">¥4.09</td>
+              <td style="color:#16a34a">¥3.31</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.3:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥181 <span style="font-size:11px">(9.1%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span> <span class="pos-tag">小盘高弹性</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">超低价位，弹性空间大<br>换手率5.6%适度活跃<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 预重整+重整投资人+算力云网<br>短期趋势确立(5日+10.1%)，趋势跟随</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#8</td>
+              <td>
+                <div class="stock-name">博纳影业</div>
+                <div class="stock-code">001330</div>
+              </td>
+              <td class="price-cell">¥7.67</td>
+              <td style="color:#dc2626">+10.04%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                63
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥7.13</td>
+              <td style="color:#3b82f6">¥7.29</td>
+              <td style="color:#dc2626;font-weight:600">¥7.91</td>
+              <td style="color:#16a34a">¥6.49</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.2:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥179 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: AI电影+AI短剧+影视院线<br>短期趋势确立(5日+10.0%)，趋势跟随<br>PB 2.9倍破净风险低<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 换手率偏高，注意短期波动 · 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#9</td>
+              <td>
+                <div class="stock-name">百洋股份</div>
+                <div class="stock-code">002696</div>
+              </td>
+              <td class="price-cell">¥8.05</td>
+              <td style="color:#dc2626">+9.97%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                63
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥7.49</td>
+              <td style="color:#3b82f6">¥7.65</td>
+              <td style="color:#dc2626;font-weight:600">¥8.4</td>
+              <td style="color:#16a34a">¥6.82</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.3:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥179 <span style="font-size:11px">(8.9%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">缩量蓄势</span> <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span> <span class="pos-tag">小盘高弹性</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率3.9%温和，筹码稳定<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 水产饲料+鱼粉涨价+青岛国资<br>PB 2.2倍破净风险低</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                <div style="color:#7c3aed;font-size:11px;margin-top:2px"><strong>🔄 已连续推荐4日</strong>，建议上移止损至成本价附近</div>
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#10</td>
+              <td>
+                <div class="stock-name">金自天正</div>
+                <div class="stock-code">600560</div>
+              </td>
+              <td class="price-cell">¥12.53</td>
+              <td style="color:#dc2626">+10.01%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                63
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥11.65</td>
+              <td style="color:#3b82f6">¥11.9</td>
+              <td style="color:#dc2626;font-weight:600">¥12.91</td>
+              <td style="color:#16a34a">¥10.6</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.2:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥180 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">缩量蓄势</span> <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span> <span class="pos-tag">小盘高弹性</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">换手率2.9%温和，筹码稳定<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 冶金自动化+钢铁智能化+国有股东<br>PB 2.9倍破净风险低</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#11</td>
+              <td>
+                <div class="stock-name">德生科技</div>
+                <div class="stock-code">002908</div>
+              </td>
+              <td class="price-cell">¥8.02</td>
+              <td style="color:#dc2626">+10.01%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                62
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥7.46</td>
+              <td style="color:#3b82f6">¥7.62</td>
+              <td style="color:#dc2626;font-weight:600">¥8.21</td>
+              <td style="color:#16a34a">¥6.79</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.2:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥180 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span> <span class="pos-tag">小盘高弹性</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率9.2%适度活跃<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 民生AI+社保服务+就医支付<br>短期趋势确立(5日+10.0%)，趋势跟随</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#12</td>
+              <td>
+                <div class="stock-name">丽人丽妆</div>
+                <div class="stock-code">605136</div>
+              </td>
+              <td class="price-cell">¥10.38</td>
+              <td style="color:#dc2626">+9.96%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                62
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥9.65</td>
+              <td style="color:#3b82f6">¥9.86</td>
+              <td style="color:#dc2626;font-weight:600">¥10.68</td>
+              <td style="color:#16a34a">¥8.78</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.2:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥180 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">缩量蓄势</span> <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">换手率1.0%温和，筹码稳定<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 化妆品电商+海外总代+业绩扭亏<br>PB 1.7倍破净风险低<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                <div style="color:#7c3aed;font-size:11px;margin-top:2px"><strong>🔄 已连续推荐2日</strong>，建议上移止损至成本价附近</div>
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#13</td>
+              <td>
+                <div class="stock-name">龙版传媒</div>
+                <div class="stock-code">605577</div>
+              </td>
+              <td class="price-cell">¥17.82</td>
+              <td style="color:#dc2626">+10.00%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                62
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥16.57</td>
+              <td style="color:#3b82f6">¥16.93</td>
+              <td style="color:#dc2626;font-weight:600">¥18.67</td>
+              <td style="color:#16a34a">¥15.08</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.3:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥179 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">缩量蓄势</span> <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">换手率3.2%温和，筹码稳定<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: AI漫剧+数字出版+出版发行<br>PB 2.0倍破净风险低<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#14</td>
+              <td>
+                <div class="stock-name">长城电工</div>
+                <div class="stock-code">600192</div>
+              </td>
+              <td class="price-cell">¥7.93</td>
+              <td style="color:#dc2626">+9.99%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                61
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥7.37</td>
+              <td style="color:#3b82f6">¥7.53</td>
+              <td style="color:#dc2626;font-weight:600">¥8.13</td>
+              <td style="color:#16a34a">¥6.71</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.2:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥179 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">缩量蓄势</span> <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率4.4%温和，筹码稳定<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 输配电设备+核电项目+资产剥离<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+            <tr class="pos-row">
+              <td class="rank-cell">#15</td>
+              <td>
+                <div class="stock-name">天顺风能</div>
+                <div class="stock-code">002531</div>
+              </td>
+              <td class="price-cell">¥8.27</td>
+              <td style="color:#dc2626">+9.97%</td>
+              <td style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;text-align:center;font-weight:700;color:#a16207;padding:4px 8px">
+                60
+              </td>
+              <td style="font-weight:600;color:#0f172a">¥7.69</td>
+              <td style="color:#3b82f6">¥7.86</td>
+              <td style="color:#dc2626;font-weight:600">¥8.48</td>
+              <td style="color:#16a34a">¥7.0</td>
+              <td style="font-weight:600;color:#7c3aed;font-size:12px">观察仓(2%)</td>
+              <td style="font-weight:700;color:#d97706">0.2:1</td>
+              <td style="color:#16a34a;font-size:12px;font-weight:600">¥179 <span style="font-size:11px">(9.0%)</span></td>
+              <td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:12px;font-size:11px">低</span></td>
+              <td class="reason-cell" style="max-width:220px">
+                <span class="pos-tag">回调建仓</span> <span class="pos-tag">题材共振</span>
+                <div style="font-size:12px;color:#374151;margin-top:3px">低价区间，建仓成本可控<br>换手率5.8%适度活跃<br>涨停回调后可关注低吸机会<br>当日强势题材驱动: 海上风电+海工装备+油气船舶<br>PB 1.7倍破净风险低<br>中小盘弹性充足</div>
+                <div style="color:#dc2626;font-size:11px;margin-top:3px">⚠ 今日涨停，切勿追高，等回调再考虑建仓</div>
+                
+                
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 免责声明（强化版） -->
+  <div class="disclaimer">
+    ⚠️ <strong>重要免责声明：</strong><br>
+    1. 本报告由AI系统基于公开市场数据自动生成，<strong>仅为数据分析参考，不构成任何投资建议</strong>，据此操作风险自担。<br>
+    2. 报告中"目标价""预期涨幅""风险收益比"均为模型估算，<strong>模拟测算收益不代表实际收益，过往表现不预示未来</strong>。<br>
+    3. 股市有风险，投资需谨慎。请结合自身风险承受能力独立决策。<br>
+    4. 本报告不面向特定投资者，如对外分享需增加合规提示。<br>
+    5. 数据来源：东方财富/同花顺/腾讯财经公开数据接口，可能存在延迟或缺失。<br>
+    6. <strong>投资有风险，入市需谨慎。历史数据不代表未来表现。</strong>
+  </div>
+
+  <div class="footer">
+    生成时间：2026-10-13 01:55:45 · 数据来源：东方财富/同花顺/腾讯财经
+  </div>
+
+</div>
+
+<script>
+// ===== 统计卡片展开 / 折叠 =====
+function togglePanel(panelId, cardEl) {
+  var panel = document.getElementById(panelId);
+  if (!panel) return;
+  var isOpen = panel.classList.contains('show');
+  // 关闭所有其他面板
+  document.querySelectorAll('.expand-panel.show').forEach(function(p) {
+    p.classList.remove('show');
+  });
+  document.querySelectorAll('.stat-card-clickable.open').forEach(function(c) {
+    c.classList.remove('open');
+  });
+  if (!isOpen) {
+    panel.classList.add('show');
+    cardEl.classList.add('open');
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+// 行业涨跌图
+const industryCtx = document.getElementById('industryChart').getContext('2d');
+new Chart(industryCtx, {
+  type: 'bar',
+  data: {
+    labels: [],
+    datasets: [{
+      label: '涨跌幅%',
+      data: [],
+      backgroundColor: [],
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { font: { size: 10 }, maxRotation: 45 } },
+      y: { grid: { color: '#f1f5f9' }, ticks: { callback: v => v + '%' } }
+    }
+  }
+});
+
+// 题材热度图
+const tagCtx = document.getElementById('tagChart').getContext('2d');
+new Chart(tagCtx, {
+  type: 'bar',
+  data: {
+    labels: ["AI应用", "AI漫剧", "出版发行", "AI短剧", "机器人", "AIGC", "预重整", "超豪华SUV传闻", "海外出海", "宁德合作", "华为合作", "钠电材料", "硅碳负极", "AI算力服务器", "染料", "安赛蜜", "精细化工", "食品饲料添加剂", "教材教辅", "文化消费"],
+    datasets: [{
+      label: '出现次数',
+      data: [3, 3, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      backgroundColor: 'rgba(245, 158, 11, 0.7)',
+      borderColor: 'rgba(245, 158, 11, 1)',
+      borderWidth: 1,
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: '#f1f5f9' } },
+      y: { ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// 短期上涨趋势图
+const risingCtx = document.getElementById('risingChart');
+if (risingCtx) {
+  new Chart(risingCtx.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: ["博汇科技", "果麦文化", "首航新能", "阿莱德", "金丹科技", "金冠电气", "莱美药业", "广电网络", "欢瑞世纪", "远程股份", "众业达", "博纳影业", "东百集团", "醋化股份", "时代万恒"],
+      datasets: [
+        {
+          label: '5日涨幅%',
+          data: [20.01, 20.01, 20.0, 20.0, 20.0, 20.0, 19.93, 10.14, 10.1, 10.08, 10.04, 10.04, 10.04, 10.03, 10.03],
+          backgroundColor: 'rgba(245, 158, 11, 0.75)',
+          borderColor: 'rgba(245, 158, 11, 1)',
+          borderWidth: 1,
+          borderRadius: 4,
+          order: 2,
+        },
+        {
+          label: '今日涨幅%',
+          data: [20.01, 20.01, 20.0, 20.0, 20.0, 20.0, 19.93, 10.14, 10.1, 10.08, 10.04, 10.04, 10.04, 10.03, 10.03],
+          backgroundColor: 'rgba(22, 163, 74, 0.65)',
+          borderColor: 'rgba(22, 163, 74, 1)',
+          borderWidth: 1,
+          borderRadius: 4,
+          order: 1,
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'top', labels: { font: { size: 12 } } },
+        tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
+      },
+      scales: {
+        x: { ticks: { font: { size: 10 }, maxRotation: 30 } },
+        y: { grid: { color: '#f1f5f9' }, ticks: { callback: v => v + '%' } }
+      }
+    }
+  });
+}
+
+// 可建仓股票评分 & 风险收益比 & 目标空间图
+const posCtx = document.getElementById('positionChart');
+if (posCtx) {
+  new Chart(posCtx.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: ["众业达", "东百集团", "海欣股份", "多伦科技", "慈文传媒", "远程股份", "广电网络", "博纳影业", "百洋股份", "金自天正", "德生科技", "丽人丽妆", "龙版传媒", "长城电工", "天顺风能"],
+      datasets: [
+        {
+          label: '建仓评分',
+          data: [78, 72, 70, 66, 65, 65, 65, 63, 63, 63, 62, 62, 62, 61, 60],
+          backgroundColor: 'rgba(124, 58, 237, 0.7)',
+          borderColor: 'rgba(124, 58, 237, 1)',
+          borderWidth: 1,
+          borderRadius: 4,
+          yAxisID: 'y',
+          order: 3,
+        },
+        {
+          label: '目标空间%',
+          data: [15.9, 17.2, 16.0, 11.1, 11.4, 14.2, 12.4, 10.9, 12.1, 10.8, 10.1, 10.7, 12.7, 10.3, 10.3],
+          backgroundColor: 'rgba(22, 163, 74, 0.5)',
+          borderColor: 'rgba(22, 163, 74, 1)',
+          borderWidth: 1,
+          borderRadius: 4,
+          yAxisID: 'y',
+          order: 2,
+        },
+        {
+          label: '风险收益比',
+          data: [0.7, 0.8, 0.7, 0.2, 0.2, 0.4, 0.3, 0.2, 0.3, 0.2, 0.2, 0.2, 0.3, 0.2, 0.2],
+          type: 'line',
+          borderColor: 'rgba(245, 158, 11, 1)',
+          backgroundColor: 'rgba(245, 158, 11, 0.15)',
+          borderWidth: 2,
+          pointRadius: 5,
+          pointBackgroundColor: 'rgba(245, 158, 11, 1)',
+          fill: true,
+          yAxisID: 'y1',
+          order: 1,
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'top', labels: { font: { size: 12 } } },
+        tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y } }
+      },
+      scales: {
+        x: { ticks: { font: { size: 10 }, maxRotation: 30 } },
+        y: { position: 'left', grid: { color: '#f1f5f9' }, title: { display: true, text: '评分', font: { size: 11 } } },
+        y1: { position: 'right', grid: { drawOnChartArea: false }, title: { display: true, text: '风险收益比', font: { size: 11 } } }
+      }
+    }
+  });
+}
+</script>
+</body>
+</html>
