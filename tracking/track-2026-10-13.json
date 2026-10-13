@@ -6,7 +6,7 @@
       "name": "三和管桩",
       "price": 6.45,
       "entry_price": 6.06,
-      "target_price": 7.21,
+      "target_price": 7.18,
       "stop_loss": 5.58,
       "score": 91
     },
@@ -15,7 +15,7 @@
       "name": "龙江交通",
       "price": 3.21,
       "entry_price": 3.02,
-      "target_price": 3.59,
+      "target_price": 3.47,
       "stop_loss": 2.78,
       "score": 86
     },
@@ -24,7 +24,7 @@
       "name": "中兴商业",
       "price": 5.78,
       "entry_price": 5.43,
-      "target_price": 6.22,
+      "target_price": 6.47,
       "stop_loss": 5.0,
       "score": 78
     },
@@ -33,7 +33,7 @@
       "name": "百洋股份",
       "price": 8.86,
       "entry_price": 8.33,
-      "target_price": 9.65,
+      "target_price": 9.42,
       "stop_loss": 7.66,
       "score": 78
     },
@@ -42,7 +42,7 @@
       "name": "奥康国际",
       "price": 11.91,
       "entry_price": 11.2,
-      "target_price": 13.11,
+      "target_price": 12.69,
       "stop_loss": 10.3,
       "score": 77
     },
@@ -51,7 +51,7 @@
       "name": "天府文旅",
       "price": 3.84,
       "entry_price": 3.61,
-      "target_price": 4.25,
+      "target_price": 4.26,
       "stop_loss": 3.32,
       "score": 74
     },
@@ -60,7 +60,7 @@
       "name": "龙建股份",
       "price": 3.65,
       "entry_price": 3.43,
-      "target_price": 4.06,
+      "target_price": 3.85,
       "stop_loss": 3.16,
       "score": 71
     },
@@ -69,7 +69,7 @@
       "name": "阳光乳业",
       "price": 14.03,
       "entry_price": 13.19,
-      "target_price": 15.12,
+      "target_price": 15.04,
       "stop_loss": 12.13,
       "score": 70
     },
@@ -78,7 +78,7 @@
       "name": "金奥博",
       "price": 11.0,
       "entry_price": 10.34,
-      "target_price": 12.22,
+      "target_price": 11.95,
       "stop_loss": 9.51,
       "score": 70
     },
@@ -87,7 +87,7 @@
       "name": "日上集团",
       "price": 4.61,
       "entry_price": 4.61,
-      "target_price": 5.16,
+      "target_price": 5.24,
       "stop_loss": 4.29,
       "score": 69
     },
@@ -96,7 +96,7 @@
       "name": "亚厦股份",
       "price": 3.92,
       "entry_price": 3.92,
-      "target_price": 4.53,
+      "target_price": 4.57,
       "stop_loss": 3.65,
       "score": 69
     },
@@ -105,7 +105,7 @@
       "name": "围海股份",
       "price": 3.53,
       "entry_price": 3.53,
-      "target_price": 4.06,
+      "target_price": 3.92,
       "stop_loss": 3.28,
       "score": 69
     },
@@ -123,7 +123,7 @@
       "name": "胜利股份",
       "price": 4.21,
       "entry_price": 4.21,
-      "target_price": 4.88,
+      "target_price": 4.73,
       "stop_loss": 3.92,
       "score": 69
     },
@@ -132,7 +132,7 @@
       "name": "华孚时尚",
       "price": 3.6,
       "entry_price": 3.6,
-      "target_price": 4.03,
+      "target_price": 4.22,
       "stop_loss": 3.35,
       "score": 69
     }
@@ -142,7 +142,7 @@
       "code": "601188",
       "name": "龙江交通",
       "price": 3.21,
-      "target_price": 3.62,
+      "target_price": 3.67,
       "stop_loss": 2.99,
       "score": 100
     },
@@ -150,7 +150,7 @@
       "code": "002696",
       "name": "百洋股份",
       "price": 8.86,
-      "target_price": 10.46,
+      "target_price": 10.47,
       "stop_loss": 8.24,
       "score": 92
     },
@@ -158,7 +158,7 @@
       "code": "000995",
       "name": "皇台酒业",
       "price": 12.25,
-      "target_price": 13.87,
+      "target_price": 14.45,
       "stop_loss": 11.39,
       "score": 92
     },
@@ -166,7 +166,7 @@
       "code": "603001",
       "name": "奥康国际",
       "price": 11.91,
-      "target_price": 13.63,
+      "target_price": 14.17,
       "stop_loss": 11.08,
       "score": 92
     },
@@ -174,7 +174,7 @@
       "code": "000558",
       "name": "天府文旅",
       "price": 3.84,
-      "target_price": 4.45,
+      "target_price": 4.53,
       "stop_loss": 3.57,
       "score": 85
     },
@@ -182,7 +182,7 @@
       "code": "600853",
       "name": "龙建股份",
       "price": 3.65,
-      "target_price": 4.25,
+      "target_price": 4.26,
       "stop_loss": 3.39,
       "score": 85
     },
@@ -190,7 +190,7 @@
       "code": "600281",
       "name": "华阳新材",
       "price": 4.98,
-      "target_price": 5.63,
+      "target_price": 5.6,
       "stop_loss": 4.63,
       "score": 85
     },
@@ -198,7 +198,7 @@
       "code": "000715",
       "name": "中兴商业",
       "price": 5.78,
-      "target_price": 6.55,
+      "target_price": 6.85,
       "stop_loss": 5.38,
       "score": 82
     },
@@ -206,7 +206,7 @@
       "code": "002343",
       "name": "慈文传媒",
       "price": 7.36,
-      "target_price": 8.61,
+      "target_price": 8.68,
       "stop_loss": 6.84,
       "score": 82
     },
@@ -214,7 +214,7 @@
       "code": "603188",
       "name": "亚邦股份",
       "price": 5.46,
-      "target_price": 6.16,
+      "target_price": 6.24,
       "stop_loss": 5.08,
       "score": 82
     },
@@ -222,7 +222,7 @@
       "code": "600712",
       "name": "南宁百货",
       "price": 5.91,
-      "target_price": 6.75,
+      "target_price": 6.91,
       "stop_loss": 5.5,
       "score": 82
     },
@@ -230,7 +230,7 @@
       "code": "600202",
       "name": "哈空调",
       "price": 5.59,
-      "target_price": 6.51,
+      "target_price": 6.6,
       "stop_loss": 5.2,
       "score": 82
     },
@@ -238,7 +238,7 @@
       "code": "603042",
       "name": "华脉科技",
       "price": 16.12,
-      "target_price": 18.43,
+      "target_price": 18.39,
       "stop_loss": 14.99,
       "score": 82
     },
@@ -246,7 +246,7 @@
       "code": "600851",
       "name": "海欣股份",
       "price": 9.46,
-      "target_price": 11.0,
+      "target_price": 10.97,
       "stop_loss": 8.8,
       "score": 82
     },
@@ -254,7 +254,7 @@
       "code": "600831",
       "name": "广电网络",
       "price": 4.3,
-      "target_price": 4.82,
+      "target_price": 4.85,
       "stop_loss": 4.0,
       "score": 80
     },
@@ -262,7 +262,7 @@
       "code": "003037",
       "name": "三和管桩",
       "price": 6.45,
-      "target_price": 7.39,
+      "target_price": 7.3,
       "stop_loss": 6.0,
       "score": 77
     },
@@ -270,7 +270,7 @@
       "code": "002184",
       "name": "海得控制",
       "price": 11.07,
-      "target_price": 13.22,
+      "target_price": 12.95,
       "stop_loss": 10.3,
       "score": 77
     },
@@ -278,7 +278,7 @@
       "code": "002693",
       "name": "双成药业",
       "price": 10.32,
-      "target_price": 12.0,
+      "target_price": 12.02,
       "stop_loss": 9.6,
       "score": 77
     },
@@ -286,7 +286,7 @@
       "code": "002322",
       "name": "理工能科",
       "price": 13.08,
-      "target_price": 14.75,
+      "target_price": 14.94,
       "stop_loss": 12.16,
       "score": 77
     },
@@ -294,7 +294,7 @@
       "code": "002917",
       "name": "金奥博",
       "price": 11.0,
-      "target_price": 13.02,
+      "target_price": 12.94,
       "stop_loss": 10.23,
       "score": 77
     }
