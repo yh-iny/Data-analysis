@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-15",
+  "position_stocks": [
+    {
+      "code": "000722",
+      "name": "湖南发展",
+      "price": 13.95,
+      "entry_price": 13.11,
+      "target_price": 14.9,
+      "stop_loss": 12.06,
+      "score": 85
+    },
+    {
+      "code": "002543",
+      "name": "万和电气",
+      "price": 7.88,
+      "entry_price": 7.41,
+      "target_price": 8.38,
+      "stop_loss": 6.82,
+      "score": 76
+    },
+    {
+      "code": "000626",
+      "name": "远大控股",
+      "price": 9.15,
+      "entry_price": 8.6,
+      "target_price": 9.81,
+      "stop_loss": 7.91,
+      "score": 75
+    },
+    {
+      "code": "002889",
+      "name": "东方嘉盛",
+      "price": 13.01,
+      "entry_price": 12.23,
+      "target_price": 13.87,
+      "stop_loss": 11.25,
+      "score": 70
+    },
+    {
+      "code": "002696",
+      "name": "百洋股份",
+      "price": 10.73,
+      "entry_price": 9.98,
+      "target_price": 11.41,
+      "stop_loss": 9.08,
+      "score": 69
+    },
+    {
+      "code": "002697",
+      "name": "红旗连锁",
+      "price": 4.77,
+      "entry_price": 4.77,
+      "target_price": 5.52,
+      "stop_loss": 4.44,
+      "score": 69
+    },
+    {
+      "code": "002154",
+      "name": "报 喜 鸟",
+      "price": 3.73,
+      "entry_price": 3.73,
+      "target_price": 4.25,
+      "stop_loss": 3.47,
+      "score": 69
+    },
+    {
+      "code": "001318",
+      "name": "阳光乳业",
+      "price": 16.97,
+      "entry_price": 15.78,
+      "target_price": 17.47,
+      "stop_loss": 14.36,
+      "score": 66
+    },
+    {
+      "code": "002668",
+      "name": "TCL智家",
+      "price": 9.34,
+      "entry_price": 9.34,
+      "target_price": 10.99,
+      "stop_loss": 8.69,
+      "score": 66
+    },
+    {
+      "code": "000989",
+      "name": "九芝堂",
+      "price": 8.88,
+      "entry_price": 8.88,
+      "target_price": 10.04,
+      "stop_loss": 8.26,
+      "score": 66
+    },
+    {
+      "code": "002233",
+      "name": "塔牌集团",
+      "price": 7.42,
+      "entry_price": 7.42,
+      "target_price": 8.66,
+      "stop_loss": 6.9,
+      "score": 66
+    },
+    {
+      "code": "002033",
+      "name": "丽江股份",
+      "price": 8.25,
+      "entry_price": 8.25,
+      "target_price": 9.36,
+      "stop_loss": 7.67,
+      "score": 66
+    },
+    {
+      "code": "002412",
+      "name": "汉森制药",
+      "price": 8.52,
+      "entry_price": 8.52,
+      "target_price": 9.4,
+      "stop_loss": 7.92,
+      "score": 66
+    },
+    {
+      "code": "002836",
+      "name": "新宏泽",
+      "price": 11.85,
+      "entry_price": 11.02,
+      "target_price": 12.65,
+      "stop_loss": 10.03,
+      "score": 64
+    },
+    {
+      "code": "000100",
+      "name": "TCL科技",
+      "price": 4.44,
+      "entry_price": 4.44,
+      "target_price": 5.11,
+      "stop_loss": 4.13,
+      "score": 64
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002543",
+      "name": "万和电气",
+      "price": 7.88,
+      "target_price": 9.14,
+      "stop_loss": 7.33,
+      "score": 97
+    },
+    {
+      "code": "000626",
+      "name": "远大控股",
+      "price": 9.15,
+      "target_price": 10.96,
+      "stop_loss": 8.51,
+      "score": 97
+    },
+    {
+      "code": "000722",
+      "name": "湖南发展",
+      "price": 13.95,
+      "target_price": 16.56,
+      "stop_loss": 12.97,
+      "score": 92
+    },
+    {
+      "code": "001318",
+      "name": "阳光乳业",
+      "price": 16.97,
+      "target_price": 19.13,
+      "stop_loss": 15.78,
+      "score": 87
+    },
+    {
+      "code": "000692",
+      "name": "惠天热电",
+      "price": 4.97,
+      "target_price": 5.66,
+      "stop_loss": 4.62,
+      "score": 80
+    },
+    {
+      "code": "002696",
+      "name": "百洋股份",
+      "price": 10.73,
+      "target_price": 12.65,
+      "stop_loss": 9.98,
+      "score": 77
+    },
+    {
+      "code": "002836",
+      "name": "新宏泽",
+      "price": 11.85,
+      "target_price": 13.71,
+      "stop_loss": 11.02,
+      "score": 77
+    },
+    {
+      "code": "002889",
+      "name": "东方嘉盛",
+      "price": 13.01,
+      "target_price": 15.21,
+      "stop_loss": 12.1,
+      "score": 77
+    },
+    {
+      "code": "002103",
+      "name": "广博股份",
+      "price": 7.5,
+      "target_price": 8.67,
+      "stop_loss": 6.98,
+      "score": 77
+    },
+    {
+      "code": "000995",
+      "name": "皇台酒业",
+      "price": 13.37,
+      "target_price": 14.48,
+      "stop_loss": 12.43,
+      "score": 72
+    },
+    {
+      "code": "002748",
+      "name": "世龙实业",
+      "price": 13.65,
+      "target_price": 14.73,
+      "stop_loss": 12.69,
+      "score": 72
+    },
+    {
+      "code": "300111",
+      "name": "向日葵",
+      "price": 3.71,
+      "target_price": 4.08,
+      "stop_loss": 3.45,
+      "score": 70
+    },
+    {
+      "code": "003029",
+      "name": "吉大正元",
+      "price": 19.99,
+      "target_price": 22.04,
+      "stop_loss": 18.59,
+      "score": 67
+    },
+    {
+      "code": "002343",
+      "name": "慈文传媒",
+      "price": 8.91,
+      "target_price": 9.58,
+      "stop_loss": 8.29,
+      "score": 67
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "price": 6.93,
+      "target_price": 7.7,
+      "stop_loss": 6.44,
+      "score": 67
+    },
+    {
+      "code": "000892",
+      "name": "欢瑞世纪",
+      "price": 5.64,
+      "target_price": 6.3,
+      "stop_loss": 5.25,
+      "score": 67
+    },
+    {
+      "code": "002945",
+      "name": "华林证券",
+      "price": 15.39,
+      "target_price": 16.42,
+      "stop_loss": 14.31,
+      "score": 62
+    },
+    {
+      "code": "000011",
+      "name": "深物业A",
+      "price": 11.01,
+      "target_price": 11.68,
+      "stop_loss": 10.24,
+      "score": 62
+    },
+    {
+      "code": "000607",
+      "name": "华媒控股",
+      "price": 4.22,
+      "target_price": 4.5,
+      "stop_loss": 3.92,
+      "score": 60
+    },
+    {
+      "code": "000665",
+      "name": "湖北广电",
+      "price": 4.37,
+      "target_price": 4.67,
+      "stop_loss": 4.06,
+      "score": 60
+    }
+  ]
+}
