@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-16",
+  "position_stocks": [
+    {
+      "code": "002889",
+      "name": "东方嘉盛",
+      "price": 14.31,
+      "entry_price": 13.45,
+      "target_price": 15.27,
+      "stop_loss": 12.37,
+      "score": 85
+    },
+    {
+      "code": "002357",
+      "name": "富临运业",
+      "price": 11.13,
+      "entry_price": 10.46,
+      "target_price": 12.0,
+      "stop_loss": 9.62,
+      "score": 85
+    },
+    {
+      "code": "000573",
+      "name": "粤宏远Ａ",
+      "price": 4.47,
+      "entry_price": 4.2,
+      "target_price": 4.79,
+      "stop_loss": 3.86,
+      "score": 81
+    },
+    {
+      "code": "000576",
+      "name": "甘化科工",
+      "price": 8.77,
+      "entry_price": 8.24,
+      "target_price": 9.42,
+      "stop_loss": 7.58,
+      "score": 80
+    },
+    {
+      "code": "603668",
+      "name": "天马科技",
+      "price": 7.55,
+      "entry_price": 7.1,
+      "target_price": 8.46,
+      "stop_loss": 6.53,
+      "score": 78
+    },
+    {
+      "code": "000099",
+      "name": "中信海直",
+      "price": 14.75,
+      "entry_price": 13.86,
+      "target_price": 16.47,
+      "stop_loss": 12.75,
+      "score": 75
+    },
+    {
+      "code": "600668",
+      "name": "尖峰集团",
+      "price": 8.79,
+      "entry_price": 8.26,
+      "target_price": 9.62,
+      "stop_loss": 7.6,
+      "score": 75
+    },
+    {
+      "code": "000701",
+      "name": "厦门信达",
+      "price": 5.36,
+      "entry_price": 5.04,
+      "target_price": 5.77,
+      "stop_loss": 4.64,
+      "score": 73
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "price": 7.65,
+      "entry_price": 7.19,
+      "target_price": 8.19,
+      "stop_loss": 6.61,
+      "score": 70
+    },
+    {
+      "code": "601999",
+      "name": "出版传媒",
+      "price": 8.25,
+      "entry_price": 7.75,
+      "target_price": 8.97,
+      "stop_loss": 7.13,
+      "score": 70
+    },
+    {
+      "code": "603239",
+      "name": "浙江仙通",
+      "price": 14.43,
+      "entry_price": 13.56,
+      "target_price": 15.92,
+      "stop_loss": 12.48,
+      "score": 70
+    },
+    {
+      "code": "603013",
+      "name": "亚普股份",
+      "price": 15.0,
+      "entry_price": 14.1,
+      "target_price": 15.91,
+      "stop_loss": 12.97,
+      "score": 70
+    },
+    {
+      "code": "000090",
+      "name": "天健集团",
+      "price": 3.75,
+      "entry_price": 3.49,
+      "target_price": 3.87,
+      "stop_loss": 3.18,
+      "score": 69
+    },
+    {
+      "code": "002700",
+      "name": "万憬能源",
+      "price": 6.4,
+      "entry_price": 6.4,
+      "target_price": 7.09,
+      "stop_loss": 5.95,
+      "score": 69
+    },
+    {
+      "code": "002807",
+      "name": "江阴银行",
+      "price": 4.09,
+      "entry_price": 4.09,
+      "target_price": 4.78,
+      "stop_loss": 3.8,
+      "score": 69
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "600668",
+      "name": "尖峰集团",
+      "price": 8.79,
+      "target_price": 10.33,
+      "stop_loss": 8.17,
+      "score": 97
+    },
+    {
+      "code": "002076",
+      "name": "星光股份",
+      "price": 2.17,
+      "target_price": 2.45,
+      "stop_loss": 2.02,
+      "score": 95
+    },
+    {
+      "code": "000099",
+      "name": "中信海直",
+      "price": 14.75,
+      "target_price": 16.84,
+      "stop_loss": 13.72,
+      "score": 92
+    },
+    {
+      "code": "002357",
+      "name": "富临运业",
+      "price": 11.13,
+      "target_price": 12.48,
+      "stop_loss": 10.35,
+      "score": 92
+    },
+    {
+      "code": "603668",
+      "name": "天马科技",
+      "price": 7.55,
+      "target_price": 8.87,
+      "stop_loss": 7.02,
+      "score": 92
+    },
+    {
+      "code": "002767",
+      "name": "先锋电子",
+      "price": 18.04,
+      "target_price": 20.54,
+      "stop_loss": 16.78,
+      "score": 87
+    },
+    {
+      "code": "000090",
+      "name": "天健集团",
+      "price": 3.75,
+      "target_price": 4.33,
+      "stop_loss": 3.49,
+      "score": 85
+    },
+    {
+      "code": "002535",
+      "name": "林州重机",
+      "price": 2.54,
+      "target_price": 2.85,
+      "stop_loss": 2.36,
+      "score": 85
+    },
+    {
+      "code": "000420",
+      "name": "吉林化纤",
+      "price": 3.88,
+      "target_price": 4.49,
+      "stop_loss": 3.61,
+      "score": 85
+    },
+    {
+      "code": "000701",
+      "name": "厦门信达",
+      "price": 5.36,
+      "target_price": 6.28,
+      "stop_loss": 4.98,
+      "score": 82
+    },
+    {
+      "code": "000576",
+      "name": "甘化科工",
+      "price": 8.77,
+      "target_price": 10.37,
+      "stop_loss": 8.16,
+      "score": 82
+    },
+    {
+      "code": "002278",
+      "name": "神开股份",
+      "price": 8.26,
+      "target_price": 9.71,
+      "stop_loss": 7.68,
+      "score": 82
+    },
+    {
+      "code": "002510",
+      "name": "天汽模",
+      "price": 5.96,
+      "target_price": 7.12,
+      "stop_loss": 5.54,
+      "score": 82
+    },
+    {
+      "code": "603168",
+      "name": "莎普爱思",
+      "price": 6.24,
+      "target_price": 7.44,
+      "stop_loss": 5.8,
+      "score": 82
+    },
+    {
+      "code": "600319",
+      "name": "亚星化学",
+      "price": 6.9,
+      "target_price": 8.19,
+      "stop_loss": 6.42,
+      "score": 82
+    },
+    {
+      "code": "600860",
+      "name": "京城股份",
+      "price": 7.91,
+      "target_price": 9.28,
+      "stop_loss": 7.36,
+      "score": 82
+    },
+    {
+      "code": "601999",
+      "name": "出版传媒",
+      "price": 8.25,
+      "target_price": 9.42,
+      "stop_loss": 7.67,
+      "score": 82
+    },
+    {
+      "code": "603278",
+      "name": "大业股份",
+      "price": 9.91,
+      "target_price": 11.22,
+      "stop_loss": 9.22,
+      "score": 82
+    },
+    {
+      "code": "000573",
+      "name": "粤宏远Ａ",
+      "price": 4.47,
+      "target_price": 5.1,
+      "stop_loss": 4.16,
+      "score": 80
+    },
+    {
+      "code": "600252",
+      "name": "中恒集团",
+      "price": 2.53,
+      "target_price": 2.85,
+      "stop_loss": 2.35,
+      "score": 80
+    }
+  ]
+}
