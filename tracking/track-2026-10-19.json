@@ -2,66 +2,21 @@
   "date": "2026-10-19",
   "position_stocks": [
     {
-      "code": "603693",
-      "name": "江苏新能",
-      "price": 13.53,
-      "entry_price": 12.72,
-      "target_price": 15.11,
-      "stop_loss": 11.7,
-      "score": 81
-    },
-    {
-      "code": "603330",
-      "name": "天洋新材",
-      "price": 9.43,
-      "entry_price": 8.86,
-      "target_price": 9.92,
-      "stop_loss": 8.15,
-      "score": 80
-    },
-    {
-      "code": "600032",
-      "name": "浙江新能",
-      "price": 7.79,
-      "entry_price": 7.32,
-      "target_price": 8.26,
-      "stop_loss": 6.73,
-      "score": 80
-    },
-    {
       "code": "002724",
       "name": "海洋王",
       "price": 8.42,
       "entry_price": 7.91,
-      "target_price": 9.43,
+      "target_price": 8.86,
       "stop_loss": 7.28,
       "score": 76
-    },
-    {
-      "code": "601778",
-      "name": "晶科科技",
-      "price": 3.58,
-      "entry_price": 3.37,
-      "target_price": 4.01,
-      "stop_loss": 3.1,
-      "score": 73
     },
     {
       "code": "002368",
       "name": "太极股份",
       "price": 12.75,
       "entry_price": 11.98,
-      "target_price": 14.12,
+      "target_price": 13.89,
       "stop_loss": 11.02,
-      "score": 72
-    },
-    {
-      "code": "600178",
-      "name": "东安动力",
-      "price": 11.28,
-      "entry_price": 10.6,
-      "target_price": 12.68,
-      "stop_loss": 9.75,
       "score": 72
     },
     {
@@ -69,35 +24,26 @@
       "name": "金达威",
       "price": 18.38,
       "entry_price": 17.28,
-      "target_price": 20.71,
+      "target_price": 20.27,
       "stop_loss": 15.9,
       "score": 71
-    },
-    {
-      "code": "600686",
-      "name": "金龙汽车",
-      "price": 10.35,
-      "entry_price": 9.73,
-      "target_price": 11.16,
-      "stop_loss": 8.95,
-      "score": 70
     },
     {
       "code": "002839",
       "name": "张家港行",
       "price": 4.41,
       "entry_price": 4.41,
-      "target_price": 4.94,
+      "target_price": 5.2,
       "stop_loss": 4.1,
       "score": 69
     },
     {
       "code": "002154",
       "name": "报 喜 鸟",
-      "price": 3.78,
-      "entry_price": 3.78,
+      "price": 3.77,
+      "entry_price": 3.77,
       "target_price": 4.3,
-      "stop_loss": 3.52,
+      "stop_loss": 3.51,
       "score": 69
     },
     {
@@ -105,84 +51,106 @@
       "name": "江阴银行",
       "price": 4.16,
       "entry_price": 4.16,
-      "target_price": 4.58,
+      "target_price": 4.72,
       "stop_loss": 3.87,
       "score": 69
     },
     {
       "code": "001227",
       "name": "兰州银行",
-      "price": 2.14,
-      "entry_price": 2.14,
-      "target_price": 2.38,
-      "stop_loss": 1.99,
+      "price": 2.13,
+      "entry_price": 2.13,
+      "target_price": 2.49,
+      "stop_loss": 1.98,
       "score": 69
     },
     {
       "code": "002035",
       "name": "华帝股份",
-      "price": 4.59,
-      "entry_price": 4.59,
-      "target_price": 5.29,
-      "stop_loss": 4.27,
+      "price": 4.58,
+      "entry_price": 4.58,
+      "target_price": 5.16,
+      "stop_loss": 4.26,
       "score": 69
     },
     {
       "code": "000589",
       "name": "贵州轮胎",
-      "price": 4.21,
-      "entry_price": 4.21,
-      "target_price": 4.88,
-      "stop_loss": 3.92,
+      "price": 4.2,
+      "entry_price": 4.2,
+      "target_price": 4.93,
+      "stop_loss": 3.91,
       "score": 69
+    },
+    {
+      "code": "002958",
+      "name": "青农商行",
+      "price": 2.92,
+      "entry_price": 2.92,
+      "target_price": 3.44,
+      "stop_loss": 2.72,
+      "score": 69
+    },
+    {
+      "code": "000576",
+      "name": "甘化科工",
+      "price": 9.65,
+      "entry_price": 8.97,
+      "target_price": 9.99,
+      "stop_loss": 8.16,
+      "score": 67
+    },
+    {
+      "code": "002452",
+      "name": "长高电气",
+      "price": 9.75,
+      "entry_price": 9.75,
+      "target_price": 11.16,
+      "stop_loss": 9.07,
+      "score": 66
+    },
+    {
+      "code": "002284",
+      "name": "亚太股份",
+      "price": 8.7,
+      "entry_price": 8.7,
+      "target_price": 9.92,
+      "stop_loss": 8.09,
+      "score": 66
+    },
+    {
+      "code": "000065",
+      "name": "北方国际",
+      "price": 9.59,
+      "entry_price": 9.59,
+      "target_price": 11.0,
+      "stop_loss": 8.92,
+      "score": 66
+    },
+    {
+      "code": "000528",
+      "name": "柳    工",
+      "price": 7.86,
+      "entry_price": 7.86,
+      "target_price": 9.16,
+      "stop_loss": 7.31,
+      "score": 66
     }
   ],
   "recommendations": [
     {
-      "code": "603330",
-      "name": "天洋新材",
-      "price": 9.43,
-      "target_price": 10.98,
-      "stop_loss": 8.77,
-      "score": 97
-    },
-    {
-      "code": "603693",
-      "name": "江苏新能",
-      "price": 13.53,
-      "target_price": 15.25,
-      "stop_loss": 12.58,
-      "score": 92
-    },
-    {
       "code": "002626",
       "name": "金达威",
       "price": 18.38,
-      "target_price": 21.37,
+      "target_price": 22.01,
       "stop_loss": 17.09,
       "score": 87
-    },
-    {
-      "code": "601778",
-      "name": "晶科科技",
-      "price": 3.58,
-      "target_price": 4.04,
-      "stop_loss": 3.33,
-      "score": 85
-    },
-    {
-      "code": "600032",
-      "name": "浙江新能",
-      "price": 7.79,
-      "target_price": 9.17,
-      "stop_loss": 7.24,
-      "score": 82
     },
     {
       "code": "002724",
       "name": "海洋王",
       "price": 8.42,
-      "target_price": 9.81,
+      "target_price": 9.83,
       "stop_loss": 7.83,
       "score": 77
     },
@@ -190,7 +158,7 @@
       "code": "000576",
       "name": "甘化科工",
       "price": 9.65,
-      "target_price": 11.48,
+      "target_price": 11.26,
       "stop_loss": 8.97,
       "score": 77
     },
@@ -198,31 +166,15 @@
       "code": "002368",
       "name": "太极股份",
       "price": 12.75,
-      "target_price": 14.38,
+      "target_price": 14.91,
       "stop_loss": 11.86,
-      "score": 77
-    },
-    {
-      "code": "600178",
-      "name": "东安动力",
-      "price": 11.28,
-      "target_price": 13.44,
-      "stop_loss": 10.49,
-      "score": 77
-    },
-    {
-      "code": "600686",
-      "name": "金龙汽车",
-      "price": 10.35,
-      "target_price": 12.4,
-      "stop_loss": 9.63,
       "score": 77
     },
     {
       "code": "002164",
       "name": "宁波东力",
       "price": 14.69,
-      "target_price": 16.05,
+      "target_price": 15.93,
       "stop_loss": 13.66,
       "score": 72
     },
@@ -230,73 +182,121 @@
       "code": "002889",
       "name": "东方嘉盛",
       "price": 15.74,
-      "target_price": 17.23,
+      "target_price": 16.76,
       "stop_loss": 14.64,
-      "score": 72
-    },
-    {
-      "code": "603348",
-      "name": "文灿股份",
-      "price": 16.84,
-      "target_price": 18.59,
-      "stop_loss": 15.66,
-      "score": 72
-    },
-    {
-      "code": "603278",
-      "name": "大业股份",
-      "price": 10.9,
-      "target_price": 12.18,
-      "stop_loss": 10.14,
       "score": 72
     },
     {
       "code": "002085",
       "name": "万丰奥威",
       "price": 10.9,
-      "target_price": 11.89,
+      "target_price": 11.85,
       "stop_loss": 10.14,
       "score": 67
     },
     {
-      "code": "300798",
-      "name": "锦鸡股份",
-      "price": 9.2,
-      "target_price": 10.07,
-      "stop_loss": 8.56,
-      "score": 67
-    },
-    {
-      "code": "300839",
-      "name": "博汇股份",
-      "price": 13.93,
-      "target_price": 15.44,
-      "stop_loss": 12.95,
-      "score": 67
-    },
-    {
-      "code": "603188",
-      "name": "亚邦股份",
-      "price": 5.56,
-      "target_price": 6.11,
-      "stop_loss": 5.17,
-      "score": 67
-    },
-    {
-      "code": "600860",
-      "name": "京城股份",
-      "price": 8.7,
-      "target_price": 9.7,
-      "stop_loss": 8.09,
+      "code": "002343",
+      "name": "慈文传媒",
+      "price": 10.26,
+      "target_price": 11.04,
+      "stop_loss": 9.54,
       "score": 62
     },
     {
-      "code": "603608",
-      "name": "天创股份",
-      "price": 19.55,
-      "target_price": 21.19,
-      "stop_loss": 18.18,
+      "code": "000011",
+      "name": "深物业A",
+      "price": 11.56,
+      "target_price": 12.56,
+      "stop_loss": 10.75,
       "score": 62
+    },
+    {
+      "code": "002121",
+      "name": "科陆电子",
+      "price": 4.26,
+      "target_price": 4.64,
+      "stop_loss": 3.96,
+      "score": 60
+    },
+    {
+      "code": "002124",
+      "name": "天邦食品",
+      "price": 2.0,
+      "target_price": 2.13,
+      "stop_loss": 1.86,
+      "score": 60
+    },
+    {
+      "code": "002506",
+      "name": "协鑫集成",
+      "price": 2.31,
+      "target_price": 2.56,
+      "stop_loss": 2.15,
+      "score": 60
+    },
+    {
+      "code": "002044",
+      "name": "美年健康",
+      "price": 4.73,
+      "target_price": 5.1,
+      "stop_loss": 4.4,
+      "score": 60
+    },
+    {
+      "code": "002154",
+      "name": "报 喜 鸟",
+      "price": 3.77,
+      "target_price": 4.21,
+      "stop_loss": 3.51,
+      "score": 60
+    },
+    {
+      "code": "000757",
+      "name": "浩物股份",
+      "price": 4.23,
+      "target_price": 4.71,
+      "stop_loss": 3.93,
+      "score": 60
+    },
+    {
+      "code": "002259",
+      "name": "升达林业",
+      "price": 4.6,
+      "target_price": 5.04,
+      "stop_loss": 4.28,
+      "score": 60
+    },
+    {
+      "code": "000620",
+      "name": "盈新发展",
+      "price": 2.79,
+      "target_price": 3.04,
+      "stop_loss": 2.59,
+      "score": 60
+    },
+    {
+      "code": "000820",
+      "name": "神雾节能",
+      "price": 3.44,
+      "target_price": 3.7,
+      "stop_loss": 3.2,
+      "score": 60
+    },
+    {
+      "code": "002583",
+      "name": "海能达",
+      "price": 7.93,
+      "target_price": 8.71,
+      "stop_loss": 7.37,
+      "score": 57
+    },
+    {
+      "code": "002031",
+      "name": "巨轮智能",
+      "price": 5.14,
+      "target_price": 5.5,
+      "stop_loss": 4.78,
+      "score": 57
     }
   ]
 }
