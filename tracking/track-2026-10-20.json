@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-20",
+  "position_stocks": [
+    {
+      "code": "002479",
+      "name": "富春环保",
+      "price": 6.01,
+      "entry_price": 5.65,
+      "target_price": 6.64,
+      "stop_loss": 5.2,
+      "score": 99
+    },
+    {
+      "code": "002835",
+      "name": "同为股份",
+      "price": 14.16,
+      "entry_price": 13.31,
+      "target_price": 15.41,
+      "stop_loss": 12.25,
+      "score": 80
+    },
+    {
+      "code": "002357",
+      "name": "富临运业",
+      "price": 10.97,
+      "entry_price": 10.97,
+      "target_price": 13.35,
+      "stop_loss": 10.09,
+      "score": 77
+    },
+    {
+      "code": "002313",
+      "name": "日海智能",
+      "price": 8.8,
+      "entry_price": 8.27,
+      "target_price": 9.28,
+      "stop_loss": 7.61,
+      "score": 76
+    },
+    {
+      "code": "002696",
+      "name": "百洋股份",
+      "price": 9.56,
+      "entry_price": 8.99,
+      "target_price": 10.65,
+      "stop_loss": 8.27,
+      "score": 73
+    },
+    {
+      "code": "002596",
+      "name": "海南瑞泽",
+      "price": 3.43,
+      "entry_price": 3.22,
+      "target_price": 3.8,
+      "stop_loss": 2.96,
+      "score": 73
+    },
+    {
+      "code": "000006",
+      "name": "深振业Ａ",
+      "price": 6.65,
+      "entry_price": 6.65,
+      "target_price": 8.08,
+      "stop_loss": 6.12,
+      "score": 73
+    },
+    {
+      "code": "001239",
+      "name": "永达股份",
+      "price": 13.4,
+      "entry_price": 12.6,
+      "target_price": 14.83,
+      "stop_loss": 11.59,
+      "score": 72
+    },
+    {
+      "code": "002081",
+      "name": "金 螳 螂",
+      "price": 4.19,
+      "entry_price": 4.19,
+      "target_price": 4.91,
+      "stop_loss": 3.9,
+      "score": 69
+    },
+    {
+      "code": "002088",
+      "name": "鲁阳节能",
+      "price": 8.49,
+      "entry_price": 7.9,
+      "target_price": 9.08,
+      "stop_loss": 7.19,
+      "score": 66
+    },
+    {
+      "code": "002083",
+      "name": "孚日股份",
+      "price": 9.31,
+      "entry_price": 9.31,
+      "target_price": 10.7,
+      "stop_loss": 8.66,
+      "score": 66
+    },
+    {
+      "code": "002590",
+      "name": "万安科技",
+      "price": 9.66,
+      "entry_price": 9.66,
+      "target_price": 10.89,
+      "stop_loss": 8.98,
+      "score": 66
+    },
+    {
+      "code": "002521",
+      "name": "齐峰新材",
+      "price": 6.02,
+      "entry_price": 6.02,
+      "target_price": 6.92,
+      "stop_loss": 5.6,
+      "score": 66
+    },
+    {
+      "code": "002582",
+      "name": "好想你",
+      "price": 9.08,
+      "entry_price": 9.08,
+      "target_price": 10.4,
+      "stop_loss": 8.44,
+      "score": 66
+    },
+    {
+      "code": "002452",
+      "name": "长高电气",
+      "price": 9.78,
+      "entry_price": 9.78,
+      "target_price": 11.46,
+      "stop_loss": 9.1,
+      "score": 66
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002596",
+      "name": "海南瑞泽",
+      "price": 3.43,
+      "target_price": 4.06,
+      "stop_loss": 3.19,
+      "score": 100
+    },
+    {
+      "code": "002313",
+      "name": "日海智能",
+      "price": 8.8,
+      "target_price": 10.31,
+      "stop_loss": 8.18,
+      "score": 97
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "price": 9.26,
+      "target_price": 11.05,
+      "stop_loss": 8.61,
+      "score": 92
+    },
+    {
+      "code": "002696",
+      "name": "百洋股份",
+      "price": 9.56,
+      "target_price": 11.38,
+      "stop_loss": 8.89,
+      "score": 82
+    },
+    {
+      "code": "002088",
+      "name": "鲁阳节能",
+      "price": 8.49,
+      "target_price": 9.69,
+      "stop_loss": 7.9,
+      "score": 82
+    },
+    {
+      "code": "002479",
+      "name": "富春环保",
+      "price": 6.01,
+      "target_price": 7.07,
+      "stop_loss": 5.59,
+      "score": 77
+    },
+    {
+      "code": "001239",
+      "name": "永达股份",
+      "price": 13.4,
+      "target_price": 15.71,
+      "stop_loss": 12.46,
+      "score": 77
+    },
+    {
+      "code": "002181",
+      "name": "粤 传 媒",
+      "price": 10.13,
+      "target_price": 11.58,
+      "stop_loss": 9.42,
+      "score": 77
+    },
+    {
+      "code": "002347",
+      "name": "泰尔股份",
+      "price": 6.61,
+      "target_price": 7.44,
+      "stop_loss": 6.15,
+      "score": 77
+    },
+    {
+      "code": "002403",
+      "name": "爱仕达",
+      "price": 11.15,
+      "target_price": 12.34,
+      "stop_loss": 10.37,
+      "score": 72
+    },
+    {
+      "code": "002076",
+      "name": "星光股份",
+      "price": 2.23,
+      "target_price": 2.49,
+      "stop_loss": 2.07,
+      "score": 70
+    },
+    {
+      "code": "002164",
+      "name": "宁波东力",
+      "price": 16.16,
+      "target_price": 17.94,
+      "stop_loss": 15.03,
+      "score": 67
+    },
+    {
+      "code": "002357",
+      "name": "富临运业",
+      "price": 10.97,
+      "target_price": 11.92,
+      "stop_loss": 10.2,
+      "score": 67
+    },
+    {
+      "code": "000757",
+      "name": "浩物股份",
+      "price": 4.4,
+      "target_price": 4.82,
+      "stop_loss": 4.09,
+      "score": 60
+    },
+    {
+      "code": "002681",
+      "name": "奋达科技",
+      "price": 4.23,
+      "target_price": 4.7,
+      "stop_loss": 3.93,
+      "score": 60
+    },
+    {
+      "code": "002329",
+      "name": "皇氏集团",
+      "price": 3.61,
+      "target_price": 3.91,
+      "stop_loss": 3.36,
+      "score": 60
+    },
+    {
+      "code": "002659",
+      "name": "凯文教育",
+      "price": 4.66,
+      "target_price": 4.97,
+      "stop_loss": 4.33,
+      "score": 60
+    },
+    {
+      "code": "002526",
+      "name": "山东矿机",
+      "price": 2.62,
+      "target_price": 2.82,
+      "stop_loss": 2.44,
+      "score": 60
+    },
+    {
+      "code": "002044",
+      "name": "美年健康",
+      "price": 4.82,
+      "target_price": 5.24,
+      "stop_loss": 4.48,
+      "score": 60
+    },
+    {
+      "code": "002084",
+      "name": "海鸥住工",
+      "price": 4.59,
+      "target_price": 4.98,
+      "stop_loss": 4.27,
+      "score": 60
+    }
+  ]
+}
