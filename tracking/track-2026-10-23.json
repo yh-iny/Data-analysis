@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-23",
+  "position_stocks": [
+    {
+      "code": "600094",
+      "name": "大名城",
+      "price": 4.39,
+      "entry_price": 4.08,
+      "target_price": 4.49,
+      "stop_loss": 3.71,
+      "score": 69
+    },
+    {
+      "code": "000972",
+      "name": "中基健康",
+      "price": 4.06,
+      "entry_price": 3.78,
+      "target_price": 4.23,
+      "stop_loss": 3.44,
+      "score": 64
+    },
+    {
+      "code": "002026",
+      "name": "山东威达",
+      "price": 11.04,
+      "entry_price": 10.27,
+      "target_price": 11.66,
+      "stop_loss": 9.35,
+      "score": 64
+    },
+    {
+      "code": "002322",
+      "name": "理工能科",
+      "price": 13.67,
+      "entry_price": 12.71,
+      "target_price": 14.0,
+      "stop_loss": 11.57,
+      "score": 64
+    },
+    {
+      "code": "002982",
+      "name": "湘佳股份",
+      "price": 13.28,
+      "entry_price": 12.35,
+      "target_price": 13.65,
+      "stop_loss": 11.24,
+      "score": 63
+    },
+    {
+      "code": "603081",
+      "name": "大丰实业",
+      "price": 10.65,
+      "entry_price": 9.9,
+      "target_price": 11.36,
+      "stop_loss": 9.01,
+      "score": 62
+    },
+    {
+      "code": "002612",
+      "name": "朗姿股份",
+      "price": 16.93,
+      "entry_price": 15.74,
+      "target_price": 17.38,
+      "stop_loss": 14.32,
+      "score": 60
+    },
+    {
+      "code": "603028",
+      "name": "赛福天",
+      "price": 8.54,
+      "entry_price": 7.94,
+      "target_price": 8.86,
+      "stop_loss": 7.23,
+      "score": 58
+    },
+    {
+      "code": "600215",
+      "name": "派斯林",
+      "price": 6.34,
+      "entry_price": 5.9,
+      "target_price": 6.65,
+      "stop_loss": 5.37,
+      "score": 57
+    },
+    {
+      "code": "600838",
+      "name": "上海九百",
+      "price": 11.0,
+      "entry_price": 10.23,
+      "target_price": 11.41,
+      "stop_loss": 9.31,
+      "score": 56
+    },
+    {
+      "code": "603089",
+      "name": "正裕工业",
+      "price": 11.89,
+      "entry_price": 11.06,
+      "target_price": 12.54,
+      "stop_loss": 10.06,
+      "score": 56
+    },
+    {
+      "code": "002535",
+      "name": "林州重机",
+      "price": 3.03,
+      "entry_price": 2.82,
+      "target_price": 3.15,
+      "stop_loss": 2.57,
+      "score": 55
+    },
+    {
+      "code": "601519",
+      "name": "大智慧",
+      "price": 9.25,
+      "entry_price": 8.6,
+      "target_price": 9.77,
+      "stop_loss": 7.83,
+      "score": 55
+    },
+    {
+      "code": "000559",
+      "name": "万向钱潮",
+      "price": 11.55,
+      "entry_price": 10.74,
+      "target_price": 12.09,
+      "stop_loss": 9.77,
+      "score": 53
+    },
+    {
+      "code": "603677",
+      "name": "奇精机械",
+      "price": 16.3,
+      "entry_price": 15.16,
+      "target_price": 16.82,
+      "stop_loss": 13.8,
+      "score": 52
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "000972",
+      "name": "中基健康",
+      "price": 4.06,
+      "target_price": 4.84,
+      "stop_loss": 3.78,
+      "score": 85
+    },
+    {
+      "code": "002535",
+      "name": "林州重机",
+      "price": 3.03,
+      "target_price": 3.41,
+      "stop_loss": 2.82,
+      "score": 85
+    },
+    {
+      "code": "600094",
+      "name": "大名城",
+      "price": 4.39,
+      "target_price": 4.94,
+      "stop_loss": 4.08,
+      "score": 85
+    },
+    {
+      "code": "600215",
+      "name": "派斯林",
+      "price": 6.34,
+      "target_price": 7.29,
+      "stop_loss": 5.9,
+      "score": 82
+    },
+    {
+      "code": "601519",
+      "name": "大智慧",
+      "price": 9.25,
+      "target_price": 10.43,
+      "stop_loss": 8.6,
+      "score": 82
+    },
+    {
+      "code": "002026",
+      "name": "山东威达",
+      "price": 11.04,
+      "target_price": 12.59,
+      "stop_loss": 10.27,
+      "score": 77
+    },
+    {
+      "code": "002322",
+      "name": "理工能科",
+      "price": 13.67,
+      "target_price": 15.32,
+      "stop_loss": 12.71,
+      "score": 77
+    },
+    {
+      "code": "600838",
+      "name": "上海九百",
+      "price": 11.0,
+      "target_price": 12.45,
+      "stop_loss": 10.23,
+      "score": 77
+    },
+    {
+      "code": "603081",
+      "name": "大丰实业",
+      "price": 10.65,
+      "target_price": 12.18,
+      "stop_loss": 9.9,
+      "score": 77
+    },
+    {
+      "code": "603089",
+      "name": "正裕工业",
+      "price": 11.89,
+      "target_price": 13.89,
+      "stop_loss": 11.06,
+      "score": 77
+    },
+    {
+      "code": "603528",
+      "name": "多伦科技",
+      "price": 8.14,
+      "target_price": 9.43,
+      "stop_loss": 7.57,
+      "score": 77
+    },
+    {
+      "code": "001298",
+      "name": "好上好",
+      "price": 17.36,
+      "target_price": 18.71,
+      "stop_loss": 16.14,
+      "score": 72
+    },
+    {
+      "code": "002077",
+      "name": "大港股份",
+      "price": 13.08,
+      "target_price": 14.41,
+      "stop_loss": 12.16,
+      "score": 72
+    },
+    {
+      "code": "002612",
+      "name": "朗姿股份",
+      "price": 16.93,
+      "target_price": 18.73,
+      "stop_loss": 15.74,
+      "score": 72
+    },
+    {
+      "code": "002982",
+      "name": "湘佳股份",
+      "price": 13.28,
+      "target_price": 14.15,
+      "stop_loss": 12.35,
+      "score": 72
+    },
+    {
+      "code": "600865",
+      "name": "百大集团",
+      "price": 11.04,
+      "target_price": 11.93,
+      "stop_loss": 10.27,
+      "score": 72
+    },
+    {
+      "code": "603677",
+      "name": "奇精机械",
+      "price": 16.3,
+      "target_price": 17.41,
+      "stop_loss": 15.16,
+      "score": 72
+    },
+    {
+      "code": "002421",
+      "name": "达实智能",
+      "price": 3.43,
+      "target_price": 3.77,
+      "stop_loss": 3.19,
+      "score": 70
+    },
+    {
+      "code": "000559",
+      "name": "万向钱潮",
+      "price": 11.55,
+      "target_price": 12.33,
+      "stop_loss": 10.74,
+      "score": 67
+    },
+    {
+      "code": "002354",
+      "name": "天娱数科",
+      "price": 8.03,
+      "target_price": 8.53,
+      "stop_loss": 7.47,
+      "score": 67
+    }
+  ]
+}
