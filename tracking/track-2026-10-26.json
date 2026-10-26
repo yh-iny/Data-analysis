@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-26",
+  "position_stocks": [
+    {
+      "code": "600558",
+      "name": "大西洋",
+      "price": 5.56,
+      "entry_price": 5.23,
+      "target_price": 6.2,
+      "stop_loss": 4.81,
+      "score": 84
+    },
+    {
+      "code": "600094",
+      "name": "大名城",
+      "price": 4.83,
+      "entry_price": 4.54,
+      "target_price": 5.27,
+      "stop_loss": 4.18,
+      "score": 84
+    },
+    {
+      "code": "001219",
+      "name": "青岛食品",
+      "price": 13.62,
+      "entry_price": 12.8,
+      "target_price": 14.96,
+      "stop_loss": 11.78,
+      "score": 82
+    },
+    {
+      "code": "002233",
+      "name": "塔牌集团",
+      "price": 7.72,
+      "entry_price": 7.72,
+      "target_price": 9.5,
+      "stop_loss": 7.1,
+      "score": 81
+    },
+    {
+      "code": "000411",
+      "name": "英特集团",
+      "price": 10.52,
+      "entry_price": 9.89,
+      "target_price": 11.33,
+      "stop_loss": 9.1,
+      "score": 80
+    },
+    {
+      "code": "002093",
+      "name": "国脉科技",
+      "price": 7.21,
+      "entry_price": 6.78,
+      "target_price": 7.92,
+      "stop_loss": 6.24,
+      "score": 76
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "price": 2.3,
+      "entry_price": 2.16,
+      "target_price": 2.56,
+      "stop_loss": 1.99,
+      "score": 76
+    },
+    {
+      "code": "002578",
+      "name": "闽发铝业",
+      "price": 3.6,
+      "entry_price": 3.38,
+      "target_price": 3.9,
+      "stop_loss": 3.11,
+      "score": 73
+    },
+    {
+      "code": "605333",
+      "name": "沪光股份",
+      "price": 18.1,
+      "entry_price": 17.01,
+      "target_price": 19.92,
+      "stop_loss": 15.65,
+      "score": 72
+    },
+    {
+      "code": "002795",
+      "name": "永和智控",
+      "price": 6.9,
+      "entry_price": 6.49,
+      "target_price": 7.67,
+      "stop_loss": 5.97,
+      "score": 71
+    },
+    {
+      "code": "600826",
+      "name": "兰生股份",
+      "price": 8.22,
+      "entry_price": 7.73,
+      "target_price": 9.07,
+      "stop_loss": 7.11,
+      "score": 71
+    },
+    {
+      "code": "603901",
+      "name": "永创智能",
+      "price": 10.63,
+      "entry_price": 9.99,
+      "target_price": 11.3,
+      "stop_loss": 9.19,
+      "score": 70
+    },
+    {
+      "code": "601900",
+      "name": "南方传媒",
+      "price": 14.28,
+      "entry_price": 13.42,
+      "target_price": 15.94,
+      "stop_loss": 12.35,
+      "score": 70
+    },
+    {
+      "code": "002060",
+      "name": "广东建工",
+      "price": 3.14,
+      "entry_price": 3.14,
+      "target_price": 3.54,
+      "stop_loss": 2.92,
+      "score": 69
+    },
+    {
+      "code": "002016",
+      "name": "世荣兆业",
+      "price": 4.38,
+      "entry_price": 4.38,
+      "target_price": 5.01,
+      "stop_loss": 4.07,
+      "score": 69
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "600094",
+      "name": "大名城",
+      "price": 4.83,
+      "target_price": 5.53,
+      "stop_loss": 4.49,
+      "score": 100
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "price": 2.3,
+      "target_price": 2.59,
+      "stop_loss": 2.14,
+      "score": 95
+    },
+    {
+      "code": "001219",
+      "name": "青岛食品",
+      "price": 13.62,
+      "target_price": 15.54,
+      "stop_loss": 12.67,
+      "score": 92
+    },
+    {
+      "code": "000810",
+      "name": "创维数字",
+      "price": 11.02,
+      "target_price": 12.57,
+      "stop_loss": 10.25,
+      "score": 92
+    },
+    {
+      "code": "002578",
+      "name": "闽发铝业",
+      "price": 3.6,
+      "target_price": 4.21,
+      "stop_loss": 3.35,
+      "score": 85
+    },
+    {
+      "code": "002178",
+      "name": "延华智能",
+      "price": 5.34,
+      "target_price": 6.07,
+      "stop_loss": 4.97,
+      "score": 82
+    },
+    {
+      "code": "002093",
+      "name": "国脉科技",
+      "price": 7.21,
+      "target_price": 8.47,
+      "stop_loss": 6.71,
+      "score": 82
+    },
+    {
+      "code": "002795",
+      "name": "永和智控",
+      "price": 6.9,
+      "target_price": 7.73,
+      "stop_loss": 6.42,
+      "score": 82
+    },
+    {
+      "code": "000635",
+      "name": "英 力 特",
+      "price": 8.02,
+      "target_price": 9.46,
+      "stop_loss": 7.46,
+      "score": 82
+    },
+    {
+      "code": "600558",
+      "name": "大西洋",
+      "price": 5.56,
+      "target_price": 6.47,
+      "stop_loss": 5.17,
+      "score": 82
+    },
+    {
+      "code": "600822",
+      "name": "上海物贸",
+      "price": 9.37,
+      "target_price": 11.23,
+      "stop_loss": 8.71,
+      "score": 82
+    },
+    {
+      "code": "603719",
+      "name": "良品铺子",
+      "price": 9.39,
+      "target_price": 11.1,
+      "stop_loss": 8.73,
+      "score": 82
+    },
+    {
+      "code": "603028",
+      "name": "赛福天",
+      "price": 9.39,
+      "target_price": 10.98,
+      "stop_loss": 8.73,
+      "score": 82
+    },
+    {
+      "code": "002820",
+      "name": "桂发祥",
+      "price": 10.19,
+      "target_price": 11.56,
+      "stop_loss": 9.48,
+      "score": 77
+    },
+    {
+      "code": "000411",
+      "name": "英特集团",
+      "price": 10.52,
+      "target_price": 11.94,
+      "stop_loss": 9.78,
+      "score": 77
+    },
+    {
+      "code": "002420",
+      "name": "毅昌科技",
+      "price": 6.39,
+      "target_price": 7.54,
+      "stop_loss": 5.94,
+      "score": 77
+    },
+    {
+      "code": "002599",
+      "name": "盛通股份",
+      "price": 6.19,
+      "target_price": 7.11,
+      "stop_loss": 5.76,
+      "score": 77
+    },
+    {
+      "code": "603089",
+      "name": "正裕工业",
+      "price": 13.08,
+      "target_price": 15.45,
+      "stop_loss": 12.16,
+      "score": 77
+    },
+    {
+      "code": "000700",
+      "name": "模塑科技",
+      "price": 13.07,
+      "target_price": 14.36,
+      "stop_loss": 12.16,
+      "score": 72
+    },
+    {
+      "code": "002095",
+      "name": "生 意 宝",
+      "price": 16.48,
+      "target_price": 17.88,
+      "stop_loss": 15.33,
+      "score": 72
+    }
+  ]
+}
