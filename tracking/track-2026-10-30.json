@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-30",
+  "position_stocks": [
+    {
+      "code": "000716",
+      "name": "黑芝麻",
+      "price": 5.24,
+      "entry_price": 4.93,
+      "target_price": 5.76,
+      "stop_loss": 4.54,
+      "score": 91
+    },
+    {
+      "code": "000417",
+      "name": "合百集团",
+      "price": 5.7,
+      "entry_price": 5.36,
+      "target_price": 6.28,
+      "stop_loss": 4.93,
+      "score": 78
+    },
+    {
+      "code": "000525",
+      "name": "红太阳",
+      "price": 4.49,
+      "entry_price": 4.22,
+      "target_price": 4.8,
+      "stop_loss": 3.88,
+      "score": 73
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "price": 2.83,
+      "entry_price": 2.66,
+      "target_price": 3.13,
+      "stop_loss": 2.45,
+      "score": 71
+    },
+    {
+      "code": "000410",
+      "name": "沈阳机床",
+      "price": 5.37,
+      "entry_price": 5.05,
+      "target_price": 5.95,
+      "stop_loss": 4.65,
+      "score": 71
+    },
+    {
+      "code": "002946",
+      "name": "新乳业",
+      "price": 15.82,
+      "entry_price": 14.87,
+      "target_price": 17.0,
+      "stop_loss": 13.68,
+      "score": 71
+    },
+    {
+      "code": "002275",
+      "name": "桂林三金",
+      "price": 14.98,
+      "entry_price": 14.08,
+      "target_price": 16.1,
+      "stop_loss": 12.95,
+      "score": 70
+    },
+    {
+      "code": "002004",
+      "name": "华邦健康",
+      "price": 4.37,
+      "entry_price": 4.37,
+      "target_price": 4.88,
+      "stop_loss": 4.06,
+      "score": 69
+    },
+    {
+      "code": "002807",
+      "name": "江阴银行",
+      "price": 4.36,
+      "entry_price": 4.36,
+      "target_price": 5.07,
+      "stop_loss": 4.05,
+      "score": 69
+    },
+    {
+      "code": "002839",
+      "name": "张家港行",
+      "price": 4.49,
+      "entry_price": 4.49,
+      "target_price": 4.96,
+      "stop_loss": 4.18,
+      "score": 69
+    },
+    {
+      "code": "002701",
+      "name": "奥瑞金",
+      "price": 4.16,
+      "entry_price": 4.16,
+      "target_price": 4.6,
+      "stop_loss": 3.87,
+      "score": 69
+    },
+    {
+      "code": "001227",
+      "name": "兰州银行",
+      "price": 2.15,
+      "entry_price": 2.15,
+      "target_price": 2.37,
+      "stop_loss": 2.0,
+      "score": 69
+    },
+    {
+      "code": "000591",
+      "name": "太阳能",
+      "price": 4.05,
+      "entry_price": 4.05,
+      "target_price": 4.52,
+      "stop_loss": 3.77,
+      "score": 69
+    },
+    {
+      "code": "000589",
+      "name": "贵州轮胎",
+      "price": 4.06,
+      "entry_price": 4.06,
+      "target_price": 4.68,
+      "stop_loss": 3.78,
+      "score": 69
+    },
+    {
+      "code": "002365",
+      "name": "永安药业",
+      "price": 12.23,
+      "entry_price": 11.37,
+      "target_price": 12.86,
+      "stop_loss": 10.35,
+      "score": 66
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "000716",
+      "name": "黑芝麻",
+      "price": 5.24,
+      "target_price": 6.0,
+      "stop_loss": 4.87,
+      "score": 97
+    },
+    {
+      "code": "002652",
+      "name": "扬子新材",
+      "price": 3.91,
+      "target_price": 4.45,
+      "stop_loss": 3.64,
+      "score": 85
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "price": 2.83,
+      "target_price": 3.28,
+      "stop_loss": 2.63,
+      "score": 85
+    },
+    {
+      "code": "000525",
+      "name": "红太阳",
+      "price": 4.49,
+      "target_price": 5.28,
+      "stop_loss": 4.18,
+      "score": 85
+    },
+    {
+      "code": "003032",
+      "name": "传智教育",
+      "price": 9.96,
+      "target_price": 11.56,
+      "stop_loss": 9.26,
+      "score": 82
+    },
+    {
+      "code": "000410",
+      "name": "沈阳机床",
+      "price": 5.37,
+      "target_price": 6.38,
+      "stop_loss": 4.99,
+      "score": 82
+    },
+    {
+      "code": "000417",
+      "name": "合百集团",
+      "price": 5.7,
+      "target_price": 6.44,
+      "stop_loss": 5.3,
+      "score": 82
+    },
+    {
+      "code": "000676",
+      "name": "智度股份",
+      "price": 6.61,
+      "target_price": 7.52,
+      "stop_loss": 6.15,
+      "score": 82
+    },
+    {
+      "code": "002088",
+      "name": "鲁阳节能",
+      "price": 7.74,
+      "target_price": 8.74,
+      "stop_loss": 7.2,
+      "score": 82
+    },
+    {
+      "code": "002275",
+      "name": "桂林三金",
+      "price": 14.98,
+      "target_price": 17.64,
+      "stop_loss": 13.93,
+      "score": 77
+    },
+    {
+      "code": "002365",
+      "name": "永安药业",
+      "price": 12.23,
+      "target_price": 13.83,
+      "stop_loss": 11.37,
+      "score": 77
+    },
+    {
+      "code": "002172",
+      "name": "澳洋健康",
+      "price": 5.91,
+      "target_price": 6.59,
+      "stop_loss": 5.5,
+      "score": 67
+    },
+    {
+      "code": "002582",
+      "name": "好想你",
+      "price": 9.93,
+      "target_price": 10.57,
+      "stop_loss": 9.23,
+      "score": 67
+    },
+    {
+      "code": "000995",
+      "name": "皇台酒业",
+      "price": 14.18,
+      "target_price": 15.78,
+      "stop_loss": 13.19,
+      "score": 62
+    },
+    {
+      "code": "002958",
+      "name": "青农商行",
+      "price": 3.03,
+      "target_price": 3.28,
+      "stop_loss": 2.82,
+      "score": 60
+    },
+    {
+      "code": "002390",
+      "name": "信邦制药",
+      "price": 3.07,
+      "target_price": 3.42,
+      "stop_loss": 2.86,
+      "score": 60
+    },
+    {
+      "code": "000900",
+      "name": "现代投资",
+      "price": 3.62,
+      "target_price": 3.96,
+      "stop_loss": 3.37,
+      "score": 60
+    },
+    {
+      "code": "000520",
+      "name": "凤凰航运",
+      "price": 3.5,
+      "target_price": 3.76,
+      "stop_loss": 3.26,
+      "score": 60
+    },
+    {
+      "code": "002004",
+      "name": "华邦健康",
+      "price": 4.37,
+      "target_price": 4.68,
+      "stop_loss": 4.06,
+      "score": 60
+    },
+    {
+      "code": "002807",
+      "name": "江阴银行",
+      "price": 4.36,
+      "target_price": 4.74,
+      "stop_loss": 4.05,
+      "score": 60
+    }
+  ]
+}
