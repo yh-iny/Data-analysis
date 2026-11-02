@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-02",
+  "position_stocks": [
+    {
+      "code": "000037",
+      "name": "深南电A",
+      "price": 8.78,
+      "entry_price": 8.25,
+      "target_price": 9.32,
+      "stop_loss": 7.59,
+      "score": 84
+    },
+    {
+      "code": "002094",
+      "name": "青岛金王",
+      "price": 4.8,
+      "entry_price": 4.51,
+      "target_price": 5.31,
+      "stop_loss": 4.15,
+      "score": 78
+    },
+    {
+      "code": "002174",
+      "name": "游族网络",
+      "price": 11.28,
+      "entry_price": 10.6,
+      "target_price": 12.47,
+      "stop_loss": 9.75,
+      "score": 72
+    },
+    {
+      "code": "002291",
+      "name": "遥望科技",
+      "price": 5.36,
+      "entry_price": 5.04,
+      "target_price": 5.99,
+      "stop_loss": 4.64,
+      "score": 70
+    },
+    {
+      "code": "000156",
+      "name": "华数传媒",
+      "price": 7.28,
+      "entry_price": 6.84,
+      "target_price": 8.02,
+      "stop_loss": 6.29,
+      "score": 70
+    },
+    {
+      "code": "000525",
+      "name": "红太阳",
+      "price": 4.94,
+      "entry_price": 4.59,
+      "target_price": 5.26,
+      "stop_loss": 4.18,
+      "score": 69
+    },
+    {
+      "code": "000599",
+      "name": "青岛双星",
+      "price": 4.09,
+      "entry_price": 3.8,
+      "target_price": 4.32,
+      "stop_loss": 3.46,
+      "score": 69
+    },
+    {
+      "code": "000417",
+      "name": "合百集团",
+      "price": 6.27,
+      "entry_price": 5.83,
+      "target_price": 6.68,
+      "stop_loss": 5.31,
+      "score": 68
+    },
+    {
+      "code": "002425",
+      "name": "凯撒文化",
+      "price": 3.15,
+      "entry_price": 2.93,
+      "target_price": 3.28,
+      "stop_loss": 2.67,
+      "score": 66
+    },
+    {
+      "code": "002275",
+      "name": "桂林三金",
+      "price": 16.48,
+      "entry_price": 15.33,
+      "target_price": 17.55,
+      "stop_loss": 13.95,
+      "score": 66
+    },
+    {
+      "code": "001230",
+      "name": "劲旅环境",
+      "price": 18.8,
+      "entry_price": 17.48,
+      "target_price": 19.67,
+      "stop_loss": 15.91,
+      "score": 66
+    },
+    {
+      "code": "002238",
+      "name": "天威视讯",
+      "price": 6.61,
+      "entry_price": 6.15,
+      "target_price": 6.88,
+      "stop_loss": 5.6,
+      "score": 66
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "price": 3.11,
+      "entry_price": 2.89,
+      "target_price": 3.31,
+      "stop_loss": 2.63,
+      "score": 66
+    },
+    {
+      "code": "002081",
+      "name": "金 螳 螂",
+      "price": 3.91,
+      "entry_price": 3.91,
+      "target_price": 4.59,
+      "stop_loss": 3.64,
+      "score": 64
+    },
+    {
+      "code": "001330",
+      "name": "博纳影业",
+      "price": 5.57,
+      "entry_price": 5.18,
+      "target_price": 5.79,
+      "stop_loss": 4.71,
+      "score": 63
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002094",
+      "name": "青岛金王",
+      "price": 4.8,
+      "target_price": 5.64,
+      "stop_loss": 4.46,
+      "score": 100
+    },
+    {
+      "code": "000037",
+      "name": "深南电A",
+      "price": 8.78,
+      "target_price": 10.09,
+      "stop_loss": 8.17,
+      "score": 97
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "price": 3.11,
+      "target_price": 3.57,
+      "stop_loss": 2.89,
+      "score": 95
+    },
+    {
+      "code": "000819",
+      "name": "岳阳兴长",
+      "price": 11.76,
+      "target_price": 13.43,
+      "stop_loss": 10.94,
+      "score": 92
+    },
+    {
+      "code": "000995",
+      "name": "皇台酒业",
+      "price": 15.6,
+      "target_price": 18.71,
+      "stop_loss": 14.51,
+      "score": 87
+    },
+    {
+      "code": "002578",
+      "name": "闽发铝业",
+      "price": 3.42,
+      "target_price": 4.1,
+      "stop_loss": 3.18,
+      "score": 85
+    },
+    {
+      "code": "000599",
+      "name": "青岛双星",
+      "price": 4.09,
+      "target_price": 4.69,
+      "stop_loss": 3.8,
+      "score": 85
+    },
+    {
+      "code": "000607",
+      "name": "华媒控股",
+      "price": 3.66,
+      "target_price": 4.34,
+      "stop_loss": 3.4,
+      "score": 85
+    },
+    {
+      "code": "002187",
+      "name": "广百股份",
+      "price": 5.8,
+      "target_price": 6.65,
+      "stop_loss": 5.39,
+      "score": 82
+    },
+    {
+      "code": "002238",
+      "name": "天威视讯",
+      "price": 6.61,
+      "target_price": 7.74,
+      "stop_loss": 6.15,
+      "score": 82
+    },
+    {
+      "code": "002045",
+      "name": "国光电器",
+      "price": 8.82,
+      "target_price": 10.52,
+      "stop_loss": 8.2,
+      "score": 82
+    },
+    {
+      "code": "002425",
+      "name": "凯撒文化",
+      "price": 3.15,
+      "target_price": 3.54,
+      "stop_loss": 2.93,
+      "score": 80
+    },
+    {
+      "code": "002712",
+      "name": "思美传媒",
+      "price": 4.94,
+      "target_price": 5.78,
+      "stop_loss": 4.59,
+      "score": 80
+    },
+    {
+      "code": "001330",
+      "name": "博纳影业",
+      "price": 5.57,
+      "target_price": 6.56,
+      "stop_loss": 5.18,
+      "score": 77
+    },
+    {
+      "code": "002291",
+      "name": "遥望科技",
+      "price": 5.36,
+      "target_price": 6.39,
+      "stop_loss": 4.98,
+      "score": 77
+    },
+    {
+      "code": "000410",
+      "name": "沈阳机床",
+      "price": 5.91,
+      "target_price": 6.76,
+      "stop_loss": 5.5,
+      "score": 77
+    },
+    {
+      "code": "002174",
+      "name": "游族网络",
+      "price": 11.28,
+      "target_price": 13.25,
+      "stop_loss": 10.49,
+      "score": 77
+    },
+    {
+      "code": "000417",
+      "name": "合百集团",
+      "price": 6.27,
+      "target_price": 7.52,
+      "stop_loss": 5.83,
+      "score": 77
+    },
+    {
+      "code": "002368",
+      "name": "太极股份",
+      "price": 13.43,
+      "target_price": 15.27,
+      "stop_loss": 12.49,
+      "score": 77
+    },
+    {
+      "code": "002292",
+      "name": "奥飞娱乐",
+      "price": 8.71,
+      "target_price": 10.01,
+      "stop_loss": 8.1,
+      "score": 77
+    }
+  ]
+}
