@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-04",
+  "position_stocks": [
+    {
+      "code": "000591",
+      "name": "太阳能",
+      "price": 4.59,
+      "entry_price": 4.31,
+      "target_price": 5.04,
+      "stop_loss": 3.97,
+      "score": 98
+    },
+    {
+      "code": "601599",
+      "name": "浙文影业",
+      "price": 3.82,
+      "entry_price": 3.59,
+      "target_price": 4.06,
+      "stop_loss": 3.3,
+      "score": 98
+    },
+    {
+      "code": "601188",
+      "name": "龙江交通",
+      "price": 3.7,
+      "entry_price": 3.48,
+      "target_price": 3.94,
+      "stop_loss": 3.2,
+      "score": 85
+    },
+    {
+      "code": "000599",
+      "name": "青岛双星",
+      "price": 4.5,
+      "entry_price": 4.23,
+      "target_price": 4.9,
+      "stop_loss": 3.89,
+      "score": 79
+    },
+    {
+      "code": "002522",
+      "name": "浙江众成",
+      "price": 5.06,
+      "entry_price": 4.76,
+      "target_price": 5.7,
+      "stop_loss": 4.38,
+      "score": 79
+    },
+    {
+      "code": "002088",
+      "name": "鲁阳节能",
+      "price": 8.33,
+      "entry_price": 7.83,
+      "target_price": 9.27,
+      "stop_loss": 7.2,
+      "score": 76
+    },
+    {
+      "code": "000608",
+      "name": "阳光股份",
+      "price": 6.2,
+      "entry_price": 5.83,
+      "target_price": 6.62,
+      "stop_loss": 5.36,
+      "score": 75
+    },
+    {
+      "code": "600558",
+      "name": "大西洋",
+      "price": 6.24,
+      "entry_price": 5.87,
+      "target_price": 6.58,
+      "stop_loss": 5.4,
+      "score": 74
+    },
+    {
+      "code": "002105",
+      "name": "信隆健康",
+      "price": 5.56,
+      "entry_price": 5.23,
+      "target_price": 6.02,
+      "stop_loss": 4.81,
+      "score": 73
+    },
+    {
+      "code": "000151",
+      "name": "中成股份",
+      "price": 9.56,
+      "entry_price": 8.99,
+      "target_price": 10.17,
+      "stop_loss": 8.27,
+      "score": 73
+    },
+    {
+      "code": "600327",
+      "name": "大东方",
+      "price": 4.35,
+      "entry_price": 4.09,
+      "target_price": 4.82,
+      "stop_loss": 3.76,
+      "score": 73
+    },
+    {
+      "code": "600358",
+      "name": "国旅联合",
+      "price": 5.57,
+      "entry_price": 5.24,
+      "target_price": 5.88,
+      "stop_loss": 4.82,
+      "score": 71
+    },
+    {
+      "code": "600892",
+      "name": "大晟文化",
+      "price": 4.81,
+      "entry_price": 4.52,
+      "target_price": 5.07,
+      "stop_loss": 4.16,
+      "score": 71
+    },
+    {
+      "code": "002692",
+      "name": "远程股份",
+      "price": 4.18,
+      "entry_price": 3.89,
+      "target_price": 4.46,
+      "stop_loss": 3.54,
+      "score": 69
+    },
+    {
+      "code": "002145",
+      "name": "钛能化学",
+      "price": 3.79,
+      "entry_price": 3.79,
+      "target_price": 4.33,
+      "stop_loss": 3.52,
+      "score": 69
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "000591",
+      "name": "太阳能",
+      "price": 4.59,
+      "target_price": 5.49,
+      "stop_loss": 4.27,
+      "score": 100
+    },
+    {
+      "code": "601599",
+      "name": "浙文影业",
+      "price": 3.82,
+      "target_price": 4.42,
+      "stop_loss": 3.55,
+      "score": 100
+    },
+    {
+      "code": "002522",
+      "name": "浙江众成",
+      "price": 5.06,
+      "target_price": 5.95,
+      "stop_loss": 4.71,
+      "score": 97
+    },
+    {
+      "code": "000608",
+      "name": "阳光股份",
+      "price": 6.2,
+      "target_price": 7.34,
+      "stop_loss": 5.77,
+      "score": 97
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "price": 3.42,
+      "target_price": 4.05,
+      "stop_loss": 3.18,
+      "score": 95
+    },
+    {
+      "code": "600802",
+      "name": "福建水泥",
+      "price": 7.51,
+      "target_price": 8.67,
+      "stop_loss": 6.98,
+      "score": 92
+    },
+    {
+      "code": "000599",
+      "name": "青岛双星",
+      "price": 4.5,
+      "target_price": 5.08,
+      "stop_loss": 4.19,
+      "score": 85
+    },
+    {
+      "code": "600327",
+      "name": "大东方",
+      "price": 4.35,
+      "target_price": 5.0,
+      "stop_loss": 4.05,
+      "score": 85
+    },
+    {
+      "code": "601188",
+      "name": "龙江交通",
+      "price": 3.7,
+      "target_price": 4.36,
+      "stop_loss": 3.44,
+      "score": 85
+    },
+    {
+      "code": "601366",
+      "name": "利群股份",
+      "price": 3.96,
+      "target_price": 4.68,
+      "stop_loss": 3.68,
+      "score": 85
+    },
+    {
+      "code": "600261",
+      "name": "阳光照明",
+      "price": 4.95,
+      "target_price": 5.82,
+      "stop_loss": 4.6,
+      "score": 85
+    },
+    {
+      "code": "002105",
+      "name": "信隆健康",
+      "price": 5.56,
+      "target_price": 6.64,
+      "stop_loss": 5.17,
+      "score": 82
+    },
+    {
+      "code": "002088",
+      "name": "鲁阳节能",
+      "price": 8.33,
+      "target_price": 9.36,
+      "stop_loss": 7.75,
+      "score": 82
+    },
+    {
+      "code": "000151",
+      "name": "中成股份",
+      "price": 9.56,
+      "target_price": 10.97,
+      "stop_loss": 8.89,
+      "score": 82
+    },
+    {
+      "code": "002292",
+      "name": "奥飞娱乐",
+      "price": 9.58,
+      "target_price": 11.07,
+      "stop_loss": 8.91,
+      "score": 82
+    },
+    {
+      "code": "000679",
+      "name": "大连友谊",
+      "price": 6.62,
+      "target_price": 7.64,
+      "stop_loss": 6.16,
+      "score": 82
+    },
+    {
+      "code": "600358",
+      "name": "国旅联合",
+      "price": 5.57,
+      "target_price": 6.64,
+      "stop_loss": 5.18,
+      "score": 82
+    },
+    {
+      "code": "600630",
+      "name": "龙头股份",
+      "price": 7.05,
+      "target_price": 8.07,
+      "stop_loss": 6.56,
+      "score": 82
+    },
+    {
+      "code": "002692",
+      "name": "远程股份",
+      "price": 4.18,
+      "target_price": 4.9,
+      "stop_loss": 3.89,
+      "score": 80
+    },
+    {
+      "code": "002578",
+      "name": "闽发铝业",
+      "price": 3.76,
+      "target_price": 4.48,
+      "stop_loss": 3.5,
+      "score": 80
+    }
+  ]
+}
