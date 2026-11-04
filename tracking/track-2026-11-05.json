@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-05",
+  "position_stocks": [
+    {
+      "code": "002081",
+      "name": "金 螳 螂",
+      "price": 4.3,
+      "entry_price": 4.04,
+      "target_price": 4.65,
+      "stop_loss": 3.72,
+      "score": 77
+    },
+    {
+      "code": "000096",
+      "name": "广聚能源",
+      "price": 8.46,
+      "entry_price": 7.95,
+      "target_price": 9.05,
+      "stop_loss": 7.31,
+      "score": 74
+    },
+    {
+      "code": "002674",
+      "name": "兴业科技",
+      "price": 18.33,
+      "entry_price": 17.23,
+      "target_price": 20.14,
+      "stop_loss": 15.85,
+      "score": 72
+    },
+    {
+      "code": "002309",
+      "name": "中利集团",
+      "price": 2.65,
+      "entry_price": 2.46,
+      "target_price": 2.74,
+      "stop_loss": 2.24,
+      "score": 68
+    },
+    {
+      "code": "601599",
+      "name": "浙文影业",
+      "price": 4.2,
+      "entry_price": 3.91,
+      "target_price": 4.41,
+      "stop_loss": 3.56,
+      "score": 67
+    },
+    {
+      "code": "000919",
+      "name": "金陵药业",
+      "price": 6.67,
+      "entry_price": 6.2,
+      "target_price": 6.9,
+      "stop_loss": 5.64,
+      "score": 60
+    },
+    {
+      "code": "002088",
+      "name": "鲁阳节能",
+      "price": 9.16,
+      "entry_price": 8.52,
+      "target_price": 9.49,
+      "stop_loss": 7.75,
+      "score": 60
+    },
+    {
+      "code": "002716",
+      "name": "湖南白银",
+      "price": 7.6,
+      "entry_price": 7.07,
+      "target_price": 7.78,
+      "stop_loss": 6.43,
+      "score": 59
+    },
+    {
+      "code": "000679",
+      "name": "大连友谊",
+      "price": 7.28,
+      "entry_price": 6.77,
+      "target_price": 7.58,
+      "stop_loss": 6.16,
+      "score": 58
+    },
+    {
+      "code": "002529",
+      "name": "海源复材",
+      "price": 6.11,
+      "entry_price": 5.68,
+      "target_price": 6.39,
+      "stop_loss": 5.17,
+      "score": 58
+    },
+    {
+      "code": "600892",
+      "name": "大晟文化",
+      "price": 5.29,
+      "entry_price": 4.92,
+      "target_price": 5.48,
+      "stop_loss": 4.48,
+      "score": 58
+    },
+    {
+      "code": "601212",
+      "name": "白银有色",
+      "price": 5.08,
+      "entry_price": 4.72,
+      "target_price": 5.36,
+      "stop_loss": 4.3,
+      "score": 58
+    },
+    {
+      "code": "002155",
+      "name": "湖南黄金",
+      "price": 19.32,
+      "entry_price": 17.97,
+      "target_price": 20.36,
+      "stop_loss": 16.35,
+      "score": 57
+    },
+    {
+      "code": "002578",
+      "name": "闽发铝业",
+      "price": 4.14,
+      "entry_price": 3.85,
+      "target_price": 4.37,
+      "stop_loss": 3.5,
+      "score": 56
+    },
+    {
+      "code": "000506",
+      "name": "招金黄金",
+      "price": 13.41,
+      "entry_price": 12.47,
+      "target_price": 14.32,
+      "stop_loss": 11.35,
+      "score": 55
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002081",
+      "name": "金 螳 螂",
+      "price": 4.3,
+      "target_price": 5.01,
+      "stop_loss": 4.0,
+      "score": 85
+    },
+    {
+      "code": "002309",
+      "name": "中利集团",
+      "price": 2.65,
+      "target_price": 3.03,
+      "stop_loss": 2.46,
+      "score": 85
+    },
+    {
+      "code": "000017",
+      "name": "深中华A",
+      "price": 6.38,
+      "target_price": 7.49,
+      "stop_loss": 5.93,
+      "score": 82
+    },
+    {
+      "code": "000679",
+      "name": "大连友谊",
+      "price": 7.28,
+      "target_price": 8.27,
+      "stop_loss": 6.77,
+      "score": 82
+    },
+    {
+      "code": "000919",
+      "name": "金陵药业",
+      "price": 6.67,
+      "target_price": 7.52,
+      "stop_loss": 6.2,
+      "score": 82
+    },
+    {
+      "code": "002088",
+      "name": "鲁阳节能",
+      "price": 9.16,
+      "target_price": 10.8,
+      "stop_loss": 8.52,
+      "score": 82
+    },
+    {
+      "code": "002388",
+      "name": "新亚制程",
+      "price": 5.51,
+      "target_price": 6.21,
+      "stop_loss": 5.12,
+      "score": 82
+    },
+    {
+      "code": "600892",
+      "name": "大晟文化",
+      "price": 5.29,
+      "target_price": 6.12,
+      "stop_loss": 4.92,
+      "score": 82
+    },
+    {
+      "code": "002578",
+      "name": "闽发铝业",
+      "price": 4.14,
+      "target_price": 4.92,
+      "stop_loss": 3.85,
+      "score": 80
+    },
+    {
+      "code": "601599",
+      "name": "浙文影业",
+      "price": 4.2,
+      "target_price": 4.92,
+      "stop_loss": 3.91,
+      "score": 80
+    },
+    {
+      "code": "002529",
+      "name": "海源复材",
+      "price": 6.11,
+      "target_price": 7.32,
+      "stop_loss": 5.68,
+      "score": 77
+    },
+    {
+      "code": "002716",
+      "name": "湖南白银",
+      "price": 7.6,
+      "target_price": 9.06,
+      "stop_loss": 7.07,
+      "score": 77
+    },
+    {
+      "code": "603777",
+      "name": "来伊份",
+      "price": 14.5,
+      "target_price": 16.93,
+      "stop_loss": 13.49,
+      "score": 77
+    },
+    {
+      "code": "000506",
+      "name": "招金黄金",
+      "price": 13.41,
+      "target_price": 14.46,
+      "stop_loss": 12.47,
+      "score": 72
+    },
+    {
+      "code": "001282",
+      "name": "三联锻造",
+      "price": 17.0,
+      "target_price": 18.73,
+      "stop_loss": 15.81,
+      "score": 72
+    },
+    {
+      "code": "002275",
+      "name": "桂林三金",
+      "price": 17.38,
+      "target_price": 18.7,
+      "stop_loss": 16.16,
+      "score": 72
+    },
+    {
+      "code": "002674",
+      "name": "兴业科技",
+      "price": 18.33,
+      "target_price": 20.47,
+      "stop_loss": 17.05,
+      "score": 72
+    },
+    {
+      "code": "600371",
+      "name": "万向德农",
+      "price": 10.85,
+      "target_price": 12.02,
+      "stop_loss": 10.09,
+      "score": 72
+    },
+    {
+      "code": "601212",
+      "name": "白银有色",
+      "price": 5.08,
+      "target_price": 5.57,
+      "stop_loss": 4.72,
+      "score": 72
+    },
+    {
+      "code": "603767",
+      "name": "中马传动",
+      "price": 15.61,
+      "target_price": 16.95,
+      "stop_loss": 14.52,
+      "score": 72
+    }
+  ]
+}
