@@ -6,7 +6,7 @@
       "name": "新能股份",
       "price": 5.38,
       "entry_price": 5.06,
-      "target_price": 6.0,
+      "target_price": 5.99,
       "stop_loss": 4.66,
       "score": 86
     },
@@ -15,7 +15,7 @@
       "name": "龙江交通",
       "price": 3.81,
       "entry_price": 3.58,
-      "target_price": 4.22,
+      "target_price": 4.06,
       "stop_loss": 3.29,
       "score": 80
     },
@@ -24,7 +24,7 @@
       "name": "东方嘉盛",
       "price": 14.91,
       "entry_price": 14.02,
-      "target_price": 16.08,
+      "target_price": 16.21,
       "stop_loss": 12.9,
       "score": 74
     },
@@ -33,7 +33,7 @@
       "name": "东方创业",
       "price": 7.12,
       "entry_price": 6.69,
-      "target_price": 7.52,
+      "target_price": 7.91,
       "stop_loss": 6.15,
       "score": 74
     },
@@ -42,7 +42,7 @@
       "name": "日出东方",
       "price": 8.99,
       "entry_price": 8.45,
-      "target_price": 9.6,
+      "target_price": 10.09,
       "stop_loss": 7.77,
       "score": 74
     },
@@ -51,7 +51,7 @@
       "name": "黑牡丹",
       "price": 6.94,
       "entry_price": 6.94,
-      "target_price": 8.47,
+      "target_price": 8.28,
       "stop_loss": 6.38,
       "score": 73
     },
@@ -60,7 +60,7 @@
       "name": "侨银股份",
       "price": 10.78,
       "entry_price": 10.13,
-      "target_price": 11.46,
+      "target_price": 11.96,
       "stop_loss": 9.32,
       "score": 70
     },
@@ -69,7 +69,7 @@
       "name": "立新能源",
       "price": 9.57,
       "entry_price": 9.0,
-      "target_price": 10.66,
+      "target_price": 10.62,
       "stop_loss": 8.28,
       "score": 70
     },
@@ -78,7 +78,7 @@
       "name": "南侨食品",
       "price": 15.8,
       "entry_price": 14.85,
-      "target_price": 16.92,
+      "target_price": 17.17,
       "stop_loss": 13.66,
       "score": 70
     },
@@ -87,7 +87,7 @@
       "name": "华孚时尚",
       "price": 3.41,
       "entry_price": 3.41,
-      "target_price": 3.98,
+      "target_price": 4.01,
       "stop_loss": 3.17,
       "score": 69
     },
@@ -96,7 +96,7 @@
       "name": "江阴银行",
       "price": 4.37,
       "entry_price": 4.37,
-      "target_price": 4.87,
+      "target_price": 5.0,
       "stop_loss": 4.06,
       "score": 69
     },
@@ -105,7 +105,7 @@
       "name": "华邦健康",
       "price": 4.7,
       "entry_price": 4.7,
-      "target_price": 5.37,
+      "target_price": 5.26,
       "stop_loss": 4.37,
       "score": 69
     },
@@ -114,7 +114,7 @@
       "name": "辉隆股份",
       "price": 4.36,
       "entry_price": 4.36,
-      "target_price": 5.07,
+      "target_price": 5.1,
       "stop_loss": 4.05,
       "score": 69
     },
@@ -123,7 +123,7 @@
       "name": "张家港行",
       "price": 4.4,
       "entry_price": 4.4,
-      "target_price": 4.94,
+      "target_price": 5.02,
       "stop_loss": 4.09,
       "score": 69
     },
@@ -132,7 +132,7 @@
       "name": "青农商行",
       "price": 2.97,
       "entry_price": 2.97,
-      "target_price": 3.48,
+      "target_price": 3.34,
       "stop_loss": 2.76,
       "score": 69
     }
@@ -142,7 +142,7 @@
       "code": "603366",
       "name": "日出东方",
       "price": 8.99,
-      "target_price": 10.15,
+      "target_price": 10.58,
       "stop_loss": 8.36,
       "score": 97
     },
@@ -150,7 +150,7 @@
       "code": "002889",
       "name": "东方嘉盛",
       "price": 14.91,
-      "target_price": 17.77,
+      "target_price": 17.05,
       "stop_loss": 13.87,
       "score": 87
     },
@@ -158,7 +158,7 @@
       "code": "002310",
       "name": "东方新能",
       "price": 2.32,
-      "target_price": 2.74,
+      "target_price": 2.75,
       "stop_loss": 2.16,
       "score": 85
     },
@@ -166,7 +166,7 @@
       "code": "601188",
       "name": "龙江交通",
       "price": 3.81,
-      "target_price": 4.41,
+      "target_price": 4.49,
       "stop_loss": 3.54,
       "score": 85
     },
@@ -174,7 +174,7 @@
       "code": "600207",
       "name": "安彩高科",
       "price": 4.88,
-      "target_price": 5.55,
+      "target_price": 5.7,
       "stop_loss": 4.54,
       "score": 85
     },
@@ -182,7 +182,7 @@
       "code": "001258",
       "name": "立新能源",
       "price": 9.57,
-      "target_price": 11.25,
+      "target_price": 10.95,
       "stop_loss": 8.9,
       "score": 82
     },
@@ -190,7 +190,7 @@
       "code": "600278",
       "name": "东方创业",
       "price": 7.12,
-      "target_price": 8.41,
+      "target_price": 8.25,
       "stop_loss": 6.62,
       "score": 82
     },
@@ -198,7 +198,7 @@
       "code": "601599",
       "name": "浙文影业",
       "price": 5.08,
-      "target_price": 5.97,
+      "target_price": 6.06,
       "stop_loss": 4.72,
       "score": 82
     },
@@ -206,7 +206,7 @@
       "code": "300237",
       "name": "美晨科技",
       "price": 2.82,
-      "target_price": 3.25,
+      "target_price": 3.33,
       "stop_loss": 2.62,
       "score": 80
     },
@@ -214,7 +214,7 @@
       "code": "002578",
       "name": "闽发铝业",
       "price": 5.01,
-      "target_price": 5.66,
+      "target_price": 5.93,
       "stop_loss": 4.66,
       "score": 77
     },
@@ -222,7 +222,7 @@
       "code": "000525",
       "name": "红太阳",
       "price": 5.02,
-      "target_price": 5.66,
+      "target_price": 5.81,
       "stop_loss": 4.67,
       "score": 77
     },
@@ -230,7 +230,7 @@
       "code": "000595",
       "name": "新能股份",
       "price": 5.38,
-      "target_price": 6.31,
+      "target_price": 6.17,
       "stop_loss": 5.0,
       "score": 77
     },
@@ -238,7 +238,7 @@
       "code": "002973",
       "name": "侨银股份",
       "price": 10.78,
-      "target_price": 12.65,
+      "target_price": 12.28,
       "stop_loss": 10.03,
       "score": 77
     },
@@ -246,7 +246,7 @@
       "code": "002712",
       "name": "思美传媒",
       "price": 5.96,
-      "target_price": 7.0,
+      "target_price": 6.99,
       "stop_loss": 5.54,
       "score": 77
     },
@@ -262,7 +262,7 @@
       "code": "600156",
       "name": "华升股份",
       "price": 7.07,
-      "target_price": 8.3,
+      "target_price": 7.94,
       "stop_loss": 6.58,
       "score": 77
     },
@@ -270,7 +270,7 @@
       "code": "002088",
       "name": "鲁阳节能",
       "price": 11.09,
-      "target_price": 12.16,
+      "target_price": 12.3,
       "stop_loss": 10.31,
       "score": 72
     },
@@ -278,7 +278,7 @@
       "code": "300686",
       "name": "智动力",
       "price": 13.68,
-      "target_price": 15.26,
+      "target_price": 14.93,
       "stop_loss": 12.72,
       "score": 72
     },
@@ -286,7 +286,7 @@
       "code": "002086",
       "name": "东方海洋",
       "price": 3.97,
-      "target_price": 4.38,
+      "target_price": 4.4,
       "stop_loss": 3.69,
       "score": 70
     },
@@ -294,7 +294,7 @@
       "code": "600540",
       "name": "新赛股份",
       "price": 4.58,
-      "target_price": 5.1,
+      "target_price": 5.04,
       "stop_loss": 4.26,
       "score": 70
     }
