@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-09",
+  "position_stocks": [
+    {
+      "code": "002596",
+      "name": "海南瑞泽",
+      "price": 3.48,
+      "entry_price": 3.27,
+      "target_price": 3.8,
+      "stop_loss": 3.01,
+      "score": 83
+    },
+    {
+      "code": "601188",
+      "name": "龙江交通",
+      "price": 4.19,
+      "entry_price": 3.94,
+      "target_price": 4.65,
+      "stop_loss": 3.62,
+      "score": 82
+    },
+    {
+      "code": "600609",
+      "name": "金杯汽车",
+      "price": 3.48,
+      "entry_price": 3.27,
+      "target_price": 3.78,
+      "stop_loss": 3.01,
+      "score": 81
+    },
+    {
+      "code": "002310",
+      "name": "东方新能",
+      "price": 2.55,
+      "entry_price": 2.4,
+      "target_price": 2.74,
+      "stop_loss": 2.21,
+      "score": 79
+    },
+    {
+      "code": "002124",
+      "name": "天邦食品",
+      "price": 2.2,
+      "entry_price": 2.07,
+      "target_price": 2.39,
+      "stop_loss": 1.9,
+      "score": 73
+    },
+    {
+      "code": "002889",
+      "name": "东方嘉盛",
+      "price": 16.4,
+      "entry_price": 15.42,
+      "target_price": 17.87,
+      "stop_loss": 14.19,
+      "score": 73
+    },
+    {
+      "code": "600408",
+      "name": "安泰集团",
+      "price": 3.32,
+      "entry_price": 3.12,
+      "target_price": 3.56,
+      "stop_loss": 2.87,
+      "score": 73
+    },
+    {
+      "code": "600776",
+      "name": "东方通信",
+      "price": 12.22,
+      "entry_price": 11.49,
+      "target_price": 13.09,
+      "stop_loss": 10.57,
+      "score": 72
+    },
+    {
+      "code": "600853",
+      "name": "龙建股份",
+      "price": 3.85,
+      "entry_price": 3.62,
+      "target_price": 4.18,
+      "stop_loss": 3.33,
+      "score": 71
+    },
+    {
+      "code": "002035",
+      "name": "华帝股份",
+      "price": 4.46,
+      "entry_price": 4.46,
+      "target_price": 5.19,
+      "stop_loss": 4.15,
+      "score": 69
+    },
+    {
+      "code": "000030",
+      "name": "富奥股份",
+      "price": 3.77,
+      "entry_price": 3.77,
+      "target_price": 4.17,
+      "stop_loss": 3.51,
+      "score": 69
+    },
+    {
+      "code": "000937",
+      "name": "冀中能源",
+      "price": 4.35,
+      "entry_price": 4.35,
+      "target_price": 5.09,
+      "stop_loss": 4.05,
+      "score": 69
+    },
+    {
+      "code": "002807",
+      "name": "江阴银行",
+      "price": 4.45,
+      "entry_price": 4.45,
+      "target_price": 5.18,
+      "stop_loss": 4.14,
+      "score": 69
+    },
+    {
+      "code": "001227",
+      "name": "兰州银行",
+      "price": 2.16,
+      "entry_price": 2.16,
+      "target_price": 2.5,
+      "stop_loss": 2.01,
+      "score": 69
+    },
+    {
+      "code": "002958",
+      "name": "青农商行",
+      "price": 3.01,
+      "entry_price": 3.01,
+      "target_price": 3.41,
+      "stop_loss": 2.8,
+      "score": 69
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002596",
+      "name": "海南瑞泽",
+      "price": 3.48,
+      "target_price": 4.01,
+      "stop_loss": 3.24,
+      "score": 100
+    },
+    {
+      "code": "002124",
+      "name": "天邦食品",
+      "price": 2.2,
+      "target_price": 2.54,
+      "stop_loss": 2.05,
+      "score": 95
+    },
+    {
+      "code": "601188",
+      "name": "龙江交通",
+      "price": 4.19,
+      "target_price": 4.79,
+      "stop_loss": 3.9,
+      "score": 95
+    },
+    {
+      "code": "600408",
+      "name": "安泰集团",
+      "price": 3.32,
+      "target_price": 3.89,
+      "stop_loss": 3.09,
+      "score": 95
+    },
+    {
+      "code": "600776",
+      "name": "东方通信",
+      "price": 12.22,
+      "target_price": 14.29,
+      "stop_loss": 11.36,
+      "score": 92
+    },
+    {
+      "code": "002889",
+      "name": "东方嘉盛",
+      "price": 16.4,
+      "target_price": 18.43,
+      "stop_loss": 15.25,
+      "score": 87
+    },
+    {
+      "code": "002638",
+      "name": "勤上股份",
+      "price": 4.33,
+      "target_price": 4.98,
+      "stop_loss": 4.03,
+      "score": 85
+    },
+    {
+      "code": "600609",
+      "name": "金杯汽车",
+      "price": 3.48,
+      "target_price": 4.13,
+      "stop_loss": 3.24,
+      "score": 85
+    },
+    {
+      "code": "600853",
+      "name": "龙建股份",
+      "price": 3.85,
+      "target_price": 4.48,
+      "stop_loss": 3.58,
+      "score": 85
+    },
+    {
+      "code": "002347",
+      "name": "泰尔股份",
+      "price": 7.0,
+      "target_price": 8.38,
+      "stop_loss": 6.51,
+      "score": 82
+    },
+    {
+      "code": "002488",
+      "name": "金固股份",
+      "price": 7.48,
+      "target_price": 8.9,
+      "stop_loss": 6.96,
+      "score": 82
+    },
+    {
+      "code": "002310",
+      "name": "东方新能",
+      "price": 2.55,
+      "target_price": 2.89,
+      "stop_loss": 2.37,
+      "score": 80
+    },
+    {
+      "code": "600715",
+      "name": "文投控股",
+      "price": 2.59,
+      "target_price": 3.1,
+      "stop_loss": 2.41,
+      "score": 80
+    },
+    {
+      "code": "603366",
+      "name": "日出东方",
+      "price": 9.89,
+      "target_price": 11.53,
+      "stop_loss": 9.2,
+      "score": 80
+    },
+    {
+      "code": "600121",
+      "name": "郑州煤电",
+      "price": 4.73,
+      "target_price": 5.43,
+      "stop_loss": 4.4,
+      "score": 80
+    },
+    {
+      "code": "600792",
+      "name": "云煤能源",
+      "price": 4.2,
+      "target_price": 4.86,
+      "stop_loss": 3.91,
+      "score": 80
+    },
+    {
+      "code": "002565",
+      "name": "顺灏股份",
+      "price": 10.54,
+      "target_price": 11.84,
+      "stop_loss": 9.8,
+      "score": 77
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "price": 9.57,
+      "target_price": 11.32,
+      "stop_loss": 8.9,
+      "score": 77
+    },
+    {
+      "code": "002578",
+      "name": "闽发铝业",
+      "price": 5.51,
+      "target_price": 6.46,
+      "stop_loss": 5.12,
+      "score": 77
+    },
+    {
+      "code": "600278",
+      "name": "东方创业",
+      "price": 7.83,
+      "target_price": 9.25,
+      "stop_loss": 7.28,
+      "score": 77
+    }
+  ]
+}
