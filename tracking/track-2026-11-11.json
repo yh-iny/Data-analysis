@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-11",
+  "position_stocks": [
+    {
+      "code": "000631",
+      "name": "顺发恒能",
+      "price": 3.14,
+      "entry_price": 2.95,
+      "target_price": 3.42,
+      "stop_loss": 2.71,
+      "score": 94
+    },
+    {
+      "code": "002154",
+      "name": "报 喜 鸟",
+      "price": 3.89,
+      "entry_price": 3.66,
+      "target_price": 4.32,
+      "stop_loss": 3.37,
+      "score": 86
+    },
+    {
+      "code": "600162",
+      "name": "香江控股",
+      "price": 3.67,
+      "entry_price": 3.45,
+      "target_price": 4.06,
+      "stop_loss": 3.17,
+      "score": 84
+    },
+    {
+      "code": "603725",
+      "name": "天安新材",
+      "price": 11.96,
+      "entry_price": 11.24,
+      "target_price": 13.06,
+      "stop_loss": 10.34,
+      "score": 76
+    },
+    {
+      "code": "000407",
+      "name": "胜利股份",
+      "price": 4.35,
+      "entry_price": 4.09,
+      "target_price": 4.84,
+      "stop_loss": 3.76,
+      "score": 74
+    },
+    {
+      "code": "002593",
+      "name": "日上集团",
+      "price": 4.75,
+      "entry_price": 4.46,
+      "target_price": 5.29,
+      "stop_loss": 4.1,
+      "score": 71
+    },
+    {
+      "code": "601326",
+      "name": "秦港股份",
+      "price": 3.46,
+      "entry_price": 3.46,
+      "target_price": 4.13,
+      "stop_loss": 3.18,
+      "score": 71
+    },
+    {
+      "code": "002148",
+      "name": "北纬科技",
+      "price": 6.57,
+      "entry_price": 6.18,
+      "target_price": 7.12,
+      "stop_loss": 5.69,
+      "score": 70
+    },
+    {
+      "code": "002110",
+      "name": "三钢闽光",
+      "price": 3.01,
+      "entry_price": 2.8,
+      "target_price": 3.21,
+      "stop_loss": 2.55,
+      "score": 69
+    },
+    {
+      "code": "002067",
+      "name": "景兴纸业",
+      "price": 3.67,
+      "entry_price": 3.67,
+      "target_price": 4.1,
+      "stop_loss": 3.41,
+      "score": 69
+    },
+    {
+      "code": "000570",
+      "name": "苏常柴Ａ",
+      "price": 5.0,
+      "entry_price": 5.0,
+      "target_price": 5.65,
+      "stop_loss": 4.65,
+      "score": 69
+    },
+    {
+      "code": "300259",
+      "name": "新天科技",
+      "price": 3.55,
+      "entry_price": 3.55,
+      "target_price": 3.99,
+      "stop_loss": 3.3,
+      "score": 69
+    },
+    {
+      "code": "300230",
+      "name": "永利股份",
+      "price": 4.49,
+      "entry_price": 4.49,
+      "target_price": 5.01,
+      "stop_loss": 4.18,
+      "score": 69
+    },
+    {
+      "code": "600103",
+      "name": "青山纸业",
+      "price": 3.28,
+      "entry_price": 3.05,
+      "target_price": 3.39,
+      "stop_loss": 2.78,
+      "score": 69
+    },
+    {
+      "code": "603536",
+      "name": "惠发食品",
+      "price": 11.85,
+      "entry_price": 11.02,
+      "target_price": 12.18,
+      "stop_loss": 10.03,
+      "score": 69
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "600162",
+      "name": "香江控股",
+      "price": 3.67,
+      "target_price": 4.14,
+      "stop_loss": 3.41,
+      "score": 100
+    },
+    {
+      "code": "002154",
+      "name": "报 喜 鸟",
+      "price": 3.89,
+      "target_price": 4.52,
+      "stop_loss": 3.62,
+      "score": 95
+    },
+    {
+      "code": "603536",
+      "name": "惠发食品",
+      "price": 11.85,
+      "target_price": 13.75,
+      "stop_loss": 11.02,
+      "score": 92
+    },
+    {
+      "code": "603725",
+      "name": "天安新材",
+      "price": 11.96,
+      "target_price": 13.89,
+      "stop_loss": 11.12,
+      "score": 92
+    },
+    {
+      "code": "002313",
+      "name": "日海智能",
+      "price": 10.16,
+      "target_price": 12.0,
+      "stop_loss": 9.45,
+      "score": 87
+    },
+    {
+      "code": "000545",
+      "name": "金浦钛业",
+      "price": 2.09,
+      "target_price": 2.37,
+      "stop_loss": 1.94,
+      "score": 85
+    },
+    {
+      "code": "002110",
+      "name": "三钢闽光",
+      "price": 3.01,
+      "target_price": 3.39,
+      "stop_loss": 2.8,
+      "score": 85
+    },
+    {
+      "code": "600103",
+      "name": "青山纸业",
+      "price": 3.28,
+      "target_price": 3.72,
+      "stop_loss": 3.05,
+      "score": 85
+    },
+    {
+      "code": "600076",
+      "name": "康欣新材",
+      "price": 2.23,
+      "target_price": 2.54,
+      "stop_loss": 2.07,
+      "score": 85
+    },
+    {
+      "code": "002148",
+      "name": "北纬科技",
+      "price": 6.57,
+      "target_price": 7.67,
+      "stop_loss": 6.11,
+      "score": 82
+    },
+    {
+      "code": "002795",
+      "name": "永和智控",
+      "price": 7.59,
+      "target_price": 9.08,
+      "stop_loss": 7.06,
+      "score": 82
+    },
+    {
+      "code": "002520",
+      "name": "日发精机",
+      "price": 7.26,
+      "target_price": 8.36,
+      "stop_loss": 6.75,
+      "score": 82
+    },
+    {
+      "code": "600228",
+      "name": "返利科技",
+      "price": 9.77,
+      "target_price": 11.39,
+      "stop_loss": 9.09,
+      "score": 82
+    },
+    {
+      "code": "603135",
+      "name": "中重科技",
+      "price": 9.25,
+      "target_price": 10.49,
+      "stop_loss": 8.6,
+      "score": 82
+    },
+    {
+      "code": "000631",
+      "name": "顺发恒能",
+      "price": 3.14,
+      "target_price": 3.64,
+      "stop_loss": 2.92,
+      "score": 80
+    },
+    {
+      "code": "000407",
+      "name": "胜利股份",
+      "price": 4.35,
+      "target_price": 4.95,
+      "stop_loss": 4.05,
+      "score": 80
+    },
+    {
+      "code": "002160",
+      "name": "常铝股份",
+      "price": 4.4,
+      "target_price": 5.18,
+      "stop_loss": 4.09,
+      "score": 80
+    },
+    {
+      "code": "002593",
+      "name": "日上集团",
+      "price": 4.75,
+      "target_price": 5.41,
+      "stop_loss": 4.42,
+      "score": 80
+    },
+    {
+      "code": "002076",
+      "name": "星光股份",
+      "price": 2.22,
+      "target_price": 2.61,
+      "stop_loss": 2.06,
+      "score": 80
+    },
+    {
+      "code": "600293",
+      "name": "三峡新材",
+      "price": 4.31,
+      "target_price": 5.05,
+      "stop_loss": 4.01,
+      "score": 80
+    }
+  ]
+}
