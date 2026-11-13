@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-13",
+  "position_stocks": [
+    {
+      "code": "002042",
+      "name": "华孚时尚",
+      "price": 3.62,
+      "entry_price": 3.4,
+      "target_price": 3.94,
+      "stop_loss": 3.13,
+      "score": 96
+    },
+    {
+      "code": "603928",
+      "name": "兴业股份",
+      "price": 11.96,
+      "entry_price": 11.24,
+      "target_price": 13.28,
+      "stop_loss": 10.34,
+      "score": 91
+    },
+    {
+      "code": "600467",
+      "name": "好当家",
+      "price": 2.73,
+      "entry_price": 2.57,
+      "target_price": 2.99,
+      "stop_loss": 2.36,
+      "score": 81
+    },
+    {
+      "code": "603166",
+      "name": "福达股份",
+      "price": 11.84,
+      "entry_price": 11.13,
+      "target_price": 12.64,
+      "stop_loss": 10.24,
+      "score": 80
+    },
+    {
+      "code": "000665",
+      "name": "湖北广电",
+      "price": 4.58,
+      "entry_price": 4.31,
+      "target_price": 4.97,
+      "stop_loss": 3.97,
+      "score": 79
+    },
+    {
+      "code": "002548",
+      "name": "金新农",
+      "price": 3.83,
+      "entry_price": 3.6,
+      "target_price": 4.1,
+      "stop_loss": 3.31,
+      "score": 74
+    },
+    {
+      "code": "000595",
+      "name": "新能股份",
+      "price": 5.53,
+      "entry_price": 5.2,
+      "target_price": 6.04,
+      "stop_loss": 4.78,
+      "score": 70
+    },
+    {
+      "code": "002839",
+      "name": "张家港行",
+      "price": 4.51,
+      "entry_price": 4.51,
+      "target_price": 5.17,
+      "stop_loss": 4.19,
+      "score": 69
+    },
+    {
+      "code": "002807",
+      "name": "江阴银行",
+      "price": 4.45,
+      "entry_price": 4.45,
+      "target_price": 4.95,
+      "stop_loss": 4.14,
+      "score": 69
+    },
+    {
+      "code": "002004",
+      "name": "华邦健康",
+      "price": 4.56,
+      "entry_price": 4.56,
+      "target_price": 5.26,
+      "stop_loss": 4.24,
+      "score": 69
+    },
+    {
+      "code": "002958",
+      "name": "青农商行",
+      "price": 3.0,
+      "entry_price": 3.0,
+      "target_price": 3.35,
+      "stop_loss": 2.79,
+      "score": 69
+    },
+    {
+      "code": "001227",
+      "name": "兰州银行",
+      "price": 2.13,
+      "entry_price": 2.13,
+      "target_price": 2.51,
+      "stop_loss": 1.98,
+      "score": 69
+    },
+    {
+      "code": "000819",
+      "name": "岳阳兴长",
+      "price": 12.82,
+      "entry_price": 11.92,
+      "target_price": 13.55,
+      "stop_loss": 10.85,
+      "score": 66
+    },
+    {
+      "code": "002205",
+      "name": "国统股份",
+      "price": 12.93,
+      "entry_price": 12.02,
+      "target_price": 13.26,
+      "stop_loss": 10.94,
+      "score": 66
+    },
+    {
+      "code": "002116",
+      "name": "中国海诚",
+      "price": 6.89,
+      "entry_price": 6.89,
+      "target_price": 7.85,
+      "stop_loss": 6.41,
+      "score": 66
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002042",
+      "name": "华孚时尚",
+      "price": 3.62,
+      "target_price": 4.21,
+      "stop_loss": 3.37,
+      "score": 100
+    },
+    {
+      "code": "000595",
+      "name": "新能股份",
+      "price": 5.53,
+      "target_price": 6.5,
+      "stop_loss": 5.14,
+      "score": 97
+    },
+    {
+      "code": "000819",
+      "name": "岳阳兴长",
+      "price": 12.82,
+      "target_price": 15.25,
+      "stop_loss": 11.92,
+      "score": 92
+    },
+    {
+      "code": "603928",
+      "name": "兴业股份",
+      "price": 11.96,
+      "target_price": 14.06,
+      "stop_loss": 11.12,
+      "score": 92
+    },
+    {
+      "code": "000665",
+      "name": "湖北广电",
+      "price": 4.58,
+      "target_price": 5.4,
+      "stop_loss": 4.26,
+      "score": 85
+    },
+    {
+      "code": "002548",
+      "name": "金新农",
+      "price": 3.83,
+      "target_price": 4.55,
+      "stop_loss": 3.56,
+      "score": 85
+    },
+    {
+      "code": "600467",
+      "name": "好当家",
+      "price": 2.73,
+      "target_price": 3.18,
+      "stop_loss": 2.54,
+      "score": 85
+    },
+    {
+      "code": "002905",
+      "name": "金逸影视",
+      "price": 9.9,
+      "target_price": 11.47,
+      "stop_loss": 9.21,
+      "score": 82
+    },
+    {
+      "code": "002425",
+      "name": "凯撒文化",
+      "price": 3.96,
+      "target_price": 4.49,
+      "stop_loss": 3.68,
+      "score": 80
+    },
+    {
+      "code": "600715",
+      "name": "文投控股",
+      "price": 3.4,
+      "target_price": 3.82,
+      "stop_loss": 3.16,
+      "score": 80
+    },
+    {
+      "code": "002205",
+      "name": "国统股份",
+      "price": 12.93,
+      "target_price": 15.48,
+      "stop_loss": 12.02,
+      "score": 77
+    },
+    {
+      "code": "002148",
+      "name": "北纬科技",
+      "price": 7.95,
+      "target_price": 9.2,
+      "stop_loss": 7.39,
+      "score": 77
+    },
+    {
+      "code": "002685",
+      "name": "华东重机",
+      "price": 5.54,
+      "target_price": 6.28,
+      "stop_loss": 5.15,
+      "score": 77
+    },
+    {
+      "code": "603166",
+      "name": "福达股份",
+      "price": 11.84,
+      "target_price": 14.05,
+      "stop_loss": 11.01,
+      "score": 77
+    },
+    {
+      "code": "600665",
+      "name": "天地源",
+      "price": 3.1,
+      "target_price": 3.49,
+      "stop_loss": 2.88,
+      "score": 75
+    },
+    {
+      "code": "002748",
+      "name": "世龙实业",
+      "price": 12.39,
+      "target_price": 13.58,
+      "stop_loss": 11.52,
+      "score": 72
+    },
+    {
+      "code": "000766",
+      "name": "通化金马",
+      "price": 16.5,
+      "target_price": 18.0,
+      "stop_loss": 15.35,
+      "score": 72
+    },
+    {
+      "code": "603686",
+      "name": "福龙马",
+      "price": 13.6,
+      "target_price": 14.81,
+      "stop_loss": 12.65,
+      "score": 72
+    },
+    {
+      "code": "603767",
+      "name": "中马传动",
+      "price": 17.74,
+      "target_price": 19.64,
+      "stop_loss": 16.5,
+      "score": 72
+    },
+    {
+      "code": "002124",
+      "name": "天邦食品",
+      "price": 2.31,
+      "target_price": 2.48,
+      "stop_loss": 2.15,
+      "score": 70
+    }
+  ]
+}
