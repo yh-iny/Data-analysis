@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-19",
+  "position_stocks": [
+    {
+      "code": "002701",
+      "name": "奥瑞金",
+      "price": 4.29,
+      "entry_price": 4.29,
+      "target_price": 4.84,
+      "stop_loss": 3.99,
+      "score": 69
+    },
+    {
+      "code": "002266",
+      "name": "浙富控股",
+      "price": 3.64,
+      "entry_price": 3.64,
+      "target_price": 4.12,
+      "stop_loss": 3.39,
+      "score": 69
+    },
+    {
+      "code": "300259",
+      "name": "新天科技",
+      "price": 3.2,
+      "entry_price": 3.2,
+      "target_price": 3.68,
+      "stop_loss": 2.98,
+      "score": 69
+    },
+    {
+      "code": "300230",
+      "name": "永利股份",
+      "price": 4.21,
+      "entry_price": 4.21,
+      "target_price": 4.75,
+      "stop_loss": 3.92,
+      "score": 69
+    },
+    {
+      "code": "002418",
+      "name": "康盛股份",
+      "price": 4.02,
+      "entry_price": 3.74,
+      "target_price": 4.28,
+      "stop_loss": 3.4,
+      "score": 68
+    },
+    {
+      "code": "002771",
+      "name": "真视通",
+      "price": 14.38,
+      "entry_price": 13.37,
+      "target_price": 15.35,
+      "stop_loss": 12.17,
+      "score": 67
+    },
+    {
+      "code": "002077",
+      "name": "大港股份",
+      "price": 12.11,
+      "entry_price": 11.26,
+      "target_price": 12.8,
+      "stop_loss": 10.25,
+      "score": 66
+    },
+    {
+      "code": "002420",
+      "name": "毅昌科技",
+      "price": 6.42,
+      "entry_price": 5.97,
+      "target_price": 6.76,
+      "stop_loss": 5.43,
+      "score": 66
+    },
+    {
+      "code": "002572",
+      "name": "索菲亚",
+      "price": 7.17,
+      "entry_price": 7.17,
+      "target_price": 8.3,
+      "stop_loss": 6.67,
+      "score": 66
+    },
+    {
+      "code": "000065",
+      "name": "北方国际",
+      "price": 8.88,
+      "entry_price": 8.88,
+      "target_price": 10.46,
+      "stop_loss": 8.26,
+      "score": 66
+    },
+    {
+      "code": "002286",
+      "name": "保龄宝",
+      "price": 9.07,
+      "entry_price": 9.07,
+      "target_price": 10.27,
+      "stop_loss": 8.44,
+      "score": 66
+    },
+    {
+      "code": "301039",
+      "name": "中集车辆",
+      "price": 7.34,
+      "entry_price": 7.34,
+      "target_price": 8.45,
+      "stop_loss": 6.83,
+      "score": 66
+    },
+    {
+      "code": "300221",
+      "name": "银禧科技",
+      "price": 9.33,
+      "entry_price": 9.33,
+      "target_price": 10.37,
+      "stop_loss": 8.68,
+      "score": 66
+    },
+    {
+      "code": "300002",
+      "name": "神州泰岳",
+      "price": 7.79,
+      "entry_price": 7.79,
+      "target_price": 8.7,
+      "stop_loss": 7.24,
+      "score": 66
+    },
+    {
+      "code": "300932",
+      "name": "三友联众",
+      "price": 7.78,
+      "entry_price": 7.78,
+      "target_price": 8.81,
+      "stop_loss": 7.24,
+      "score": 66
+    }
+  ],
+  "recommendations": [
+    {
+      "code": "002418",
+      "name": "康盛股份",
+      "price": 4.02,
+      "target_price": 4.57,
+      "stop_loss": 3.74,
+      "score": 100
+    },
+    {
+      "code": "002579",
+      "name": "中京电子",
+      "price": 12.17,
+      "target_price": 14.06,
+      "stop_loss": 11.32,
+      "score": 87
+    },
+    {
+      "code": "002165",
+      "name": "红 宝 丽",
+      "price": 6.3,
+      "target_price": 7.49,
+      "stop_loss": 5.86,
+      "score": 82
+    },
+    {
+      "code": "000711",
+      "name": "京蓝科技",
+      "price": 3.83,
+      "target_price": 4.42,
+      "stop_loss": 3.56,
+      "score": 80
+    },
+    {
+      "code": "002771",
+      "name": "真视通",
+      "price": 14.38,
+      "target_price": 16.22,
+      "stop_loss": 13.37,
+      "score": 77
+    },
+    {
+      "code": "002077",
+      "name": "大港股份",
+      "price": 12.11,
+      "target_price": 12.88,
+      "stop_loss": 11.26,
+      "score": 72
+    },
+    {
+      "code": "001258",
+      "name": "立新能源",
+      "price": 8.71,
+      "target_price": 9.73,
+      "stop_loss": 8.1,
+      "score": 67
+    },
+    {
+      "code": "002420",
+      "name": "毅昌科技",
+      "price": 6.42,
+      "target_price": 6.91,
+      "stop_loss": 5.97,
+      "score": 62
+    },
+    {
+      "code": "000819",
+      "name": "岳阳兴长",
+      "price": 13.23,
+      "target_price": 14.73,
+      "stop_loss": 12.3,
+      "score": 62
+    },
+    {
+      "code": "000839",
+      "name": "国安股份",
+      "price": 2.56,
+      "target_price": 2.76,
+      "stop_loss": 2.38,
+      "score": 60
+    },
+    {
+      "code": "002367",
+      "name": "康力电梯",
+      "price": 4.96,
+      "target_price": 5.52,
+      "stop_loss": 4.61,
+      "score": 60
+    },
+    {
+      "code": "000599",
+      "name": "青岛双星",
+      "price": 3.65,
+      "target_price": 3.98,
+      "stop_loss": 3.39,
+      "score": 60
+    },
+    {
+      "code": "300032",
+      "name": "金龙机电",
+      "price": 3.4,
+      "target_price": 3.71,
+      "stop_loss": 3.16,
+      "score": 60
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "price": 16.74,
+      "target_price": 17.89,
+      "stop_loss": 15.57,
+      "score": 57
+    },
+    {
+      "code": "002668",
+      "name": "TCL智家",
+      "price": 9.18,
+      "target_price": 10.05,
+      "stop_loss": 8.54,
+      "score": 57
+    },
+    {
+      "code": "002706",
+      "name": "良信股份",
+      "price": 8.42,
+      "target_price": 9.29,
+      "stop_loss": 7.83,
+      "score": 57
+    },
+    {
+      "code": "002348",
+      "name": "高乐股份",
+      "price": 7.2,
+      "target_price": 7.79,
+      "stop_loss": 6.7,
+      "score": 57
+    },
+    {
+      "code": "000697",
+      "name": "炼石航空",
+      "price": 8.85,
+      "target_price": 9.7,
+      "stop_loss": 8.23,
+      "score": 57
+    },
+    {
+      "code": "002212",
+      "name": "天融信",
+      "price": 5.57,
+      "target_price": 6.13,
+      "stop_loss": 5.18,
+      "score": 57
+    },
+    {
+      "code": "000670",
+      "name": "盈方微",
+      "price": 6.22,
+      "target_price": 6.9,
+      "stop_loss": 5.78,
+      "score": 57
+    }
+  ]
+}
